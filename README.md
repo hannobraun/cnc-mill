@@ -47,3 +47,17 @@ I'm focusing the research on options that are free (or have a free tier) and sup
   Also looks interesting, although the website presents architecture and furniture use cases, versus the mechanical assemblies showcased on the OnShape website. Hard to say how relevant this will be for this project.
 - TinkerCAD: https://www.tinkercad.com/
   Looks least interesting, judging from the website, as it stresses the beginner/education use case. Doesn't mean that it won't be more than capable enough for this project though.
+
+### Configuration
+
+I believe that the following machine configurations are the strongest contenders:
+
+- **Moving gantry:** Tool moves in all 3 axes.
+- **Moving gantry:** Tool moves in x and z axes, table moves in y axis.
+
+I have ruled out more exotic configurations for my first build (despite having lots of ideas), to reduce overall risk.
+
+References:
+
+- https://cncchronicle.com/fixed_or_moving_gantry_for_cnc_router/
+  Compares the two configuration. Has a nice comparison table further down.
