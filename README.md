@@ -61,3 +61,31 @@ References:
 
 - https://cncchronicle.com/fixed_or_moving_gantry_for_cnc_router/
   Compares the two configuration. Has a nice comparison table further down.
+
+### Control Software
+
+On the controller side I have the following priorities:
+
+- Resist the temptation to do any custom software, or otherwise use something exotic. This might be an option in later builds, but I want to keep it simple for the first version.
+- Be controllable from a regular PC, without requiring one to run. I don't want to add a screen/keyboard/mouse to the bill of materials, but I also don't want to dedicate a whole computer to control it.
+
+I found the following options:
+
+- LinuxCNC: https://linuxcnc.org/
+  Runs on the Raspberry Pi:
+  http://linuxcnc.org/docs/stable/html/getting-started/getting-linuxcnc.html
+
+  The download page talks about interface cards. Not sure what specifically is required, but I found this list:
+  http://wiki.linuxcnc.org/cgi-bin/wiki.pl?LinuxCNC_Supported_Hardware
+
+  I haven't done much research, but the interface cards I saw were quite expensive. Overall, I get the impression that LinuxCNC is not suited for a budget-sensitive build.
+
+- Machinekit: https://www.machinekit.io/
+  I found it hard to understand whether this is suitable. What I can gather is that it runs on the BeagleBone Black: https://www.machinekit.io/docs/getting-started/machinekit-images-for-bbb/
+
+  No idea what else is required to make it work. The information presented is not very approachable, and I'm not sure how much of it is outdated.
+
+- grbl: https://github.com/gnea/grbl
+  I've often heard about this being used for the kind of small-scale CNC machine I'm aiming to build. It's confusing though. There are two different repositories, neither actively developed, and lots of forks.
+
+Based on my cursory research into this area, I think this might be the wrong approach. It might be better to search for easily available CNC controllers, and figure out which software to use for them from there.
