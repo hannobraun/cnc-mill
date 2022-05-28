@@ -19,6 +19,16 @@ I suspect it might simply be impossible to fulfill all of these requirements at 
 As of this writing, I've literally just started. This README exists, and nothing else.
 
 
+## License
+
+This project is open source. All documents, design files, and software in this repository are available under the terms of the [Zero Clause BSD License] (0BSD, for short). This basically means you can do anything with them, without any restrictions, but you can't hold the authors liable for problems.
+
+See [LICENSE.md] for full details.
+
+[Zero Clause BSD License]: https://opensource.org/licenses/0BSD
+[LICENSE.md]: LICENSE.md
+
+
 ## Research Notes
 
 These are the notes from my research process.
@@ -37,13 +47,3 @@ I'm focusing the research on options that are free (or have a free tier) and sup
   Also looks interesting, although the website presents architecture and furniture use cases, versus the mechanical assemblies showcased on the OnShape website. Hard to say how relevant this will be for this project.
 - TinkerCAD: https://www.tinkercad.com/
   Looks least interesting, judging from the website, as it stresses the beginner/education use case. Doesn't mean that it won't be more than capable enough for this project though.
-
-
-## License
-
-This project is open source. All documents, design files, and software in this repository are available under the terms of the [Zero Clause BSD License] (0BSD, for short). This basically means you can do anything with them, without any restrictions, but you can't hold the authors liable for problems.
-
-See [LICENSE.md] for full details.
-
-[Zero Clause BSD License]: https://opensource.org/licenses/0BSD
-[LICENSE.md]: LICENSE.md
