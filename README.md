@@ -2,7 +2,7 @@
 
 ## Goal
 
-I want to have a CNC mill. I've considered buying one, but everything I can find violates one or more of the following constraints:
+I want to have a 3-axis CNC mill. I've considered buying one, but everything I can find violates one or more of the following constraints:
 
 - **Budget:** It's going to be my first, so spending a lot of money doesn't make a whole lot of sense. The main purpose is to learn, and figure out what I actually need in a CNC mill.
 - **Capability:** At the same time, I don't want to buy a machine that I will outgrow within the first week. It should be capable of cutting aluminium relatively comfortably.
