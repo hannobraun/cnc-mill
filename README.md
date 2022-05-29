@@ -97,3 +97,34 @@ Host-side control software:
 - https://github.com/Denvi/Candle
 - https://github.com/winder/Universal-G-Code-Sender
 - https://github.com/terjeio/ioSender
+
+### Controller Boards
+
+I'm currently operating under the assumption that an open-loop control system using stepper motors will be used, for cost reasons.
+
+There is a huge number of options available. A lot of them are pricy enough to take up the majority of the available budget. For that reason, I've focused on lower-priced options.
+
+TinyG control boards, which include steppers drivers, but lack something to control the spindle:
+
+- https://synthetos.myshopify.com/products/tinyg
+  Not the cheapest option ($129.99), but open source and well-documented. Includes 4 stepper drivers (2.5 amps).
+- https://synthetos.myshopify.com/collections/assembled-electronics/products/gshield-v5
+  Cheaper alternative to the TinyG ($49.99), which requires an Arduino to work. I happen to have an Arduino Due lying around, so that might work out well. Includes 3 stepper drivers (2.5 amps).
+
+Both of those boards don't seem to be available in Europe, so the real cost might be significantly higher, with shipping and customs duties.
+
+SainSmart sells the controller boards for their low-cost CNC machines separately:
+- https://www.sainsmart.com/collections/genmitsu-cnc-replacement-upgrade-parts/products/genmtisu-grbl-controller-board-for-3018-prover-3018-mx3
+- https://www.sainsmart.com/collections/genmitsu-cnc-replacement-upgrade-parts/products/controller-board-for-genmtisu-cnc-router-3018-3018-pro-1810-rpo
+
+They are much cheaper (40-50€) and can control a spindle. One of them is limited to 1.5-2amps for the stepper motors, the other doesn't specify. Since the SainSmart machines are pretty weak, it's doubtful that the controller board supports any motors (axis or spindle) that would be a significant upgrade over them.
+
+Here's another board, linked to grblHAL:
+https://www.tindie.com/products/philba/grblhal-bob-unkit-for-teensy-41-t41u5xbb/
+
+Costs around 50€, plus shipping from the US. Requires a Teensy 4.1, which is readily available locally, for under 30€. Doesn't include stepper drivers, but can control a spindler with an external VFD.
+
+References:
+
+- https://www.cnccookbook.com/cnc-controller-software-drivers-boards/
+  Overview over some available options.
