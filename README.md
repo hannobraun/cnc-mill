@@ -88,4 +88,7 @@ I found the following options:
 - grbl: https://github.com/gnea/grbl
   I've often heard about this being used for the kind of small-scale CNC machine I'm aiming to build. It's confusing though. There are two different repositories, neither actively developed, and lots of forks.
 
+- grblHAL: https://www.grbl.org/
+  Fork of gbrl, for 32-bit MCUs.
+
 Based on my cursory research into this area, I think this might be the wrong approach. It might be better to search for easily available CNC controllers, and figure out which software to use for them from there.
