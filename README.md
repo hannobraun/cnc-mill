@@ -128,3 +128,12 @@ References:
 
 - https://www.cnccookbook.com/cnc-controller-software-drivers-boards/
   Overview over some available options.
+
+### Further Areas of Research
+
+These are just some notes, not an exhaustive list.
+
+- Stepper drivers, if using a board that doesn't have them built-in.
+- VFDs, if using a board that requires them to control the spindle motor.
+- Power supplies.
+- Cooling. Active or passive cooling might be required for the control electronics.
