@@ -53,7 +53,7 @@ I'm focusing the research on options that are free (or have a free tier) and sup
 I believe that the following machine configurations are the strongest contenders:
 
 - **Moving gantry:** Tool moves in all 3 axes.
-- **Moving gantry:** Tool moves in x and z axes, table moves in y axis.
+- **Fixed gantry:** Tool moves in x and z axes, table moves in y axis.
 
 I have ruled out more exotic configurations for my first build (despite having lots of ideas), to reduce overall risk.
 
