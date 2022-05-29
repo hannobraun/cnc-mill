@@ -4,7 +4,7 @@
 
 I want to have a 3-axis CNC mill. I've considered buying one, but everything I can find violates one or more of the following constraints:
 
-- **Budget:** It's going to be my first, so spending a lot of money doesn't make a whole lot of sense. The main purpose is to learn, and figure out what I actually need in a CNC mill.
+- **Budget:** It's going to be my first CNC mill, so spending a lot of money doesn't make a whole lot of sense. The main purpose is to learn, and figure out what I actually need in a CNC mill.
 - **Capability:** At the same time, I don't want to buy a machine that I will outgrow within the first week. It should be capable of cutting aluminium relatively comfortably.
 - **Space:** I'm severely limited on space. It needs to comfortably fit on a desk (while not taking up the whole desk).
 - **Environment:** I don't have a proper workshop, unfortunately. The machine will need to run in my apartment, preferably without making my neighbors hate me.
