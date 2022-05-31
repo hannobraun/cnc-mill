@@ -41,11 +41,11 @@ Normally, I'd favor open source software, but since migration to Fornjot at a la
 
 I'm focusing the research on options that are free (or have a free tier) and support Linux:
 
-- OnShape: https://www.onshape.com/
+- **OnShape:** https://www.onshape.com/
   Looks highly professional. Would certainly be an interesting learning experience.
-- SketchUp: https://sketchup.com/
+- **SketchUp:** https://sketchup.com/
   Also looks interesting, although the website presents architecture and furniture use cases, versus the mechanical assemblies showcased on the OnShape website. Hard to say how relevant this will be for this project.
-- TinkerCAD: https://www.tinkercad.com/
+- **TinkerCAD:** https://www.tinkercad.com/
   Looks least interesting, judging from the website, as it stresses the beginner/education use case. Doesn't mean that it won't be more than capable enough for this project though.
 
 ### Configuration
@@ -71,7 +71,7 @@ On the controller side I have the following priorities:
 
 I found the following options:
 
-- LinuxCNC: https://linuxcnc.org/
+- **LinuxCNC:** https://linuxcnc.org/
   Runs on the Raspberry Pi:
   http://linuxcnc.org/docs/stable/html/getting-started/getting-linuxcnc.html
 
@@ -80,15 +80,15 @@ I found the following options:
 
   I haven't done much research, but the interface cards I saw were quite expensive. Overall, I get the impression that LinuxCNC is not suited for a budget-sensitive build.
 
-- Machinekit: https://www.machinekit.io/
+- **Machinekit:** https://www.machinekit.io/
   I found it hard to understand whether this is suitable. What I can gather is that it runs on the BeagleBone Black: https://www.machinekit.io/docs/getting-started/machinekit-images-for-bbb/
 
   No idea what else is required to make it work. The information presented is not very approachable, and I'm not sure how much of it is outdated.
 
-- grbl: https://github.com/gnea/grbl
+- **grbl:** https://github.com/gnea/grbl
   I've often heard about this being used for the kind of small-scale CNC machine I'm aiming to build. It's confusing though. There are two different repositories, neither actively developed, and lots of forks.
 
-- grblHAL: https://www.grbl.org/
+- **grblHAL:** https://www.grbl.org/
   Fork of gbrl, for 32-bit MCUs.
 
 Based on my cursory research into this area, I think this might be the wrong approach. It might be better to search for easily available CNC controllers, and figure out which software to use for them from there.
