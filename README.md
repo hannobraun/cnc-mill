@@ -132,6 +132,25 @@ References:
 - https://www.cnccookbook.com/cnc-controller-software-drivers-boards/
   Overview over some available options.
 
+### Stepper Drivers
+
+Makerbase: https://www.aliexpress.com/store/1047297
+  - standard(?) breakout board pinout
+    - Makerbase MKS A4988: https://www.aliexpress.com/item/32888457440.html
+      2.0A max
+    - Makerbase MKS TMC2208: https://www.aliexpress.com/item/32888980385.html
+      2.0A max
+    - Makerbase MKS TMC2209: https://www.aliexpress.com/item/33043140087.html
+      2.5A max
+    - Makerbase MKS TMC2225: https://www.aliexpress.com/item/4001149124672.html
+      2.0A max
+    - Makerbase MKS TMC2226: https://www.aliexpress.com/item/1005002669282600.html
+      2.5A max
+  - Makerbase MKS TMC2160: https://www.aliexpress.com/item/1005004044381878.html
+    4.33A max
+  - Makerbase MKS TMC2160-OC: https://www.aliexpress.com/item/4000185818422.html
+    4.33A max, extra cooling
+
 ### Further Areas of Research
 
 These are just some notes, not an exhaustive list.
