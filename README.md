@@ -91,6 +91,9 @@ I found the following options:
 - **grblHAL:** https://www.grbl.org/
   Fork of gbrl, for 32-bit MCUs.
 
+- **FluidNC:** https://github.com/bdring/FluidNC
+  Looks promising. Unclear though, which hardware it runs on. (Well, ESP32, obviously, but I mean which specific boards I could use.)
+
 Based on my cursory research into this area, I think this might be the wrong approach. It might be better to search for easily available CNC controllers, and figure out which software to use for them from there.
 
 Host-side control software:
