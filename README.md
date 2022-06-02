@@ -92,7 +92,7 @@ I found the following options:
   Fork of gbrl, for 32-bit MCUs.
 
 - **FluidNC:** https://github.com/bdring/FluidNC
-  Looks promising. Unclear though, which hardware it runs on. (Well, ESP32, obviously, but I mean which specific boards I could use.)
+  Looks promising. Has a list of supported hardware: https://github.com/bdring/FluidNC/wiki/Hardware-that-Runs-FluidNC
 
 Based on my cursory research into this area, I think this might be the wrong approach. It might be better to search for easily available CNC controllers, and figure out which software to use for them from there.
 
