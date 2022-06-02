@@ -155,7 +155,6 @@ Makerbase: https://www.aliexpress.com/store/1047297
 
 These are just some notes, not an exhaustive list.
 
-- Stepper drivers, if using a board that doesn't have them built-in.
 - VFDs, if using a board that requires them to control the spindle motor.
 - Power supplies.
 - Cooling. Active or passive cooling might be required for the control electronics.
