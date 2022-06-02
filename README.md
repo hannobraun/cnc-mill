@@ -167,6 +167,15 @@ AliExpress
 - Bulk Man 3D: https://bulkman3d.com/, https://www.aliexpress.com/store/1752067
   Large selection of lots of things I'm going to need.
 
+### Other Machines
+
+It's going to make sense to take inspiration from other machines at some point. Here are some links:
+
+- OpenBuilds: https://openbuilds.com/
+  Lots of machines of all kinds.
+- MPCNC: https://docs.v1engineering.com/mpcnc/intro/
+  Interesting design. Less traditional than what I have in mind.
+
 ### Further Areas of Research
 
 These are just some notes, not an exhaustive list.
