@@ -151,6 +151,22 @@ Makerbase: https://www.aliexpress.com/store/1047297
   - Makerbase MKS TMC2160-OC: https://www.aliexpress.com/item/4000185818422.html
     4.33A max, extra cooling
 
+### Online Shops
+
+I'm looking into two groups of online shops now:
+
+- Local (i.e. European) shops, because that gives me a minimum of hassle (shipping, customs).
+- Shops on platforms like AliExpress or eBay with low prices, as that might be necessary to meet my budget.
+
+European shops:
+
+- DOLD Mechatronik: https://dold-mechatronik.de/
+  Have a lot of different stuff, including aluminium in various sizes. At least some categories seems to be high-priced, relative to the available budget.
+
+AliExpress
+- Bulk Man 3D: https://bulkman3d.com/, https://www.aliexpress.com/store/1752067
+  Large selection of lots of things I'm going to need.
+
 ### Further Areas of Research
 
 These are just some notes, not an exhaustive list.
