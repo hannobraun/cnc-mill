@@ -41,11 +41,11 @@ Normally, I'd favor open source software, but since migration to Fornjot at a la
 
 I'm focusing the research on options that are free (or have a free tier) and support Linux:
 
-- **OnShape:** https://www.onshape.com/
+- **OnShape:** https://www.onshape.com/ <br />
   Looks highly professional. Would certainly be an interesting learning experience.
-- **SketchUp:** https://sketchup.com/
+- **SketchUp:** https://sketchup.com/ <br />
   Also looks interesting, although the website presents architecture and furniture use cases, versus the mechanical assemblies showcased on the OnShape website. Hard to say how relevant this will be for this project.
-- **TinkerCAD:** https://www.tinkercad.com/
+- **TinkerCAD:** https://www.tinkercad.com/ <br />
   Looks least interesting, judging from the website, as it stresses the beginner/education use case. Doesn't mean that it won't be more than capable enough for this project though.
 
 ### Configuration
@@ -59,7 +59,7 @@ I have ruled out more exotic configurations for my first build (despite having l
 
 References:
 
-- https://cncchronicle.com/fixed_or_moving_gantry_for_cnc_router/
+- https://cncchronicle.com/fixed_or_moving_gantry_for_cnc_router/ <br />
   Compares the two configuration. Has a nice comparison table further down.
 
 ### Control Software
@@ -71,7 +71,7 @@ On the controller side I have the following priorities:
 
 I found the following options:
 
-- **LinuxCNC:** https://linuxcnc.org/
+- **LinuxCNC:** https://linuxcnc.org/ <br />
   Runs on the Raspberry Pi:
   http://linuxcnc.org/docs/stable/html/getting-started/getting-linuxcnc.html
 
@@ -80,18 +80,18 @@ I found the following options:
 
   I haven't done much research, but the interface cards I saw were quite expensive. Overall, I get the impression that LinuxCNC is not suited for a budget-sensitive build.
 
-- **Machinekit:** https://www.machinekit.io/
+- **Machinekit:** https://www.machinekit.io/ <br />
   I found it hard to understand whether this is suitable. What I can gather is that it runs on the BeagleBone Black: https://www.machinekit.io/docs/getting-started/machinekit-images-for-bbb/
 
   No idea what else is required to make it work. The information presented is not very approachable, and I'm not sure how much of it is outdated.
 
-- **grbl:** https://github.com/gnea/grbl
+- **grbl:** https://github.com/gnea/grbl <br />
   I've often heard about this being used for the kind of small-scale CNC machine I'm aiming to build. It's confusing though. There are two different repositories, neither actively developed, and lots of forks.
 
-- **grblHAL:** https://www.grbl.org/
+- **grblHAL:** https://www.grbl.org/ <br />
   Fork of gbrl, for 32-bit MCUs.
 
-- **FluidNC:** https://github.com/bdring/FluidNC
+- **FluidNC:** https://github.com/bdring/FluidNC <br />
   Looks promising. Has a list of supported hardware: https://github.com/bdring/FluidNC/wiki/Hardware-that-Runs-FluidNC
 
 Based on my cursory research into this area, I think this might be the wrong approach. It might be better to search for easily available CNC controllers, and figure out which software to use for them from there.
@@ -109,9 +109,9 @@ There is a huge number of options available. A lot of them are pricy enough to t
 
 TinyG control boards, which include steppers drivers, but lack something to control the spindle:
 
-- https://synthetos.myshopify.com/products/tinyg
+- https://synthetos.myshopify.com/products/tinyg <br />
   Not the cheapest option ($129.99), but open source and well-documented. Includes 4 stepper drivers (2.5 amps).
-- https://synthetos.myshopify.com/collections/assembled-electronics/products/gshield-v5
+- https://synthetos.myshopify.com/collections/assembled-electronics/products/gshield-v5 <br />
   Cheaper alternative to the TinyG ($49.99), which requires an Arduino to work. I happen to have an Arduino Due lying around, so that might work out well. Includes 3 stepper drivers (2.5 amps).
 
 Both of those boards don't seem to be available in Europe, so the real cost might be significantly higher, with shipping and customs duties.
@@ -136,19 +136,19 @@ References:
 
 Makerbase: https://www.aliexpress.com/store/1047297
   - standard(?) breakout board pinout
-    - Makerbase MKS A4988: https://www.aliexpress.com/item/32888457440.html
+    - Makerbase MKS A4988: https://www.aliexpress.com/item/32888457440.html <br />
       2.0A max
-    - Makerbase MKS TMC2208: https://www.aliexpress.com/item/32888980385.html
+    - Makerbase MKS TMC2208: https://www.aliexpress.com/item/32888980385.html <br />
       2.0A max
-    - Makerbase MKS TMC2209: https://www.aliexpress.com/item/33043140087.html
+    - Makerbase MKS TMC2209: https://www.aliexpress.com/item/33043140087.html <br />
       2.5A max
-    - Makerbase MKS TMC2225: https://www.aliexpress.com/item/4001149124672.html
+    - Makerbase MKS TMC2225: https://www.aliexpress.com/item/4001149124672.html <br />
       2.0A max
-    - Makerbase MKS TMC2226: https://www.aliexpress.com/item/1005002669282600.html
+    - Makerbase MKS TMC2226: https://www.aliexpress.com/item/1005002669282600.html <br />
       2.5A max
-  - Makerbase MKS TMC2160: https://www.aliexpress.com/item/1005004044381878.html
+  - Makerbase MKS TMC2160: https://www.aliexpress.com/item/1005004044381878.html <br />
     4.33A max
-  - Makerbase MKS TMC2160-OC: https://www.aliexpress.com/item/4000185818422.html
+  - Makerbase MKS TMC2160-OC: https://www.aliexpress.com/item/4000185818422.html <br />
     4.33A max, extra cooling
 
 ### Online Shops
@@ -160,20 +160,20 @@ I'm looking into two groups of online shops now:
 
 European shops:
 
-- DOLD Mechatronik: https://dold-mechatronik.de/
+- DOLD Mechatronik: https://dold-mechatronik.de/ <br />
   Have a lot of different stuff, including aluminium in various sizes. At least some categories seems to be high-priced, relative to the available budget.
 
 AliExpress
-- Bulk Man 3D: https://bulkman3d.com/, https://www.aliexpress.com/store/1752067
+- Bulk Man 3D: https://bulkman3d.com/, https://www.aliexpress.com/store/1752067 <br />
   Large selection of lots of things I'm going to need.
 
 ### Other Machines
 
 It's going to make sense to take inspiration from other machines at some point. Here are some links:
 
-- OpenBuilds: https://openbuilds.com/
+- OpenBuilds: https://openbuilds.com/ <br />
   Lots of machines of all kinds.
-- MPCNC: https://docs.v1engineering.com/mpcnc/intro/
+- MPCNC: https://docs.v1engineering.com/mpcnc/intro/ <br />
   Interesting design. Less traditional than what I have in mind.
 
 ### Further Areas of Research
