@@ -175,6 +175,8 @@ It's going to make sense to take inspiration from other machines at some point. 
   Lots of machines of all kinds.
 - MPCNC: https://docs.v1engineering.com/mpcnc/intro/ <br />
   Interesting design. Less traditional than what I have in mind.
+- Tormach xsTECH: https://tormach.com/machines/routers/xstech-router.html <br />
+  Really interesting machine, in terms of configuration, form factor, and enclosure. Pretty much what I want to build, but hopefully I can fit some more rigid components into the budget.
 
 ### Further Areas of Research
 
