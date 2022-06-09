@@ -179,6 +179,8 @@ It's going to make sense to take inspiration from other machines at some point. 
   Really interesting machine, in terms of configuration, form factor, and enclosure. Pretty much what I want to build, but hopefully I can fit some more rigid components into the budget.
 - PrintNC: https://wiki.printnc.info/en/home<br />
   Moving gantry design with a frame based on steel tubing.
+- Millennium Mill: https://www.reddit.com/r/MilleniumMachines/<br />
+  C-frame mill based on aluminium extrusion.
 
 ### Further Areas of Research
 
