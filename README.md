@@ -181,6 +181,8 @@ It's going to make sense to take inspiration from other machines at some point. 
   Moving gantry design with a frame based on steel tubing.
 - Millennium Mill: https://www.reddit.com/r/MilleniumMachines/<br />
   C-frame mill based on aluminium extrusion.
+- ULTIMATE Bee: https://bulkman3d.com/knowledge-base/ultimate-bee/<br />
+  Classic moving gantry design, with what looks like high-quality components.
 
 ### Further Areas of Research
 
