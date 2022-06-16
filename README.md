@@ -194,6 +194,31 @@ It's going to make sense to take inspiration from other machines at some point. 
 - ULTIMATE Bee: https://bulkman3d.com/knowledge-base/ultimate-bee/<br />
   Classic moving gantry design, with what looks like high-quality components.
 
+### Spindle
+
+After an initial round of research, I'm now focusing on water-cooled spindles with a minimum of around 1kW power and 24k max RPM, for the following reasons:
+
+- According to information I found online, 1kW and 24k max RPM should be good for milling aluminium.
+- Noise is an important concern, and water-cooled spindles are quieter than air-cooled ones.
+- It seems like the only real downsides are price and complexity. Prices are surprisingly affordable, from what I can see, and I've been told the complexity isn't too bad.
+
+#### Manufacturers
+
+In articles I've read, Huanyang has been called out as a quality brand, and I can find affordable offers with EU-based inventory. Unless the budget turns out to be really tight, or some other information comes to light, I might just go with that.
+
+#### Collets
+
+I've been told (from a trusted source) to get at least ER16 or greater, as ER11 is too limiting.
+
+#### References
+
+- https://mellowpine.com/cnc/how-to-choose-a-cnc-spindle/<br />
+  Has very specific recommendations.
+- https://mellowpine.com/cnc/best-cnc-spindles/<br />
+  Presents some specific spindles and what they're suitable for.
+- https://en.wikipedia.org/wiki/Collet#ER_collets<br />
+  Just some background info on ER collets, for the mechanically challenged (like me).
+
 
 ## Design
 
