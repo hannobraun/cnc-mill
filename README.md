@@ -172,6 +172,11 @@ AliExpress:
 - Makerbase: https://www.aliexpress.com/store/1047297<br />
   Control boards mostly seem not applicable, but the stepper drivers are very interesting.
 
+eBay:
+
+- https://www.ebay.de/str/motormall<br />
+  Chinese shop, ships from Europe. Has spindles and VFDs.
+
 ### Other Machines
 
 It's going to make sense to take inspiration from other machines at some point. Here are some links:
