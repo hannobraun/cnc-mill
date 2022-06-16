@@ -186,14 +186,6 @@ It's going to make sense to take inspiration from other machines at some point. 
 - ULTIMATE Bee: https://bulkman3d.com/knowledge-base/ultimate-bee/<br />
   Classic moving gantry design, with what looks like high-quality components.
 
-### Further Areas of Research
-
-These are just some notes, not an exhaustive list.
-
-- VFDs, if using a board that requires them to control the spindle motor.
-- Power supplies.
-- Cooling. Active or passive cooling might be required for the control electronics.
-
 
 ## Design
 
