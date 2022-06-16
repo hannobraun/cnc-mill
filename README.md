@@ -165,7 +165,8 @@ European shops:
 - DOLD Mechatronik: https://dold-mechatronik.de/<br />
   Have a lot of different stuff, including aluminium in various sizes. At least some categories seems to be high-priced, relative to the available budget.
 
-AliExpress
+AliExpress:
+
 - Bulk Man 3D: https://bulkman3d.com/, https://www.aliexpress.com/store/1752067<br />
   Large selection of lots of things I'm going to need.
 - Makerbase: https://www.aliexpress.com/store/1047297<br />
