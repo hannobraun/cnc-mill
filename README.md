@@ -219,6 +219,16 @@ I've been told (from a trusted source) to get at least ER16 or greater, as ER11 
 - https://en.wikipedia.org/wiki/Collet#ER_collets<br />
   Just some background info on ER collets, for the mechanically challenged (like me).
 
+### Power Supply
+
+As far as I can see, the machine needs the following kinds of power:
+
+- **230V AC:** Since I'm in Europe, this is the input I'm dealing with. It's needed by the VFD for the spindle, the DC power supply, possibly the water pump.
+- **3.3V - 5V DC:** This is the typical range for microcontrollers and many other kinds of electronics.
+- **higher-voltage DC:** The stepper motors are going to need DC at a higher voltage than the controller.
+
+So I'm going to need a power supply that turns AC into DC, and possibly something else to step the DC up or down to meet the different requirements. As for the power supply, I've often seen [Meanwell](https://www.meanwell.com/) in various sets and such. Unless there's a good reason not to, I might just stick to that.
+
 
 ## Design
 
