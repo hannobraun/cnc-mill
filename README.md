@@ -219,6 +219,26 @@ I've been told (from a trusted source) to get at least ER16 or greater, as ER11 
 - https://en.wikipedia.org/wiki/Collet#ER_collets<br />
   Just some background info on ER collets, for the mechanically challenged (like me).
 
+### Spindle: Counterpoint
+
+This is some information I've come across, that runs counter to my previous research on spindles above. The way I arrived there went roughly like that:
+
+1. The cheap CNC mills sold by Sainsmart have up to 400W spindles, there seems to be wide agreement that they're not great for aluminium, and on top of that, they are marketed as "CNC engravers".
+2. Credible-looking information online tells me I need at least 0.8 - 1 kW for aluminium. If the Sainsmart mills are not good for aluminium, needing twice as much to be good at aluminium makes sense.
+
+Now I'm finding counter-examples though: machines that are used to mill aluminium, but are much less powerful. Some examples:
+
+- [**PocketNC:**](https://pocketnc.com/) Both the V2-10 and the V2-50 come with a 200W spindle[^1][^2]. And yet it seems capable milling aluminium and more. This video is very interesting: https://youtu.be/7YfRNZbfjaY?t=326
+- [**Nomad:**](https://carbide3d.com/nomad/) Only has a 70W spindle. It's easy to find videos of it milling aluminium, but in the one's I've seen, either the sound is covered by a voiceover, or it sounds horribly chattery. So not a strong case, but interesting none the less.
+
+I think the PocketNC is a strong example here. It's obviously not capable of great speeds, and it starts chattering if the settings are too aggressive. But still, it seems to be capable of producing aluminium parts.
+
+Given the size constraints of the machine, being able to use a smaller spindle would be very attractive.
+
+[^1]: https://cdn.shopify.com/s/files/1/0077/5477/6623/files/V2-10_Spec_V05.pdf?v=1611173337
+[^2]: https://cdn.shopify.com/s/files/1/0077/5477/6623/files/V250CHKCHBSpecSheet.pdf?v=1624559427
+[^3]: https://youtu.be/vMY06dzf7UA?t=127
+
 ### Power Supply
 
 As far as I can see, the machine needs the following kinds of power:
