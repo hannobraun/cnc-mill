@@ -160,10 +160,8 @@ I'm looking into two groups of online shops now:
 
 European shops:
 
-- cnc-technics: https://shop.cnc-technics.de/<br />
-  Have lots of relevant products, but probably too high-end for my budget.
-- DOLD Mechatronik: https://dold-mechatronik.de/<br />
-  Have a lot of different stuff, including aluminium in various sizes. At least some categories seems to be high-priced, relative to the available budget.
+- [**cnc-technics**](https://shop.cnc-technics.de/): Have lots of relevant products, but probably too high-end for my budget.
+- [**DOLD Mechatronik**](https://dold-mechatronik.de/): Have a lot of different stuff, including aluminium in various sizes. At least some categories seems to be high-priced, relative to the available budget.
 
 AliExpress:
 
