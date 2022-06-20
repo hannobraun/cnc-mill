@@ -233,7 +233,6 @@ Given the size constraints of the machine, being able to use a smaller spindle w
 
 [^1]: https://cdn.shopify.com/s/files/1/0077/5477/6623/files/V2-10_Spec_V05.pdf?v=1611173337
 [^2]: https://cdn.shopify.com/s/files/1/0077/5477/6623/files/V250CHKCHBSpecSheet.pdf?v=1624559427
-[^3]: https://youtu.be/vMY06dzf7UA?t=127
 
 ### Power Supply
 
