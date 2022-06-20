@@ -162,6 +162,7 @@ European shops:
 
 - [**cnc-technics**](https://shop.cnc-technics.de/): Have lots of relevant products, but probably too high-end for my budget.
 - [**DOLD Mechatronik**](https://dold-mechatronik.de/): Have a lot of different stuff, including aluminium in various sizes. At least some categories seems to be high-priced, relative to the available budget.
+- [**Sorotec**](https://www.sorotec.de/shop/): Large selection of all kinds of stuff required for CNCs.
 
 AliExpress:
 
