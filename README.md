@@ -187,6 +187,8 @@ It's going to make sense to take inspiration from other machines at some point. 
 - [**PrintNC**](https://wiki.printnc.info/en/home): Moving gantry design with a frame based on steel tubing.
 - [**Millennium Mill**](https://www.reddit.com/r/MilleniumMachines/): C-frame mill based on aluminium extrusion.
 - [**ULTIMATE Bee**](https://bulkman3d.com/knowledge-base/ultimate-bee/): Classic moving gantry design, with what looks like high-quality components.
+- [**PocketNC:**](https://pocketnc.com/): 5-axis desktop CNC mill. Interesting, in that it is used for milling aluminium (easy to find examples on YouTube), but has a relatively weak spindle (200W).
+- [**Nomad:**](https://carbide3d.com/nomad/): Pretty close to what I would like to build, in regards to the configuration, form factor, and enclosure. Notable for its weak spindle (70W).
 
 ### Spindle
 
@@ -222,8 +224,8 @@ This is some information I've come across, that runs counter to my previous rese
 
 Now I'm finding counter-examples though: machines that are used to mill aluminium, but are much less powerful. Some examples:
 
-- [**PocketNC:**](https://pocketnc.com/) Both the V2-10 and the V2-50 come with a 200W spindle[^1][^2]. And yet it seems capable milling aluminium and more. This video is very interesting: https://youtu.be/7YfRNZbfjaY?t=326
-- [**Nomad:**](https://carbide3d.com/nomad/) Only has a 70W spindle. It's easy to find videos of it milling aluminium, but in the one's I've seen, either the sound is covered by a voiceover, or it sounds horribly chattery. So not a strong case, but interesting none the less.
+- **PocketNC:** Both the V2-10 and the V2-50 come with a 200W spindle[^1][^2]. And yet it seems capable milling aluminium and more. This video is very interesting: https://youtu.be/7YfRNZbfjaY?t=326
+- **Nomad:** Only has a 70W spindle. It's easy to find videos of it milling aluminium, but in the one's I've seen, either the sound is covered by a voiceover, or it sounds horribly chattery. So not a strong case, but interesting none the less.
 
 I think the PocketNC is a strong example here. It's obviously not capable of great speeds, and it starts chattering if the settings are too aggressive. But still, it seems to be capable of producing aluminium parts.
 
