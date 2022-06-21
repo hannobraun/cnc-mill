@@ -243,6 +243,14 @@ As far as I can see, the machine needs the following kinds of power:
 
 So I'm going to need a power supply that turns AC into DC, and possibly something else to step the DC up or down to meet the different requirements. As for the power supply, I've often seen [Meanwell](https://www.meanwell.com/) in various sets and such. Unless there's a good reason not to, I might just stick to that.
 
+### Enclosure
+
+The design goal for the whole machine is to have it run in an apartment environment, if at all possible, without creating the kind of noise that would be unacceptable in such an environment. An enclosure is going to be critical to achieve that.
+
+References:
+
+- https://www.youtube.com/watch?v=1zIFWG3X1DU
+
 
 ## Design
 
