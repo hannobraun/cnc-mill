@@ -29,7 +29,7 @@ See [LICENSE.md] for full details.
 [LICENSE.md]: LICENSE.md
 
 
-## Design
+## Design Decisions
 
 Here are some high-level design decisions I've made. None of them are final, and they might still change as I do more research:
 
