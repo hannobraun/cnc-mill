@@ -43,6 +43,31 @@ Here are some high-level design decisions I've made. None of them are final, and
 
 These are the notes from my research process.
 
+### Online Shops
+
+I'm looking into two groups of online shops now:
+
+- Local (i.e. European) shops, because that gives me a minimum of hassle (shipping, customs).
+- Shops on platforms like AliExpress or eBay with low prices, as that might be necessary to meet my budget.
+
+European shops:
+
+- [**cnc-technics**](https://shop.cnc-technics.de/): Have lots of relevant products, but probably too high-end for my budget.
+- [**DOLD Mechatronik**](https://dold-mechatronik.de/): Have a lot of different stuff, including aluminium in various sizes. At least some categories seems to be high-priced, relative to the available budget.
+- [**Sorotec**](https://www.sorotec.de/shop/): Large selection of all kinds of stuff required for CNCs.
+
+AliExpress:
+
+- Bulk Man 3D: https://bulkman3d.com/, https://www.aliexpress.com/store/1752067<br />
+  Large selection of lots of things I'm going to need.
+- Makerbase: https://www.aliexpress.com/store/1047297<br />
+  Control boards mostly seem not applicable, but the stepper drivers are very interesting.
+
+eBay:
+
+- https://www.ebay.de/str/motormall<br />
+  Chinese shop, ships from Europe. Has spindles and VFDs.
+
 ### CAD Software
 
 I'd love to use [Fornjot](https://www.fornjot.app/), but it'll be a while before it's ready for a project like this. I hope that I can migrate the project to Fornjot eventually.
@@ -157,31 +182,6 @@ Makerbase: https://www.aliexpress.com/store/1047297
     4.33A max
   - Makerbase MKS TMC2160-OC: https://www.aliexpress.com/item/4000185818422.html<br />
     4.33A max, extra cooling
-
-### Online Shops
-
-I'm looking into two groups of online shops now:
-
-- Local (i.e. European) shops, because that gives me a minimum of hassle (shipping, customs).
-- Shops on platforms like AliExpress or eBay with low prices, as that might be necessary to meet my budget.
-
-European shops:
-
-- [**cnc-technics**](https://shop.cnc-technics.de/): Have lots of relevant products, but probably too high-end for my budget.
-- [**DOLD Mechatronik**](https://dold-mechatronik.de/): Have a lot of different stuff, including aluminium in various sizes. At least some categories seems to be high-priced, relative to the available budget.
-- [**Sorotec**](https://www.sorotec.de/shop/): Large selection of all kinds of stuff required for CNCs.
-
-AliExpress:
-
-- Bulk Man 3D: https://bulkman3d.com/, https://www.aliexpress.com/store/1752067<br />
-  Large selection of lots of things I'm going to need.
-- Makerbase: https://www.aliexpress.com/store/1047297<br />
-  Control boards mostly seem not applicable, but the stepper drivers are very interesting.
-
-eBay:
-
-- https://www.ebay.de/str/motormall<br />
-  Chinese shop, ships from Europe. Has spindles and VFDs.
 
 ### Other Machines
 
