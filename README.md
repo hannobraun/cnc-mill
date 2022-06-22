@@ -63,8 +63,7 @@ AliExpress:
 
 eBay:
 
-- https://www.ebay.de/str/motormall<br />
-  Chinese shop, ships from Europe. Has spindles and VFDs.
+- [**motor-mall**](https://www.ebay.de/str/motormall) Chinese shop, ships from Europe. Has spindles and VFDs.
 
 ### CAD Software
 
