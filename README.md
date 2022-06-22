@@ -51,12 +51,9 @@ Normally, I'd favor open source software, but since migration to Fornjot at a la
 
 I'm focusing the research on options that are free (or have a free tier) and support Linux:
 
-- **OnShape:** https://www.onshape.com/<br />
-  Looks highly professional. Would certainly be an interesting learning experience.
-- **SketchUp:** https://sketchup.com/<br />
-  Also looks interesting, although the website presents architecture and furniture use cases, versus the mechanical assemblies showcased on the OnShape website. Hard to say how relevant this will be for this project.
-- **TinkerCAD:** https://www.tinkercad.com/<br />
-  Looks least interesting, judging from the website, as it stresses the beginner/education use case. Doesn't mean that it won't be more than capable enough for this project though.
+- [**OnShape:**](https://www.onshape.com/) Looks highly professional. Would certainly be an interesting learning experience.
+- [**SketchUp:**](https://sketchup.com/) Also looks interesting, although the website presents architecture and furniture use cases, versus the mechanical assemblies showcased on the OnShape website. Hard to say how relevant this will be for this project.
+- [**TinkerCAD:**](https://www.tinkercad.com/) Looks least interesting, judging from the website, as it stresses the beginner/education use case. Doesn't mean that it won't be more than capable enough for this project though.
 
 ### Configuration
 
