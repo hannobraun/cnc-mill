@@ -58,10 +58,8 @@ European shops:
 
 AliExpress:
 
-- Bulk Man 3D: https://bulkman3d.com/, https://www.aliexpress.com/store/1752067<br />
-  Large selection of lots of things I'm going to need.
-- Makerbase: https://www.aliexpress.com/store/1047297<br />
-  Control boards mostly seem not applicable, but the stepper drivers are very interesting.
+- [**Bulk Man 3D**](https://www.aliexpress.com/store/1752067) ([also have a website](https://bulkman3d.com/)): Large selection of lots of things I'm going to need.
+- [**Makerbase:**](https://www.aliexpress.com/store/1047297) Control boards mostly seem not applicable, but the stepper drivers are very interesting.
 
 eBay:
 
