@@ -45,9 +45,9 @@ These are the notes from my research process.
 
 ### CAD Software
 
-I'd love to use [Fornjot](https://www.fornjot.app/) for this, but it'll be a while before it's ready for a project like this. I hope that I can migrate the project to Fornjot eventually.
+I'd love to use [Fornjot](https://www.fornjot.app/), but it'll be a while before it's ready for a project like this. I hope that I can migrate the project to Fornjot eventually.
 
-Normally, I'd favor open source software, but since migration to Fornjot at a later stage is planned anyway, I don't see that as a priority right now. I've used OpenSCAD, FreeCAD, SolveSpace, and other open source options in the past, and I'd like to take this opportunity to try something new.
+Normally, I'd favor open source software, but since migration to Fornjot at a later stage is planned anyway, I don't see that as a priority. I've used OpenSCAD, FreeCAD, SolveSpace, and other open source options in the past, and I'd like to take this opportunity to try something new.
 
 I'm focusing the research on options that are free (or have a free tier) and support Linux:
 
