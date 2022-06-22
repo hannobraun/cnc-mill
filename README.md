@@ -105,7 +105,7 @@ In articles I've read, Huanyang has been called out as a quality brand, and I ca
 
 #### Collets
 
-I've been told (from a trusted source) to get at least ER16 or greater, as ER11 is too limiting.
+I've been told (from a trusted source) to get at least ER16 or greater, as ER11 is too limiting. It seems like ER11 and ER20 are the most common sizes, so ER20 should be the one to look for.
 
 #### References
 
