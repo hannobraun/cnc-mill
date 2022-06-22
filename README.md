@@ -16,7 +16,7 @@ I suspect it might simply be impossible to fulfill all of these requirements at 
 
 ## Status
 
-As of this writing, I've literally just started. This README exists, and nothing else.
+I've been doing research for a while now, and have made some preliminary design decisions. All of that is documented below.
 
 
 ## License
