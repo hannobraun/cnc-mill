@@ -91,6 +91,50 @@ References:
 - https://cncchronicle.com/fixed_or_moving_gantry_for_cnc_router/<br />
   Compares the two configuration. Has a nice comparison table further down.
 
+### Spindle
+
+After an initial round of research, I'm now focusing on water-cooled spindles with a minimum of around 1kW power and 24k max RPM, for the following reasons:
+
+- According to information I found online, 1kW and 24k max RPM should be good for milling aluminium.
+- Noise is an important concern, and water-cooled spindles are quieter than air-cooled ones.
+- It seems like the only real downsides are price and complexity. Prices are surprisingly affordable, from what I can see, and I've been told the complexity isn't too bad.
+
+#### Manufacturers
+
+In articles I've read, Huanyang has been called out as a quality brand, and I can find affordable offers with EU-based inventory. Unless the budget turns out to be really tight, or some other information comes to light, I might just go with that.
+
+#### Collets
+
+I've been told (from a trusted source) to get at least ER16 or greater, as ER11 is too limiting.
+
+#### References
+
+- https://mellowpine.com/cnc/how-to-choose-a-cnc-spindle/<br />
+  Has very specific recommendations.
+- https://mellowpine.com/cnc/best-cnc-spindles/<br />
+  Presents some specific spindles and what they're suitable for.
+- https://en.wikipedia.org/wiki/Collet#ER_collets<br />
+  Just some background info on ER collets, for the mechanically challenged (like me).
+
+### Spindle: Counterpoint
+
+This is some information I've come across, that runs counter to my previous research on spindles above. The way I arrived there went roughly like that:
+
+1. The cheap CNC mills sold by Sainsmart have up to 400W spindles, there seems to be wide agreement that they're not great for aluminium, and on top of that, they are marketed as "CNC engravers".
+2. Credible-looking information online tells me I need at least 0.8 - 1 kW for aluminium. If the Sainsmart mills are not good for aluminium, needing twice as much to be good at aluminium makes sense.
+
+Now I'm finding counter-examples though: machines that are used to mill aluminium, but are much less powerful. Some examples:
+
+- **PocketNC:** Both the V2-10 and the V2-50 come with a 200W spindle[^1][^2]. And yet it seems capable milling aluminium and more. This video is very interesting: https://youtu.be/7YfRNZbfjaY?t=326
+- **Nomad:** Only has a 70W spindle. It's easy to find videos of it milling aluminium, but in the one's I've seen, either the sound is covered by a voiceover, or it sounds horribly chattery. So not a strong case, but interesting none the less.
+
+I think the PocketNC is a strong example here. It's obviously not capable of great speeds, and it starts chattering if the settings are too aggressive. But still, it seems to be capable of producing aluminium parts.
+
+Given the size constraints of the machine, being able to use a smaller spindle would be very attractive.
+
+[^1]: https://cdn.shopify.com/s/files/1/0077/5477/6623/files/V2-10_Spec_V05.pdf?v=1611173337
+[^2]: https://cdn.shopify.com/s/files/1/0077/5477/6623/files/V250CHKCHBSpecSheet.pdf?v=1624559427
+
 ### Control Software
 
 On the controller side I have the following priorities:
@@ -192,50 +236,6 @@ It's going to make sense to take inspiration from other machines at some point. 
 - [**ULTIMATE Bee**](https://bulkman3d.com/knowledge-base/ultimate-bee/): Classic moving gantry design, with what looks like high-quality components.
 - [**PocketNC:**](https://pocketnc.com/): 5-axis desktop CNC mill. Interesting, in that it is used for milling aluminium (easy to find examples on YouTube), but has a relatively weak spindle (200W).
 - [**Nomad:**](https://carbide3d.com/nomad/): Pretty close to what I would like to build, in regards to the configuration, form factor, and enclosure. Notable for its weak spindle (70W).
-
-### Spindle
-
-After an initial round of research, I'm now focusing on water-cooled spindles with a minimum of around 1kW power and 24k max RPM, for the following reasons:
-
-- According to information I found online, 1kW and 24k max RPM should be good for milling aluminium.
-- Noise is an important concern, and water-cooled spindles are quieter than air-cooled ones.
-- It seems like the only real downsides are price and complexity. Prices are surprisingly affordable, from what I can see, and I've been told the complexity isn't too bad.
-
-#### Manufacturers
-
-In articles I've read, Huanyang has been called out as a quality brand, and I can find affordable offers with EU-based inventory. Unless the budget turns out to be really tight, or some other information comes to light, I might just go with that.
-
-#### Collets
-
-I've been told (from a trusted source) to get at least ER16 or greater, as ER11 is too limiting.
-
-#### References
-
-- https://mellowpine.com/cnc/how-to-choose-a-cnc-spindle/<br />
-  Has very specific recommendations.
-- https://mellowpine.com/cnc/best-cnc-spindles/<br />
-  Presents some specific spindles and what they're suitable for.
-- https://en.wikipedia.org/wiki/Collet#ER_collets<br />
-  Just some background info on ER collets, for the mechanically challenged (like me).
-
-### Spindle: Counterpoint
-
-This is some information I've come across, that runs counter to my previous research on spindles above. The way I arrived there went roughly like that:
-
-1. The cheap CNC mills sold by Sainsmart have up to 400W spindles, there seems to be wide agreement that they're not great for aluminium, and on top of that, they are marketed as "CNC engravers".
-2. Credible-looking information online tells me I need at least 0.8 - 1 kW for aluminium. If the Sainsmart mills are not good for aluminium, needing twice as much to be good at aluminium makes sense.
-
-Now I'm finding counter-examples though: machines that are used to mill aluminium, but are much less powerful. Some examples:
-
-- **PocketNC:** Both the V2-10 and the V2-50 come with a 200W spindle[^1][^2]. And yet it seems capable milling aluminium and more. This video is very interesting: https://youtu.be/7YfRNZbfjaY?t=326
-- **Nomad:** Only has a 70W spindle. It's easy to find videos of it milling aluminium, but in the one's I've seen, either the sound is covered by a voiceover, or it sounds horribly chattery. So not a strong case, but interesting none the less.
-
-I think the PocketNC is a strong example here. It's obviously not capable of great speeds, and it starts chattering if the settings are too aggressive. But still, it seems to be capable of producing aluminium parts.
-
-Given the size constraints of the machine, being able to use a smaller spindle would be very attractive.
-
-[^1]: https://cdn.shopify.com/s/files/1/0077/5477/6623/files/V2-10_Spec_V05.pdf?v=1611173337
-[^2]: https://cdn.shopify.com/s/files/1/0077/5477/6623/files/V250CHKCHBSpecSheet.pdf?v=1624559427
 
 ### Power Supply
 
