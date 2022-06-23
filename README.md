@@ -129,6 +129,7 @@ Advantages of AC spindles:
 Notes:
 
 - In articles I've read, Huanyang has been called out as a quality brand, and I can find affordable offers with EU-based inventory. Unless the budget turns out to be really tight, or some other information comes to light, I might just go with that.
+- Some spindles come in a rectangular form factor, with mounting holes included. Seems more convenient than the round ones.
 
 Examples:
 
