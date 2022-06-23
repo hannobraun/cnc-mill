@@ -43,6 +43,33 @@ Here are some high-level design decisions I've made. None of them are final, and
 
 These are the notes from my research process.
 
+### Other Machines
+
+It's going to make sense to take inspiration from other machines at some point. Here are some links:
+
+- [**OpenBuilds**](https://openbuilds.com/): Lots of machines of all kinds.
+- [**MPCNC**](https://docs.v1engineering.com/mpcnc/intro/): Interesting design. Less traditional than what I have in mind.
+- [**Tormach xsTECH**](https://tormach.com/machines/routers/xstech-router.html):: Really interesting machine, in terms of configuration, form factor, and enclosure. Pretty much what I want to build, but hopefully I can fit some more rigid components into the budget.
+- [**PrintNC**](https://wiki.printnc.info/en/home): Moving gantry design with a frame based on steel tubing.
+- [**Millennium Mill**](https://www.reddit.com/r/MilleniumMachines/): C-frame mill based on aluminium extrusion.
+- [**ULTIMATE Bee**](https://bulkman3d.com/knowledge-base/ultimate-bee/): Classic moving gantry design, with what looks like high-quality components.
+- [**PocketNC:**](https://pocketnc.com/): 5-axis desktop CNC mill. Interesting, in that it is used for milling aluminium (easy to find examples on YouTube), but has a relatively weak spindle (200W).
+- [**Nomad:**](https://carbide3d.com/nomad/): Pretty close to what I would like to build, in regards to the configuration, form factor, and enclosure. Notable for its weak spindle (70W).
+
+### Configuration
+
+I believe that the following machine configurations are the strongest contenders:
+
+- **Moving gantry:** Tool moves in all 3 axes.
+- **Fixed gantry:** Tool moves in x and z axes, table moves in y axis.
+
+I have ruled out more exotic configurations for my first build (despite having lots of ideas), to reduce overall risk.
+
+References:
+
+- https://cncchronicle.com/fixed_or_moving_gantry_for_cnc_router/<br />
+  Compares the two configuration. Has a nice comparison table further down.
+
 ### Online Shops
 
 I'm looking into two groups of online shops now:
@@ -64,32 +91,6 @@ AliExpress:
 eBay:
 
 - [**motor-mall**](https://www.ebay.de/str/motormall) Chinese shop, ships from Europe. Has spindles and VFDs.
-
-### CAD Software
-
-I'd love to use [Fornjot](https://www.fornjot.app/), but it'll be a while before it's ready for a project like this. I hope that I can migrate the project to Fornjot eventually.
-
-Normally, I'd favor open source software, but since migration to Fornjot at a later stage is planned anyway, I don't see that as a priority. I've used OpenSCAD, FreeCAD, SolveSpace, and other open source options in the past, and I'd like to take this opportunity to try something new.
-
-I'm focusing the research on options that are free (or have a free tier) and support Linux:
-
-- [**OnShape:**](https://www.onshape.com/) Looks highly professional. Would certainly be an interesting learning experience.
-- [**SketchUp:**](https://sketchup.com/) Also looks interesting, although the website presents architecture and furniture use cases, versus the mechanical assemblies showcased on the OnShape website. Hard to say how relevant this will be for this project.
-- [**TinkerCAD:**](https://www.tinkercad.com/) Looks least interesting, judging from the website, as it stresses the beginner/education use case. Doesn't mean that it won't be more than capable enough for this project though.
-
-### Configuration
-
-I believe that the following machine configurations are the strongest contenders:
-
-- **Moving gantry:** Tool moves in all 3 axes.
-- **Fixed gantry:** Tool moves in x and z axes, table moves in y axis.
-
-I have ruled out more exotic configurations for my first build (despite having lots of ideas), to reduce overall risk.
-
-References:
-
-- https://cncchronicle.com/fixed_or_moving_gantry_for_cnc_router/<br />
-  Compares the two configuration. Has a nice comparison table further down.
 
 ### Spindle
 
@@ -134,6 +135,25 @@ Given the size constraints of the machine, being able to use a smaller spindle w
 
 [^1]: https://cdn.shopify.com/s/files/1/0077/5477/6623/files/V2-10_Spec_V05.pdf?v=1611173337
 [^2]: https://cdn.shopify.com/s/files/1/0077/5477/6623/files/V250CHKCHBSpecSheet.pdf?v=1624559427
+
+### Stepper Drivers
+
+Makerbase: https://www.aliexpress.com/store/1047297
+  - standard(?) breakout board pinout
+    - Makerbase MKS A4988: https://www.aliexpress.com/item/32888457440.html<br />
+      2.0A max
+    - Makerbase MKS TMC2208: https://www.aliexpress.com/item/32888980385.html<br />
+      2.0A max
+    - Makerbase MKS TMC2209: https://www.aliexpress.com/item/33043140087.html<br />
+      2.5A max
+    - Makerbase MKS TMC2225: https://www.aliexpress.com/item/4001149124672.html<br />
+      2.0A max
+    - Makerbase MKS TMC2226: https://www.aliexpress.com/item/1005002669282600.html<br />
+      2.5A max
+  - Makerbase MKS TMC2160: https://www.aliexpress.com/item/1005004044381878.html<br />
+    4.33A max
+  - Makerbase MKS TMC2160-OC: https://www.aliexpress.com/item/4000185818422.html<br />
+    4.33A max, extra cooling
 
 ### Control Software
 
@@ -205,38 +225,6 @@ References:
 - https://www.cnccookbook.com/cnc-controller-software-drivers-boards/
   Overview over some available options.
 
-### Stepper Drivers
-
-Makerbase: https://www.aliexpress.com/store/1047297
-  - standard(?) breakout board pinout
-    - Makerbase MKS A4988: https://www.aliexpress.com/item/32888457440.html<br />
-      2.0A max
-    - Makerbase MKS TMC2208: https://www.aliexpress.com/item/32888980385.html<br />
-      2.0A max
-    - Makerbase MKS TMC2209: https://www.aliexpress.com/item/33043140087.html<br />
-      2.5A max
-    - Makerbase MKS TMC2225: https://www.aliexpress.com/item/4001149124672.html<br />
-      2.0A max
-    - Makerbase MKS TMC2226: https://www.aliexpress.com/item/1005002669282600.html<br />
-      2.5A max
-  - Makerbase MKS TMC2160: https://www.aliexpress.com/item/1005004044381878.html<br />
-    4.33A max
-  - Makerbase MKS TMC2160-OC: https://www.aliexpress.com/item/4000185818422.html<br />
-    4.33A max, extra cooling
-
-### Other Machines
-
-It's going to make sense to take inspiration from other machines at some point. Here are some links:
-
-- [**OpenBuilds**](https://openbuilds.com/): Lots of machines of all kinds.
-- [**MPCNC**](https://docs.v1engineering.com/mpcnc/intro/): Interesting design. Less traditional than what I have in mind.
-- [**Tormach xsTECH**](https://tormach.com/machines/routers/xstech-router.html):: Really interesting machine, in terms of configuration, form factor, and enclosure. Pretty much what I want to build, but hopefully I can fit some more rigid components into the budget.
-- [**PrintNC**](https://wiki.printnc.info/en/home): Moving gantry design with a frame based on steel tubing.
-- [**Millennium Mill**](https://www.reddit.com/r/MilleniumMachines/): C-frame mill based on aluminium extrusion.
-- [**ULTIMATE Bee**](https://bulkman3d.com/knowledge-base/ultimate-bee/): Classic moving gantry design, with what looks like high-quality components.
-- [**PocketNC:**](https://pocketnc.com/): 5-axis desktop CNC mill. Interesting, in that it is used for milling aluminium (easy to find examples on YouTube), but has a relatively weak spindle (200W).
-- [**Nomad:**](https://carbide3d.com/nomad/): Pretty close to what I would like to build, in regards to the configuration, form factor, and enclosure. Notable for its weak spindle (70W).
-
 ### Power Supply
 
 As far as I can see, the machine needs the following kinds of power:
@@ -246,6 +234,18 @@ As far as I can see, the machine needs the following kinds of power:
 - **higher-voltage DC:** The stepper motors are going to need DC at a higher voltage than the controller.
 
 So I'm going to need a power supply that turns AC into DC, and possibly something else to step the DC up or down to meet the different requirements. As for the power supply, I've often seen [Meanwell](https://www.meanwell.com/) in various sets and such. Unless there's a good reason not to, I might just stick to that.
+
+### CAD Software
+
+I'd love to use [Fornjot](https://www.fornjot.app/), but it'll be a while before it's ready for a project like this. I hope that I can migrate the project to Fornjot eventually.
+
+Normally, I'd favor open source software, but since migration to Fornjot at a later stage is planned anyway, I don't see that as a priority. I've used OpenSCAD, FreeCAD, SolveSpace, and other open source options in the past, and I'd like to take this opportunity to try something new.
+
+I'm focusing the research on options that are free (or have a free tier) and support Linux:
+
+- [**OnShape:**](https://www.onshape.com/) Looks highly professional. Would certainly be an interesting learning experience.
+- [**SketchUp:**](https://sketchup.com/) Also looks interesting, although the website presents architecture and furniture use cases, versus the mechanical assemblies showcased on the OnShape website. Hard to say how relevant this will be for this project.
+- [**TinkerCAD:**](https://www.tinkercad.com/) Looks least interesting, judging from the website, as it stresses the beginner/education use case. Doesn't mean that it won't be more than capable enough for this project though.
 
 ### Enclosure
 
