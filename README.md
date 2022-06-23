@@ -130,6 +130,20 @@ Notes:
 
 - In articles I've read, Huanyang has been called out as a quality brand, and I can find affordable offers with EU-based inventory. Unless the budget turns out to be really tight, or some other information comes to light, I might just go with that.
 
+Examples:
+
+- Air-cooled:
+  - [0.8kW, 24k RPM, ER11, ~240€](https://www.ebay.de/itm/174956638303); VFD included
+  - [0.8kW, 24k RPM, ER11, ~240€](https://www.ebay.de/itm/185102648864); VFD specified at 1.5kW
+  - [2.2kW, 24k RPM, ER20, ~220€](https://www.ebay.de/itm/171841127523); VFD included
+  - [2.2kW, 24k RPM, ER20, ~220€](https://www.ebay.de/itm/183100123168); VFD included; not sure, if there's any difference to the previous one
+- Water-cooled:
+  - [1.5kW, 24k RPM, ER16, ~155€](https://www.ebay.de/itm/185467595787); spindle only
+  - [2.2kW, 24k RPM, ER20, ~320€](https://www.ebay.de/itm/185340019340); full set: spindle, VFD, water pump, holder, collets
+  - [2.2kW, 24k RPM, ER20, ~350€](https://www.ebay.de/itm/185467757422); VFD included
+  - [3.0kW, 24k RPM, ER20, ~165€](https://www.ebay.de/itm/185102654786); spindle only
+  - [3.0kW, 24k RPM, ER20, ~285€](https://www.ebay.de/itm/174974637566); VFD included
+
 #### Collets
 
 I've been told (from a trusted source) to get at least ER16 or greater, as ER11 is too limiting. It seems like ER11 and ER20 are the most common sizes, so ER20 should be the one to look for.
