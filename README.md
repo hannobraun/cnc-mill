@@ -72,7 +72,7 @@ References:
 
 ### Online Shops
 
-I'm looking into two groups of online shops now:
+I'm looking into two groups of online shops:
 
 - Local (i.e. European) shops, because that gives me a minimum of hassle (shipping, customs).
 - Shops on platforms like AliExpress or eBay with low prices, as that might be necessary to meet my budget.
