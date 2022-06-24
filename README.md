@@ -53,8 +53,8 @@ It's going to make sense to take inspiration from other machines at some point. 
 - [**PrintNC**](https://wiki.printnc.info/en/home): Moving gantry design with a frame based on steel tubing.
 - [**Millennium Mill**](https://www.reddit.com/r/MilleniumMachines/): C-frame mill based on aluminium extrusion.
 - [**ULTIMATE Bee**](https://bulkman3d.com/knowledge-base/ultimate-bee/): Classic moving gantry design, with what looks like high-quality components.
-- [**PocketNC:**](https://pocketnc.com/): 5-axis desktop CNC mill. Interesting, in that it is used for milling aluminium (easy to find examples on YouTube), but has a relatively weak spindle (200W).
-- [**Nomad:**](https://carbide3d.com/nomad/): Pretty close to what I would like to build, in regards to the configuration, form factor, and enclosure. Notable for its weak spindle (70W).
+- [**PocketNC:**](https://pocketnc.com/) 5-axis desktop CNC mill. Interesting, in that it is used for milling aluminium (easy to find examples on YouTube), but has a relatively weak spindle (200W).
+- [**Nomad:**](https://carbide3d.com/nomad/) Pretty close to what I would like to build, in regards to the configuration, form factor, and enclosure. Notable for its weak spindle (70W).
 
 ### Configuration
 
