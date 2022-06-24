@@ -49,7 +49,7 @@ It's going to make sense to take inspiration from other machines at some point. 
 
 - [**OpenBuilds**](https://openbuilds.com/): Lots of machines of all kinds.
 - [**MPCNC**](https://docs.v1engineering.com/mpcnc/intro/): Interesting design. Less traditional than what I have in mind.
-- [**Tormach xsTECH**](https://tormach.com/machines/routers/xstech-router.html):: Really interesting machine, in terms of configuration, form factor, and enclosure. Pretty much what I want to build, but hopefully I can fit some more rigid components into the budget.
+- [**Tormach xsTECH**](https://tormach.com/machines/routers/xstech-router.html): Really interesting machine, in terms of configuration, form factor, and enclosure. Pretty much what I want to build, but hopefully I can fit some more rigid components into the budget.
 - [**PrintNC**](https://wiki.printnc.info/en/home): Moving gantry design with a frame based on steel tubing.
 - [**Millennium Mill**](https://www.reddit.com/r/MilleniumMachines/): C-frame mill based on aluminium extrusion.
 - [**ULTIMATE Bee**](https://bulkman3d.com/knowledge-base/ultimate-bee/): Classic moving gantry design, with what looks like high-quality components.
