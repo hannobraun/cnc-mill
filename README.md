@@ -91,6 +91,15 @@ AliExpress:
 eBay:
 
 - [**motor-mall**](https://www.ebay.de/str/motormall): Chinese shop, ships from Europe. Has spindles and VFDs.
+- Those seems to be essentially the same:
+  - [**kuku081**](https://www.ebay.de/str/kuku081)
+  - [**kuku281**](https://www.ebay.de/str/kuku218)
+  - [**kuku86**](https://www.ebay.de/str/kuku86)
+  - [**powave21**](https://www.ebay.de/str/powace21)
+  - [**rattmmotor**](https://www.ebay.de/str/rattmmotor)
+  - [**rattmmotor88**](https://www.ebay.de/str/rattmmotor88)
+  - [**RATTM MOTOR CNC**](https://www.ebay.de/str/rattmmotorcnc)
+- [**chinacnczone-de**](https://www.ebay.de/str/cnczonedd)
 
 ### Spindle
 
