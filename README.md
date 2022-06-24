@@ -187,8 +187,7 @@ On the controller side I have the following priorities:
 
 I found the following options:
 
-- **LinuxCNC**: https://linuxcnc.org/<br />
-  Runs on the Raspberry Pi:
+- [**LinuxCNC**](https://linuxcnc.org/): Runs on the Raspberry Pi:
   http://linuxcnc.org/docs/stable/html/getting-started/getting-linuxcnc.html
 
   The download page talks about interface cards. Not sure what specifically is required, but I found this list:
@@ -196,19 +195,15 @@ I found the following options:
 
   I haven't done much research, but the interface cards I saw were quite expensive. Overall, I get the impression that LinuxCNC is not suited for a budget-sensitive build.
 
-- **Machinekit**: https://www.machinekit.io/<br />
-  I found it hard to understand whether this is suitable. What I can gather is that it runs on the BeagleBone Black: https://www.machinekit.io/docs/getting-started/machinekit-images-for-bbb/
+- [**Machinekit**](https://www.machinekit.io/): I found it hard to understand whether this is suitable. What I can gather is that it runs on the BeagleBone Black: https://www.machinekit.io/docs/getting-started/machinekit-images-for-bbb/
 
   No idea what else is required to make it work. The information presented is not very approachable, and I'm not sure how much of it is outdated.
 
-- **grbl**: https://github.com/gnea/grbl<br />
-  I've often heard about this being used for the kind of small-scale CNC machine I'm aiming to build. It's confusing though. There are two different repositories, neither actively developed, and lots of forks.
+- [**grbl**](https://github.com/gnea/grbl): I've often heard about this being used for the kind of small-scale CNC machine I'm aiming to build. It's confusing though. There are two different repositories, neither actively developed, and lots of forks.
 
-- **grblHAL**: https://www.grbl.org/<br />
-  Fork of gbrl, for 32-bit MCUs.
+- [**grblHAL**](https://www.grbl.org/): Fork of gbrl, for 32-bit MCUs.
 
-- **FluidNC**: https://github.com/bdring/FluidNC<br />
-  Looks promising. Has a list of supported hardware: https://github.com/bdring/FluidNC/wiki/Hardware-that-Runs-FluidNC
+- [**FluidNC**](https://github.com/bdring/FluidNC): Looks promising. Has a list of supported hardware: https://github.com/bdring/FluidNC/wiki/Hardware-that-Runs-FluidNC
 
 Based on my cursory research into this area, I think this might be the wrong approach. It might be better to search for easily available CNC controllers, and figure out which software to use for them from there.
 
