@@ -53,15 +53,15 @@ It's going to make sense to take inspiration from other machines at some point. 
 - [**PrintNC**](https://wiki.printnc.info/en/home): Moving gantry design with a frame based on steel tubing.
 - [**Millennium Mill**](https://www.reddit.com/r/MilleniumMachines/): C-frame mill based on aluminium extrusion.
 - [**ULTIMATE Bee**](https://bulkman3d.com/knowledge-base/ultimate-bee/): Classic moving gantry design, with what looks like high-quality components.
-- [**PocketNC:**](https://pocketnc.com/) 5-axis desktop CNC mill. Interesting, in that it is used for milling aluminium (easy to find examples on YouTube), but has a relatively weak spindle (200W).
-- [**Nomad:**](https://carbide3d.com/nomad/) Pretty close to what I would like to build, in regards to the configuration, form factor, and enclosure. Notable for its weak spindle (70W).
+- [**PocketNC**](https://pocketnc.com/): 5-axis desktop CNC mill. Interesting, in that it is used for milling aluminium (easy to find examples on YouTube), but has a relatively weak spindle (200W).
+- [**Nomad**](https://carbide3d.com/nomad/): Pretty close to what I would like to build, in regards to the configuration, form factor, and enclosure. Notable for its weak spindle (70W).
 
 ### Configuration
 
 I believe that the following machine configurations are the strongest contenders:
 
-- **Moving gantry:** Tool moves in all 3 axes.
-- **Fixed gantry:** Tool moves in x and z axes, table moves in y axis.
+- **Moving gantry**: Tool moves in all 3 axes.
+- **Fixed gantry**: Tool moves in x and z axes, table moves in y axis.
 
 I have ruled out more exotic configurations for my first build (despite having lots of ideas), to reduce overall risk.
 
@@ -86,7 +86,7 @@ European shops:
 AliExpress:
 
 - [**Bulk Man 3D**](https://www.aliexpress.com/store/1752067) ([also have a website](https://bulkman3d.com/)): Large selection of lots of things I'm going to need.
-- [**Makerbase:**](https://www.aliexpress.com/store/1047297) Control boards mostly seem not applicable, but the stepper drivers are very interesting.
+- [**Makerbase**](https://www.aliexpress.com/store/1047297): Control boards mostly seem not applicable, but the stepper drivers are very interesting.
 
 eBay:
 
@@ -110,8 +110,8 @@ Advantages of DC spindles:
 
 Examples of machines with relatively weak DC spindles:
 
-- **PocketNC:** Both the V2-10 and the V2-50 come with a 200W spindle[^1][^2]. And yet it seems capable milling aluminium and more. This video is very interesting: https://youtu.be/7YfRNZbfjaY?t=326
-- **Nomad:** Only has a 70W spindle. It's easy to find videos of it milling aluminium, but in the one's I've seen, either the sound is covered by a voiceover, or it sounds horribly chattery. So not a strong case, but interesting none the less.
+- **PocketNC**: Both the V2-10 and the V2-50 come with a 200W spindle[^1][^2]. And yet it seems capable milling aluminium and more. This video is very interesting: https://youtu.be/7YfRNZbfjaY?t=326
+- **Nomad**: Only has a 70W spindle. It's easy to find videos of it milling aluminium, but in the one's I've seen, either the sound is covered by a voiceover, or it sounds horribly chattery. So not a strong case, but interesting none the less.
 
 I think the PocketNC is a strong example here. It's obviously not capable of great speeds, and it starts chattering if the settings are too aggressive. But still, it seems to be capable of producing aluminium parts.
 
@@ -187,7 +187,7 @@ On the controller side I have the following priorities:
 
 I found the following options:
 
-- **LinuxCNC:** https://linuxcnc.org/<br />
+- **LinuxCNC**: https://linuxcnc.org/<br />
   Runs on the Raspberry Pi:
   http://linuxcnc.org/docs/stable/html/getting-started/getting-linuxcnc.html
 
@@ -196,18 +196,18 @@ I found the following options:
 
   I haven't done much research, but the interface cards I saw were quite expensive. Overall, I get the impression that LinuxCNC is not suited for a budget-sensitive build.
 
-- **Machinekit:** https://www.machinekit.io/<br />
+- **Machinekit**: https://www.machinekit.io/<br />
   I found it hard to understand whether this is suitable. What I can gather is that it runs on the BeagleBone Black: https://www.machinekit.io/docs/getting-started/machinekit-images-for-bbb/
 
   No idea what else is required to make it work. The information presented is not very approachable, and I'm not sure how much of it is outdated.
 
-- **grbl:** https://github.com/gnea/grbl<br />
+- **grbl**: https://github.com/gnea/grbl<br />
   I've often heard about this being used for the kind of small-scale CNC machine I'm aiming to build. It's confusing though. There are two different repositories, neither actively developed, and lots of forks.
 
-- **grblHAL:** https://www.grbl.org/<br />
+- **grblHAL**: https://www.grbl.org/<br />
   Fork of gbrl, for 32-bit MCUs.
 
-- **FluidNC:** https://github.com/bdring/FluidNC<br />
+- **FluidNC**: https://github.com/bdring/FluidNC<br />
   Looks promising. Has a list of supported hardware: https://github.com/bdring/FluidNC/wiki/Hardware-that-Runs-FluidNC
 
 Based on my cursory research into this area, I think this might be the wrong approach. It might be better to search for easily available CNC controllers, and figure out which software to use for them from there.
@@ -252,9 +252,9 @@ References:
 
 As far as I can see, the machine needs the following kinds of power:
 
-- **230V AC:** Since I'm in Europe, this is the input I'm dealing with. It's needed by the VFD for the spindle, the DC power supply, possibly the water pump.
-- **3.3V - 5V DC:** This is the typical range for microcontrollers and many other kinds of electronics.
-- **higher-voltage DC:** The stepper motors are going to need DC at a higher voltage than the controller.
+- **230V AC**: Since I'm in Europe, this is the input I'm dealing with. It's needed by the VFD for the spindle, the DC power supply, possibly the water pump.
+- **3.3V - 5V DC**: This is the typical range for microcontrollers and many other kinds of electronics.
+- **higher-voltage DC**: The stepper motors are going to need DC at a higher voltage than the controller.
 
 So I'm going to need a power supply that turns AC into DC, and possibly something else to step the DC up or down to meet the different requirements. As for the power supply, I've often seen [Meanwell](https://www.meanwell.com/) in various sets and such. Unless there's a good reason not to, I might just stick to that.
 
@@ -266,9 +266,9 @@ Normally, I'd favor open source software, but since migration to Fornjot at a la
 
 I'm focusing the research on options that are free (or have a free tier) and support Linux:
 
-- [**OnShape:**](https://www.onshape.com/) Looks highly professional. Would certainly be an interesting learning experience.
-- [**SketchUp:**](https://sketchup.com/) Also looks interesting, although the website presents architecture and furniture use cases, versus the mechanical assemblies showcased on the OnShape website. Hard to say how relevant this will be for this project.
-- [**TinkerCAD:**](https://www.tinkercad.com/) Looks least interesting, judging from the website, as it stresses the beginner/education use case. Doesn't mean that it won't be more than capable enough for this project though.
+- [**OnShape**](https://www.onshape.com/): Looks highly professional. Would certainly be an interesting learning experience.
+- [**SketchUp**](https://sketchup.com/): Also looks interesting, although the website presents architecture and furniture use cases, versus the mechanical assemblies showcased on the OnShape website. Hard to say how relevant this will be for this project.
+- [**TinkerCAD**](https://www.tinkercad.com/): Looks least interesting, judging from the website, as it stresses the beginner/education use case. Doesn't mean that it won't be more than capable enough for this project though.
 
 ### Enclosure
 
