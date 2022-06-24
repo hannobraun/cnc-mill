@@ -124,6 +124,15 @@ Examples of machines with relatively weak DC spindles:
 
 I think the PocketNC is a strong example here. It's obviously not capable of great speeds, and it starts chattering if the settings are too aggressive. But still, it seems to be capable of producing aluminium parts.
 
+Examples of DC spindles:
+
+- [104W, 10.8k RPM, ER8, ~140€](https://www.ebay.de/itm/384842723224); includes driver and bracket
+- [400W, 12k RPM, ER8, ~130€](https://www.ebay.de/itm/255388710895); includes driver and bracket
+- [400W, 12k RPM, ER8, ~140€](https://www.ebay.de/itm/384842725572); includes driver and bracket
+- [500W, 12k RPM, ER11, ~120€](https://www.ebay.de/itm/403510912800); includes driver and bracket
+- [500W, 12k RPM, ER11, ~60€](https://www.ebay.de/itm/174570637963); includes driver and bracket
+- [600W, 12k RPM, ER11, ~85€](https://www.ebay.de/itm/384858278032); motor only
+
 [^1]: https://cdn.shopify.com/s/files/1/0077/5477/6623/files/V2-10_Spec_V05.pdf?v=1611173337
 [^2]: https://cdn.shopify.com/s/files/1/0077/5477/6623/files/V250CHKCHBSpecSheet.pdf?v=1624559427
 
