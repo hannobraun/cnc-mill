@@ -68,7 +68,7 @@ I have ruled out more exotic configurations for my first build (despite having l
 References:
 
 - https://cncchronicle.com/fixed_or_moving_gantry_for_cnc_router/<br />
-  Compares the two configuration. Has a nice comparison table further down.
+  Compares the two configurations. Has a nice comparison table further down.
 
 ### Online Shops
 
