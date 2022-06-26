@@ -177,6 +177,27 @@ I've been told (from a trusted source) to get at least ER16 or greater, as ER11 
 - https://en.wikipedia.org/wiki/Collet#ER_collets<br />
   Just some background info on ER collets, for the mechanically challenged (like me).
 
+### Linear Guides
+
+I figure that within the constraints of a home-built machine, linear rails are the best I can practically do in this category. I've decided to focus my research on those, and see where that leaves me budget-wise. I'll revisit later, if necessary.
+
+Types of linear rails:
+
+- ARC/HRC: https://www.dold-mechatronik.de/Profilschienenfuehrungen-ARC-HRC
+- BR: https://www.dold-mechatronik.de/Profilschienenfuehrungen-BR-Serie
+- HG:
+  - https://www.dold-mechatronik.de/HG-Profilschienenfuehrungen
+  - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/
+  - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/sorotec-blue-line-936/
+- LF: https://www.dold-mechatronik.de/Profilschienenfuehrungen-LF-Serie
+- LSK: https://www.dold-mechatronik.de/Profilschienenfuehrungen-LSK-Serie
+- MGN: https://www.dold-mechatronik.de/MGN-Miniatur-Linearfuehrungen-schmal
+- MGW: https://www.dold-mechatronik.de/MGW-Miniatur-Linearfuehrungen-breit
+- MR: https://www.dold-mechatronik.de/MR-Miniatur-Linearfuehrungen
+- MRW: https://www.dold-mechatronik.de/MRW-Miniatur-Linearfuehrungen-breit
+- MSB: https://www.dold-mechatronik.de/Profilschienen-MSB-Serie-PMI
+- ST: https://www.dold-mechatronik.de/ST-Miniatur-Kurzhub-Linearfuehrung
+
 
 ### Stepper Drivers
 
