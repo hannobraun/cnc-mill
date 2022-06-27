@@ -184,6 +184,32 @@ I figure that within the constraints of a home-built machine, linear rails are t
 Types of linear rails:
 
 - ARC/HRC: https://www.dold-mechatronik.de/Profilschienenfuehrungen-ARC-HRC
+  - data sheet: https://www.dold-mechatronik.de/documents/Datenblaetter/Linearfuehrungen/Datenblatt-Linearfuehrung-ARC-HRC.pdf
+  - seal (Dichtung): S or B
+    - S: seals better; recommended for dirty environments.
+    - B: less friction
+  - pretension (Vorspannung): VC, V0, V1, V2
+    - VC and V0 have play; only available in lower quality classes (H, N)
+    - V1 and V2 don't, but have more friction
+    - V1 might be a good compromise, is my initial impression
+    - HRC has higher tension than ARC, in the equivalent classes
+  - precision class (Genauigkeitsklassen): N, H, P, SP, UP
+    - recommended for CNC mills: N to P, or H to SP for more precision
+  - bearing cage (Kugelkette): should make sure it's included, unless price is prohibitive
+  - standard lengths, minimum: 300mm
+  - series:
+    - ARC-M: compact, narrow
+      - I assume I'll have two rails in every axis, so narrow carriages should be fine. I assume broader ones make sense, if you have just one rail.
+    - ARC-F: compact, flange
+      - broader than M
+    - HRC-M: high, narrow
+      - more height above the rail
+    - HRC-F:
+      - relates to HRC-M as ARC-F relates to ARC-M
+  - sub-series: Each of the previously presented series is further divided into more series. The distinction between those is the size of the carriage that fits a given size rail. Larger ones can take more force.
+    - ARC-MS (S = small?): rail sizes from 15x15 to 28x27
+    - ARC-MN (N = normal?): rail sizes from 15x15 to 53x46
+    - ARC-ML (L = large?): rail sizes from 15x15 to 53x46
 - BR: https://www.dold-mechatronik.de/Profilschienenfuehrungen-BR-Serie
 - HG:
   - https://www.dold-mechatronik.de/HG-Profilschienenfuehrungen
