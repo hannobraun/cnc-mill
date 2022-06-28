@@ -11,7 +11,7 @@ I want to have a 3-axis CNC mill. I've considered buying one, but everything I c
 
 There simply doesn't seem to be a machine like this, which is not a surprise. For this reason, I'd like to try and build my own, purpose-made for my use case.
 
-I suspect it might simply be impossible to fulfill all of these requirements at within limited budget. If that is the case, I'm looking forward to learning what the limitations are specifically. I'm also aware that there's a high risk that a self-built machine will fall short in some or all of these areas. I think it's still likely to be a better investment, for the learning experience alone.
+I suspect it might simply be impossible to fulfill all of these requirements within the limited budget. If that is the case, I'm looking forward to learning what the limitations are specifically. I'm also aware that there's a high risk that a self-built machine will fall short in some or all of these areas. I think it's still likely to be a better investment, for the learning experience alone.
 
 
 ## Status
