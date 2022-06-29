@@ -270,6 +270,17 @@ Information from online shops:
   - shares a data sheet with MRW
   - specialized thing for short movements; probably not interesting
 
+Information from HIWIN:
+
+- full catalogue with lots of information:
+  - https://www.hiwin.de/medias/GW-11-4-EN-2207-K.PDF?context=bWFzdGVyfGhpd2luRG9jdW1lbnRNZWRpYXw3NjY2NzMwfGFwcGxpY2F0aW9uL3BkZnxoaXdpbkRvY3VtZW50TWVkaWEvaDZkL2hkNi85MjcwNzkzNTY4Mjg2LnBkZnxmMjBjMGQ1ZjFjODA0ZjY5ODQ1Y2UwZWY5NGY5YWIzZWIxNGUzZTU3M2JjMmQ5OGVlOTMzZjQ4YmE3YjU5YmJh&attachment=true
+  - https://www.hiwin.de/medias/GW-11-4-DE-2207-K.PDF?context=bWFzdGVyfGhpd2luRG9jdW1lbnRNZWRpYXw4MjA1ODI3fGFwcGxpY2F0aW9uL3BkZnxoaXdpbkRvY3VtZW50TWVkaWEvaDZiL2g2Ni85MjcwNzkzNTM1NTE4LnBkZnwzNDVmMDIxNDRjNDY4ZDUxOTVmNTgzN2M5ZjgwNzAwYzRlMGEyNmVlNmRjOGRlOWViZGQ0ZWI0OTMyMGI2N2U0&attachment=true
+- configurator: https://www.hiwin.de/configurator/newConfiguration/easyKAT_GW
+
+Conclusions:
+
+- ARC and HG seem like good options, given the size and available documentation.
+- Especially the HIWIN documentation is nice. But in the Sorotec store, HIWIN is also twice as expensive as the Sorotec-branded stuff.
 
 ### Stepper Drivers
 
