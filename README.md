@@ -231,6 +231,10 @@ Information from online shops:
   - HIWIN has much more detailed information. See below.
   - Size seems comparable to lower range of ARC/HRC, which I think fits my use case.
 - LF: https://www.dold-mechatronik.de/Profilschienenfuehrungen-LF-Serie
+  - Sizes seem comparable to lower end of ARC/HRC.
+  - Barely anything available at DOLD Mechatronik.
+  - The available rails are way too long.
+  - Not data sheet.
 - LSK: https://www.dold-mechatronik.de/Profilschienenfuehrungen-LSK-Serie
 - MGN:
   - https://www.dold-mechatronik.de/MGN-Miniatur-Linearfuehrungen-schmal
