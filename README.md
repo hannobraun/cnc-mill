@@ -252,6 +252,8 @@ Information from online shops:
       - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungsschienen/baureihe-mgn-r/
   - much smaller; probably more suited to low-force stuff like printers
 - MGW: https://www.dold-mechatronik.de/MGW-Miniatur-Linearfuehrungen-breit
+  - MGN, but broad
+  - probably unnecessary, compared to MGN, since I'm going for two rails per axis
 - MR: https://www.dold-mechatronik.de/MR-Miniatur-Linearfuehrungen
 - MRW: https://www.dold-mechatronik.de/MRW-Miniatur-Linearfuehrungen-breit
 - MSB: https://www.dold-mechatronik.de/Profilschienen-MSB-Serie-PMI
