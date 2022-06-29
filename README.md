@@ -226,7 +226,9 @@ Types of linear rails:
     - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/sorotec-blue-line-936/
 - LF: https://www.dold-mechatronik.de/Profilschienenfuehrungen-LF-Serie
 - LSK: https://www.dold-mechatronik.de/Profilschienenfuehrungen-LSK-Serie
-- MGN: https://www.dold-mechatronik.de/MGN-Miniatur-Linearfuehrungen-schmal
+- MGN:
+  - https://www.dold-mechatronik.de/MGN-Miniatur-Linearfuehrungen-schmal
+  - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungswagen/mgn-baureihe/
 - MGW: https://www.dold-mechatronik.de/MGW-Miniatur-Linearfuehrungen-breit
 - MR: https://www.dold-mechatronik.de/MR-Miniatur-Linearfuehrungen
 - MRW: https://www.dold-mechatronik.de/MRW-Miniatur-Linearfuehrungen-breit
