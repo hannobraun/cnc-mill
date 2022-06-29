@@ -211,6 +211,10 @@ Types of linear rails:
     - ARC-MN (N = normal?): rail sizes from 15x15 to 53x46
     - ARC-ML (L = large?): rail sizes from 15x15 to 53x46
 - BR: https://www.dold-mechatronik.de/Profilschienenfuehrungen-BR-Serie
+  - Can't find a data sheet.
+  - BR9 and BR12 available.
+  - Only BR12 has some dimensions in the shop. Smaller compared to even the smallest ARC/HRC.
+  - Sold in sets of one rail + 2 carriages, which is what I need anyway.
 - HG:
   - https://www.dold-mechatronik.de/HG-Profilschienenfuehrungen
   - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/
