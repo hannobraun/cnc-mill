@@ -236,6 +236,13 @@ Information from online shops:
   - The available rails are way too long.
   - Not data sheet.
 - LSK: https://www.dold-mechatronik.de/Profilschienenfuehrungen-LSK-Serie
+  - data sheet: https://www.dold-mechatronik.de/documents/Dold_LSK_Linearfuehrungen.pdf
+  - Sizes seem comparable to lower end of ARC/HRC.
+  - FL and GL recommended for machine tools.
+  - FL seems lower, possible better suited.
+  - pretention (Vorspannung): Z2 (hightest) recommended for machine tools
+  - more information in there I didn't go through in detail
+  - unclear how this is meaningfully different from ARC/HRC
 - MGN:
   - https://www.dold-mechatronik.de/MGN-Miniatur-Linearfuehrungen-schmal
   - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungswagen/mgn-baureihe/
