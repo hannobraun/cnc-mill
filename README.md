@@ -204,7 +204,7 @@ Types of linear rails:
       - broader than M
     - HRC-M: high, narrow
       - more height above the rail
-    - HRC-F:
+    - HRC-F: high, flange
       - relates to HRC-M as ARC-F relates to ARC-M
   - sub-series: Each of the previously presented series is further divided into more series. The distinction between those is the size of the carriage that fits a given size rail. Larger ones can take more force.
     - ARC-MS (S = small?): rail sizes from 15x15 to 28x27
