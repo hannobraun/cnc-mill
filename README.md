@@ -217,14 +217,19 @@ Information from online shops:
   - Sold in sets of one rail + 2 carriages, which is what I need anyway.
   - Probably not interesting to me, given the small size and lack of information compared to ARC/HRC.
 - HG:
-  - DOLD Mechatronik
-    - https://www.dold-mechatronik.de/HG-Profilschienenfuehrungen
-  - HIWIN
-    - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungswagen/Baureihe-HGH-247/
-    - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungswagen/Baureihe-HGW/
-    - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungsschienen/Baureihe-HGH/
-  - Sorotec
-    - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/sorotec-blue-line-936/
+  - shop links:
+    - DOLD Mechatronik
+      - https://www.dold-mechatronik.de/HG-Profilschienenfuehrungen
+    - HIWIN
+      - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungswagen/Baureihe-HGH-247/
+      - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungswagen/Baureihe-HGW/
+      - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungsschienen/Baureihe-HGH/
+    - Sorotec
+      - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/sorotec-blue-line-936/
+  - data sheet: https://www.dold-mechatronik.de/documents/Datenblaetter/Linearfuehrungen/Datasheet_HGH-HGW_de_210720_Dold.pdf
+  - DOLD Mechatronik data sheet is much less detailed than ARC/HRC
+  - HIWIN has much more detailed information. See below.
+  - Size seems comparable to lower range of ARC/HRC, which I think fits my use case.
 - LF: https://www.dold-mechatronik.de/Profilschienenfuehrungen-LF-Serie
 - LSK: https://www.dold-mechatronik.de/Profilschienenfuehrungen-LSK-Serie
 - MGN:
