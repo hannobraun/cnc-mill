@@ -181,7 +181,7 @@ I've been told (from a trusted source) to get at least ER16 or greater, as ER11 
 
 I figure that within the constraints of a home-built machine, linear rails are the best I can practically do in this category. I've decided to focus my research on those, and see where that leaves me budget-wise. I'll revisit later, if necessary.
 
-Types of linear rails:
+Information from online shops:
 
 - ARC/HRC: https://www.dold-mechatronik.de/Profilschienenfuehrungen-ARC-HRC
   - data sheet: https://www.dold-mechatronik.de/documents/Datenblaetter/Linearfuehrungen/Datenblatt-Linearfuehrung-ARC-HRC.pdf
