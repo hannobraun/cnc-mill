@@ -244,8 +244,13 @@ Information from online shops:
   - more information in there I didn't go through in detail
   - unclear how this is meaningfully different from ARC/HRC
 - MGN:
-  - https://www.dold-mechatronik.de/MGN-Miniatur-Linearfuehrungen-schmal
-  - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungswagen/mgn-baureihe/
+  - shop links:
+    - DOLD Mechatronik
+      - https://www.dold-mechatronik.de/MGN-Miniatur-Linearfuehrungen-schmal
+    - Sorotec
+      - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungswagen/mgn-baureihe/
+      - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungsschienen/baureihe-mgn-r/
+  - much smaller; probably more suited to low-force stuff like printers
 - MGW: https://www.dold-mechatronik.de/MGW-Miniatur-Linearfuehrungen-breit
 - MR: https://www.dold-mechatronik.de/MR-Miniatur-Linearfuehrungen
 - MRW: https://www.dold-mechatronik.de/MRW-Miniatur-Linearfuehrungen-breit
