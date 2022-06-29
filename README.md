@@ -267,6 +267,8 @@ Information from online shops:
   - data sheet is sparse
   - size comparable with lower end of ARC/HRC
 - ST: https://www.dold-mechatronik.de/ST-Miniatur-Kurzhub-Linearfuehrung
+  - shares a data sheet with MRW
+  - specialized thing for short movements; probably not interesting
 
 
 ### Stepper Drivers
