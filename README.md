@@ -215,6 +215,7 @@ Types of linear rails:
   - BR9 and BR12 available.
   - Only BR12 has some dimensions in the shop. Smaller compared to even the smallest ARC/HRC.
   - Sold in sets of one rail + 2 carriages, which is what I need anyway.
+  - Probably not interesting to me, given the small size and lack of information compared to ARC/HRC.
 - HG:
   - DOLD Mechatronik
     - https://www.dold-mechatronik.de/HG-Profilschienenfuehrungen
