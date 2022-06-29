@@ -216,9 +216,14 @@ Types of linear rails:
   - Only BR12 has some dimensions in the shop. Smaller compared to even the smallest ARC/HRC.
   - Sold in sets of one rail + 2 carriages, which is what I need anyway.
 - HG:
-  - https://www.dold-mechatronik.de/HG-Profilschienenfuehrungen
-  - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/
-  - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/sorotec-blue-line-936/
+  - DOLD Mechatronik
+    - https://www.dold-mechatronik.de/HG-Profilschienenfuehrungen
+  - HIWIN
+    - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungswagen/Baureihe-HGH-247/
+    - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungswagen/Baureihe-HGW/
+    - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/Lineartechnik--Hiwin/Fuehrungsschienen/Baureihe-HGH/
+  - Sorotec
+    - https://www.sorotec.de/shop/CNC-Mechanik/lineartechnik/sorotec-blue-line-936/
 - LF: https://www.dold-mechatronik.de/Profilschienenfuehrungen-LF-Serie
 - LSK: https://www.dold-mechatronik.de/Profilschienenfuehrungen-LSK-Serie
 - MGN: https://www.dold-mechatronik.de/MGN-Miniatur-Linearfuehrungen-schmal
