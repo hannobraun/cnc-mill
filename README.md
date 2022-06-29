@@ -260,6 +260,8 @@ Information from online shops:
   - nice data sheet, didn't look into it in detail
   - didn't see anything about applications; probably too small for a mill
 - MRW: https://www.dold-mechatronik.de/MRW-Miniatur-Linearfuehrungen-breit
+  - same data sheet as MR
+  - wide version of MR
 - MSB: https://www.dold-mechatronik.de/Profilschienen-MSB-Serie-PMI
 - ST: https://www.dold-mechatronik.de/ST-Miniatur-Kurzhub-Linearfuehrung
 
