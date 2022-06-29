@@ -263,6 +263,9 @@ Information from online shops:
   - same data sheet as MR
   - wide version of MR
 - MSB: https://www.dold-mechatronik.de/Profilschienen-MSB-Serie-PMI
+  - data sheet: https://www.dold-mechatronik.de/documents/Datenblaetter/Linearfuehrungen/MSB-TE-E.pdf
+  - data sheet is sparse
+  - size comparable with lower end of ARC/HRC
 - ST: https://www.dold-mechatronik.de/ST-Miniatur-Kurzhub-Linearfuehrung
 
 
