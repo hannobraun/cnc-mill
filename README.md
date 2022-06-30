@@ -282,6 +282,70 @@ Conclusions:
 - ARC and HG seem like good options, given the size and available documentation.
 - Especially the HIWIN documentation is nice. But in the Sorotec store, HIWIN is also twice as expensive as the Sorotec-branded stuff.
 
+### Ball Screws
+
+Much like with linear rails, I figure that the best I can practically do on linear actuators are ball screws. I will do my research on that, and might scale back to something cheaper, if it turns out to be necessary.
+
+References:
+
+- Catalogue from HIWIN
+  - https://www.hiwin.de/medias/BS-08-10-DE-2206-K.PDF?context=bWFzdGVyfGhpd2luRG9jdW1lbnRNZWRpYXw2Mjg5NTAzfGFwcGxpY2F0aW9uL3BkZnxoaXdpbkRvY3VtZW50TWVkaWEvaDg3L2hmYi85MjcwMzA0NDczMTE4LnBkZnxlMzgzMWVjMzQ0NTAxOTQ2NWViYjJiMDQwN2VkMTI4MjdhYTNhNWViMTU5MGJmNGFmNDA1MjA2MWVjNGZiMzlm&attachment=true
+  - https://www.hiwin.de/medias/BS-08-10-EN-2206-K.PDF?context=bWFzdGVyfGhpd2luRG9jdW1lbnRNZWRpYXw2MzM0NjAyfGFwcGxpY2F0aW9uL3BkZnxoaXdpbkRvY3VtZW50TWVkaWEvaGViL2g5Mi85MjcwMzA0NTA1ODg2LnBkZnw1Yzk3MzcxZTc1YmUyZTgzYjJmMWQxOGJkYzI1YTNjNTFkNGQwOWY1MGE3MGVjODg2OWNjNjBmNGI5NTFmNjBh&attachment=true
+
+Notes:
+
+- HIWIN:
+  - types
+    - rolled
+      - diameter: 8-63mm
+      - typical application: transportation
+      - accuracy: T5 - T10
+      - less friction and quieter than standard threads
+    - peeled
+      - diameter: 16-80mm
+      - typical application: transportation + positioning
+      - accuracy: T5 + T10
+    - ground
+      - diameter: 6-100mm
+      - typical application: positioning
+      - accuracy: T0 - T5
+      - no stock; only available upon request
+    - other, seemingly more specialized types available
+  - preload needs to be balanced
+    - too low: lacks rigidity
+    - too high: more friction, reduced service life
+  - selection: page 12 of the HIWIN catalogue has a step-by-step guide
+  - ball recirculation systems
+    - external: tube outside of the nut body
+    - internal: tube within the nut
+    - cassette: internal, but somehow different? don't understand the description
+  - wipers
+    - NBR: "used in almost all applications"
+    - NBR-finger: more friction, more resistance against dirt and chemicals
+    - felt, felt-finger: different attributes, but unclear on applications
+  - precision
+    - T0 is best; don't have a feel for the numbers
+    - the better the accuracy, the more limited length is; not relevant for my application
+    - recommendations for milling
+      - x/y axes: T1-T5
+      - z axis: T2-T5
+    - play/preload
+      - rolled and peeled are delivered with play by default
+      - types of preload
+        - preloaded single nut: ball size
+        - lead offset: not suited for high preloads or high leads
+        - preloaded double nuts: distance between nuts
+      - preload should not exceed
+        - 5% of dynamic load rating for single nuts
+        - 10% of dynamic load rating for double nuts
+      - should only be preloaded when absolutely necessary
+    - load rating
+      - Cdyn: load at which 90% of ball screws reach life expectancy of 1 million revolutions
+      - C0: load which causes permanent deformation of more than 0.0001 ball diameter
+    - drive torque: calculation formulas on page 28
+
+Continue on page 36, nuts for rolled ball screws.
+
 ### Stepper Drivers
 
 Makerbase: https://www.aliexpress.com/store/1047297
