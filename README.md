@@ -83,6 +83,7 @@ European shops:
 - [**DOLD Mechatronik**](https://dold-mechatronik.de/): Have a lot of different stuff, including aluminium in various sizes. At least some categories seems to be high-priced, relative to the available budget.
 - [**Sorotec**](https://www.sorotec.de/shop/): Large selection of all kinds of stuff required for CNCs.
 - [**MISUMI**](https://de.misumi-ec.com/): Large selection of materials, mechanical components, and much more. Lots of options for modifying material and aluminium extrusion parts.
+- [**Motedis**](https://www.motedis.com/): Materials and mechanical components.
 
 AliExpress:
 
