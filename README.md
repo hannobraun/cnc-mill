@@ -189,7 +189,7 @@ Information from online shops:
   - seal (Dichtung): S or B
     - S: seals better; recommended for dirty environments.
     - B: less friction
-  - pretension (Vorspannung): VC, V0, V1, V2
+  - preload (Vorspannung): VC, V0, V1, V2
     - VC and V0 have play; only available in lower quality classes (H, N)
     - V1 and V2 don't, but have more friction
     - V1 might be a good compromise, is my initial impression
