@@ -35,7 +35,6 @@ Here are some high-level design decisions I've made. None of them are final, and
 
 - **Configuration:** Fixed gantry. The advantages are just too big, and I think I can live with a smaller work area in one axis.
 - **Size:** 40x40x40 cm³ or thereabouts. Those are outer dimensions. If it turns out that this leaves not enough working area, I can go a bit larger, especially in height.
-- **Spindle:** Water-cooled AC spindle, 1 kW or more, 24.000 max. RPM. There is some doubt about whether such a powerful spindle is really necessary. For now, I'm just going ahead with it, and will revisit if that escalates the budget or size requirements too much.
 - **Axis motors:** Stepper motors. I haven't really looked into servos, but seeing how many machines run just fine with steppers, I'm pretty confident they will work for me. An open-loop control system will also reduce cost and complexity.
 
 
