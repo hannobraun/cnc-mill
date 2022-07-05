@@ -394,7 +394,14 @@ Notes:
   - housing for flange nuts
     - suitable for DEB-x, DDB-x, FSCDIN
 
-Not sure yet, what conclusions to draw from all this.
+Looks like I need, per axis:
+- ball screw
+- flanged nut
+- supported bearing
+- fixed bearing
+- flanged nut housing
+
+Other than that, not sure yet, what conclusions to draw from all this.
 
 ### Stepper Drivers
 
