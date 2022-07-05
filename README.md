@@ -301,15 +301,54 @@ Notes:
       - typical application: transportation
       - accuracy: T5 - T10
       - less friction and quieter than standard threads
+      - nuts
+        - FSIDIN, FSCDIN: flange
+        - RSI, RSIT: no flange; probably wrong for my use case
     - peeled
       - diameter: 16-80mm
       - typical application: transportation + positioning
-      - accuracy: T5 + T10
+      - accuracy: T5 + T7
+      - nuts
+        - DEB-x
+          - flange
+          - single nut
+          - variants with different kinds of wipers
+        - DDB-x
+          - flange
+          - double nut
+          - variants with different kinds of wipers
+        - ZE, SE
+          - no flange
+          - probably wrong for my use case
+        - SEM
+          - safety nut
+          - has some redundancy; correct function guaranteed up until certain play
+          - pretty sure I don't need this
     - ground
       - diameter: 6-100mm
       - typical application: positioning
       - accuracy: T0 - T5
       - no stock; only available upon request
+      - nuts
+        - FSC
+          - flange
+          - single nut
+          - cassette recirculation
+        - FDC
+          - flange
+          - double nut
+          - cassette recirculation
+        - FSI
+          - flange
+          - single nut
+          - internal recirculation
+        - FDI
+          - flange
+          - double nut
+          - internal recirculation
+        - RSI, RDI
+          - no flange
+          - probably unsuited
     - other, seemingly more specialized types available
   - preload needs to be balanced
     - too low: lacks rigidity
@@ -320,9 +359,9 @@ Notes:
     - internal: tube within the nut
     - cassette: internal, but somehow different? don't understand the description
   - wipers
-    - NBR: "used in almost all applications"
-    - NBR-finger: more friction, more resistance against dirt and chemicals
-    - felt, felt-finger: different attributes, but unclear on applications
+    - NBR (N): "used in almost all applications"
+    - NBR-finger (K): more friction, more resistance against dirt and chemicals
+    - felt (F), felt-finger (V): different attributes, but unclear on applications
   - precision
     - T0 is best; don't have a feel for the numbers
     - the better the accuracy, the more limited length is; not relevant for my application
@@ -343,8 +382,19 @@ Notes:
       - Cdyn: load at which 90% of ball screws reach life expectancy of 1 million revolutions
       - C0: load which causes permanent deformation of more than 0.0001 ball diameter
     - drive torque: calculation formulas on page 28
+  - shaft ends
+    - B, E, F: simple transport applications, low axial forces
+    - SFA, SLA: more challenging precision applications
+      - SLA: supported bearing (S1, S11, S5)
+        - for supporting the non-motor end of the ball screw?
+      - SFA
+        - fixed bearing (S2, S22, S3)
+        - for supporting the motor end of the ball screw?
+    - WBK: heavy duty
+  - housing for flange nuts
+    - suitable for DEB-x, DDB-x, FSCDIN
 
-Continue on page 36, nuts for rolled ball screws.
+Not sure yet, what conclusions to draw from all this.
 
 ### Stepper Drivers
 
