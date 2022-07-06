@@ -282,6 +282,13 @@ Conclusions:
 - ARC and HG seem like good options, given the size and available documentation.
 - Especially the HIWIN documentation is nice. But in the Sorotec store, HIWIN is also twice as expensive as the Sorotec-branded stuff.
 
+I would need, per axis:
+
+- 2 rails
+- 4 carriages
+
+So 6 rails and 12 carriages overall.
+
 ### Ball Screws
 
 Much like with linear rails, I figure that the best I can practically do on linear actuators are ball screws. I will do my research on that, and might scale back to something cheaper, if it turns out to be necessary.
