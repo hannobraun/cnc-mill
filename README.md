@@ -410,6 +410,25 @@ Looks like I need, per axis:
 
 Other than that, not sure yet, what conclusions to draw from all this.
 
+
+### Frame
+
+Warning: This section is more of a brain dump, and not based on actual research so far. I'm drawing my own conclusions based on things I've seen in the past, and I'm probably missing something.
+
+I'm mainly thinking about two ways of building the frame:
+
+- Aluminium extrusion
+- Aluminium plates
+
+Or a combination of the two. Aluminium extrusion has the advantage of being more flexible and easier to use, while plates would require at least somewhat accurate drilling, if not machining.
+
+To make use of the full flexibility and simplicity of aluminium extrusion though, I need angle brackets to connect them. I don't know how well that would fare in regards to stiffness. I've seen people connect profiles by drilling through one, and putting in a screw that screws in the end of the other, but that would require somewhat accurate drilling again, plus cutting the profiles to length precisely.
+
+I'm guessing connecting plates with screws would be plenty stiff, and I could probably buy them already cut to size. This would only leave the problem of drilling and tapping, which might be manageable. An advantage over extrusion might be that they are just denser. Since more weight is largely good in a machine frame, and space is at a premium, that would probably be an advantage.
+
+At this point I'm thinking, I'll probably do a CAD design based on plates and see where that leads. If it seems doable, I might go that way. If not, I might reconsider doing an extrusion-based design.
+
+
 ### Stepper Drivers
 
 Makerbase: https://www.aliexpress.com/store/1047297
