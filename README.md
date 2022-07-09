@@ -177,6 +177,11 @@ I've been told (from a trusted source) to get at least ER16 or greater, as ER11 
 - https://en.wikipedia.org/wiki/Collet#ER_collets<br />
   Just some background info on ER collets, for the mechanically challenged (like me).
 
+#### Open Question
+
+- Go with DC or AC spindles?
+- If AC, go with water or air cooling?
+
 ### Linear Guides
 
 I figure that within the constraints of a home-built machine, linear rails are the best I can practically do in this category. I've decided to focus my research on those, and see where that leaves me budget-wise. I'll revisit later, if necessary.
@@ -288,6 +293,12 @@ I would need, per axis:
 - 4 carriages
 
 So 6 rails and 12 carriages overall.
+
+Open questions:
+
+- What type should I go with?
+- Is HIWIN even an option price-wise? Would it be even worth it? Go for something cheaper?
+- What size rail?
 
 ### Ball Screws
 
@@ -409,6 +420,12 @@ Looks like I need, per axis:
 - flanged nut housing
 
 Other than that, not sure yet, what conclusions to draw from all this.
+
+Open questions:
+
+- What size screw do I go with?
+- What accuracy do I need?
+- HIWIN is probably too expensive. Do cheaper options require different research?
 
 
 ### Frame
