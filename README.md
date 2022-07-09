@@ -176,6 +176,8 @@ I've been told (from a trusted source) to get at least ER16 or greater, as ER11 
   Presents some specific spindles and what they're suitable for.
 - https://en.wikipedia.org/wiki/Collet#ER_collets<br />
   Just some background info on ER collets, for the mechanically challenged (like me).
+- https://www.youtube.com/watch?v=w26DHMccicE<br />
+  Upgrades to a 3018. Performance becomes satisfactory with a ~1kW spindle. 500W works, but is really slow.
 
 #### Open Question
 
