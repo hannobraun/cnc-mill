@@ -197,9 +197,7 @@ Some reference material on how to calculate cutting force:
 
 From the aforementioned references, I got the following formula for computing tangential cutting force:
 
-``` math
-F_t = \frac{T_s}{R}
-```
+$F_t = \frac{T_s}{R}$
 
 Where:
 - $F_t$: tangential cutting force
