@@ -184,6 +184,47 @@ I've been told (from a trusted source) to get at least ER16 or greater, as ER11 
 - Go with DC or AC spindles?
 - If AC, go with water or air cooling?
 
+### Cutting Forces
+
+*The following is based on some research, and my own not-that-great knowledge about mechanics. For all I know, my complete reasoning could be wrong.*
+
+My thinking is that once I've selected a spindle, I can calculate what maximum cutting force can be achieved using that spindle. With that information, I can then decide how to dimension the linear axes and the frame.
+
+Some reference material on how to calculate cutting force:
+
+- [Cutting Forces in Milling](https://www.ame.com/workholding-wisdom-posts/2021/03/01/cutting-forces-in-milling/)
+- [Understanding tangential cutting force when milling](https://www.ctemag.com/news/articles/understanding-tangential-cutting-force-when-milling)
+
+From the aforementioned references, I got the following formula for computing tangential cutting force:
+
+``` math
+F_t = \frac{T_s}{R}
+```
+
+Where:
+- $F_t$: tangential cutting force
+- $T_S$: spindle torque
+- $R$: cutter radius
+
+Which makes a lot of sense. I can hopefully get the maximum torque rating of the spindle from the manufacturer. If not, I'm sure there's a way to calculate torque from spindle power, but I haven't looked into how to do that.
+
+Given the maximum torque, I can put in the radius of the smallest tool I intend to use. It's quite possible that the resulting force will be larger than the small tool can withstand. But I can just put in larger and larger tools until I get a force that will actually work with the tool, thereby figuring out the maximum tangential cutting force that is actually realistic.
+
+Once I have that number, I need two more:
+
+- Maximum expected tool length
+- Distance between tip of maximum length tool and spindle holder.
+
+With that, I can calculate the moment that acts on the spindle, which I can then use to figure out how to dimension the linear hardware on the z and x axes.
+
+*At this point I'm realizing that it would be easier to just do the calculations instead of spelling out how I would do them. I can't though, because I haven't selected a spindle yet, so I'll continue writing out my thoughts on this, so I don't forget between now and when I'll actually do the calculations. (When I started writing this, I just expected there would be much more research and much less reasoning.)*
+
+Side note: It's interesting to note that the worst case for max. tangential cutting force is a thin tool, and worst case for max. moment on the spindle is a long tool. It's probably a good idea to plug in multiple tools into the whole calculation, to figure out where the actual worst case is, since the thinnest tool certainly won't be the longest.
+
+Based on the max. tangential cutting force, I can also figure out the maximum moment that acts on the y axis, and dimension the linear hardware for that too.
+
+I assume with all those moments calculated, I can then figure out what the frame would need to look like to not deflect too much under that level of stress. I don't know how that works though.
+
 ### Linear Guides
 
 I figure that within the constraints of a home-built machine, linear rails are the best I can practically do in this category. I've decided to focus my research on those, and see where that leaves me budget-wise. I'll revisit later, if necessary.
