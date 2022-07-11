@@ -467,6 +467,7 @@ Open questions:
 - What size screw do I go with?
 - What accuracy do I need?
 - HIWIN is probably too expensive. Do cheaper options require different research?
+- What about preload? The HIWIN data sheet makes it sound like preload should be avoided, if at all possible. But isn't the whole point of a ball screw to avoid backlash?
 
 
 ### Frame
