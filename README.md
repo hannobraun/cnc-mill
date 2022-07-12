@@ -166,7 +166,7 @@ Examples:
 
 #### Collets
 
-I've been told (from a trusted source) to get at least ER16 or greater, as ER11 is too limiting. It seems like ER11 and ER20 are the most common sizes, so ER20 should be the one to look for.
+I've been told (from a trusted source) to get at least ER16 or greater, as ER11 is too limiting. It seems like ER11 and ER20 are the most common sizes, so ER20 might be the one to look for.
 
 #### References
 
@@ -178,6 +178,17 @@ I've been told (from a trusted source) to get at least ER16 or greater, as ER11 
   Just some background info on ER collets, for the mechanically challenged (like me).
 - https://www.youtube.com/watch?v=w26DHMccicE<br />
   Upgrades to a 3018. Performance becomes satisfactory with a ~1kW spindle. 500W works, but is really slow.
+
+#### Conclusion
+
+Based on everything I've seen, I've narrowed the spindle selection down to the following criteria:
+
+- 1KW+: Yes, you can mill aluminium with less, but it's far from certain whether the results would be satisfying.
+- ER16: ER11 is too limiting, and spindles with ER20 tend to be too big. This narrows down the options considerably, and at this point, I think that's a good thing.
+- 24,000 max. RPM: This should be sufficient for my needs, and it seems that within the category of 1kW+/ER16 spindles, this doesn't further reduce the selection.
+- Air-cooled: Water-cooled spindles seem to be bigger and more powerful than what I can find based on the previous criteria. At this point, I'm happy to accept the reduced complexity. Any difference in noise is probably irrelevant anyway, compared to the milling noise itself.
+- AC: I can't find any DC spindles that are powerful enough, so it's not a choice at this point.
+
 
 #### Open Question
 
