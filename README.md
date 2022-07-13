@@ -186,9 +186,14 @@ Based on everything I've seen, I've narrowed the spindle selection down to the f
 - 1KW+: Yes, you can mill aluminium with less, but it's far from certain whether the results would be satisfying.
 - ER16: ER11 is too limiting, and spindles with ER20 tend to be too big. This narrows down the options considerably, and at this point, I think that's a good thing.
 - 24,000 max. RPM: This should be sufficient for my needs, and it seems that within the category of 1kW+/ER16 spindles, this doesn't further reduce the selection.
-- Air-cooled: Water-cooled spindles seem to be bigger and more powerful than what I can find based on the previous criteria. At this point, I'm happy to accept the reduced complexity. Any difference in noise is probably irrelevant anyway, compared to the milling noise itself.
+- Air-cooled: I can find a few (very few) water-cooled ER16 spindles on eBay, but at this point, I'm happy to accept the reduced complexity. Any difference in noise is probably irrelevant anyway, compared to the milling noise itself.
 - AC: I can't find any DC spindles that are powerful enough, so it's not a choice at this point.
 
+Most of the spindles I can find with these parameters are from this manufacturer: [Zhong Hua Jian](https://www.zhonghuajiangspindle.com/)
+
+They have a square spindle that I would prefer: [1.5KW 1500W Air Cooled Spindle Square CNC Spindle Motor ER11/ER16](https://www.zhonghuajiangspindle.com/1.5kw-cnc-square-air-cooled-spindle-motor.html)
+
+Unfortunately that's the one that I can't find a source for around here.
 
 #### Open Question
 
