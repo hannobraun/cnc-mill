@@ -195,11 +195,6 @@ They have a square spindle that I would prefer: [1.5KW 1500W Air Cooled Spindle 
 
 Unfortunately that's the one that I can't find a source for around here.
 
-#### Open Question
-
-- Go with DC or AC spindles?
-- If AC, go with water or air cooling?
-
 ### Cutting Forces
 
 *The following is based on some research, and my own not-that-great knowledge about mechanics. For all I know, my complete reasoning could be wrong.*
