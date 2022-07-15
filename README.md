@@ -74,6 +74,7 @@ AliExpress:
 
 - [**Bulk Man 3D**](https://www.aliexpress.com/store/1752067) ([also have a website](https://bulkman3d.com/)): Large selection of lots of things I'm going to need.
 - [**Makerbase**](https://www.aliexpress.com/store/1047297): Control boards mostly seem not applicable, but the stepper drivers are very interesting.
+- [**Zhong Hua Jiang**](https://de.aliexpress.com/store/214974): They manufacture spindles that they sell there, as well as other useful things.
 
 eBay:
 
