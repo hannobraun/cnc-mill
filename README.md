@@ -164,10 +164,6 @@ Examples:
   - [3.0kW, 24k RPM, ER20, ~165€](https://www.ebay.de/itm/185102654786); spindle only
   - [3.0kW, 24k RPM, ER20, ~285€](https://www.ebay.de/itm/174974637566); VFD included
 
-#### Collets
-
-I've been told (from a trusted source) to get at least ER16 or greater, as ER11 is too limiting. It seems like ER11 and ER20 are the most common sizes, so ER20 might be the one to look for.
-
 #### References
 
 - https://mellowpine.com/cnc/how-to-choose-a-cnc-spindle/<br />
@@ -184,8 +180,7 @@ I've been told (from a trusted source) to get at least ER16 or greater, as ER11 
 Based on everything I've seen, I've narrowed the spindle selection down to the following criteria:
 
 - 1KW+: Yes, you can mill aluminium with less, but it's far from certain whether the results would be satisfying.
-- ER16: ER11 is too limiting, and spindles with ER20 tend to be too big. This narrows down the options considerably, and at this point, I think that's a good thing.
-- 24,000 max. RPM: This should be sufficient for my needs, and it seems that within the category of 1kW+/ER16 spindles, this doesn't further reduce the selection.
+- 24,000 max. RPM: This should be sufficient for my needs, and it seems that within the category of 1kW+, this doesn't further reduce the selection.
 - Air-cooled: I can find a few (very few) water-cooled ER16 spindles on eBay, but at this point, I'm happy to accept the reduced complexity. Any difference in noise is probably irrelevant anyway, compared to the milling noise itself.
 - AC: I can't find any DC spindles that are powerful enough, so it's not a choice at this point.
 
