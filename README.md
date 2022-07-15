@@ -55,20 +55,6 @@ It's going to make sense to take inspiration from other machines at some point. 
 - [**PocketNC**](https://pocketnc.com/): 5-axis desktop CNC mill. Interesting, in that it is used for milling aluminium (easy to find examples on YouTube), but has a relatively weak spindle (200W).
 - [**Nomad**](https://carbide3d.com/nomad/): Pretty close to what I would like to build, in regards to the configuration, form factor, and enclosure. Notable for its weak spindle (70W).
 
-### Configuration
-
-I believe that the following machine configurations are the strongest contenders:
-
-- **Moving gantry**: Tool moves in all 3 axes.
-- **Fixed gantry**: Tool moves in x and z axes, table moves in y axis.
-
-I have ruled out more exotic configurations for my first build (despite having lots of ideas), to reduce overall risk.
-
-References:
-
-- https://cncchronicle.com/fixed_or_moving_gantry_for_cnc_router/<br />
-  Compares the two configurations. Has a nice comparison table further down.
-
 ### Online Shops
 
 I'm looking into two groups of online shops:
@@ -101,6 +87,20 @@ eBay:
   - [**rattmmotor88**](https://www.ebay.de/str/rattmmotor88)
   - [**RATTM MOTOR CNC**](https://www.ebay.de/str/rattmmotorcnc)
 - [**chinacnczone-de**](https://www.ebay.de/str/cnczonedd)
+
+### Configuration
+
+I believe that the following machine configurations are the strongest contenders:
+
+- **Moving gantry**: Tool moves in all 3 axes.
+- **Fixed gantry**: Tool moves in x and z axes, table moves in y axis.
+
+I have ruled out more exotic configurations for my first build (despite having lots of ideas), to reduce overall risk.
+
+References:
+
+- https://cncchronicle.com/fixed_or_moving_gantry_for_cnc_router/<br />
+  Compares the two configurations. Has a nice comparison table further down.
 
 ### Spindle
 
