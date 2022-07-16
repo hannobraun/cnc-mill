@@ -39,6 +39,15 @@ Here are some high-level design decisions I've made. None of them are final, and
 - **Axis motors:** Stepper motors. I haven't really looked into servos, but seeing how many machines run just fine with steppers, I'm pretty confident they will work for me. An open-loop control system will also reduce cost and complexity.
 
 
+## Parts
+
+- eBay
+  - [Zhong Hua Jiang 1.5 kW Air-Cooled CNC Spindle Motor 80mm](https://www.zhonghuajiangspindle.com/1.5kw-cnc-air-cooled-spindle-motor-80mm.html): Those are widely available on eBay. Preferably ER16, but ER11 is acceptable.
+  - 1.5 kW Huanjang VFD: there are sets of those and the aforementioned spindle available
+- Sorotec
+  - [Spindle Clamp](https://www.sorotec.de/shop/Spindelhalter-f-r-80mm-HFS-Spindeln-4085.html): Lots of the spindle/VFD sets on eBay come with a clamp, but those don't have mounting holes. This one looks nicer.
+
+
 ## Research Notes
 
 These are the notes from my research process.
