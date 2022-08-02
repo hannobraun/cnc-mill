@@ -12,7 +12,12 @@ table(size_x = 300, size_y = 150, thickness = 10);
 
 module spindle(min_height) {
     translate([0, 0, min_height])
-    cylinder(d = 80, h = 261);
+    union() {
+        diameter = 80;
+        z_top_plus_connector = 261;
+
+        cylinder(d = diameter, h = z_top_plus_connector);
+    }
 }
 
 module table(size_x, size_y, thickness) {
