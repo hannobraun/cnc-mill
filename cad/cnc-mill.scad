@@ -27,6 +27,7 @@ module spindle(min_height) {
         height_shoulder               =  18;
         height_body_bottom            =   8;
         height_body_main              = 164;
+        height_body_top               =  26;
         height_total                  = 261;
 
         // These dimensions are derived from the previous ones.
@@ -48,9 +49,10 @@ module spindle(min_height) {
             [   height_shoulder,  diameter_shoulder,  black], // shoulder
             [height_body_bottom,           diameter,  black], // body: bottom
             [  height_body_main,           diameter, silver], // body: main
+            [   height_body_top,           diameter,  black], // body: top
 
             // placeholder for rest of spindle
-            [height_total - height_collet - height_neck - height_neck_base - height_shoulder - height_body_bottom - height_body_main, diameter, silver],
+            [height_total - height_collet - height_neck - height_neck_base - height_shoulder - height_body_bottom - height_body_main - height_body_top, diameter, silver],
         ];
 
         element(i = 0, elements = elements);
