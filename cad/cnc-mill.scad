@@ -1,7 +1,7 @@
 $fn = 60;
 
 spindle();
-table(300, 150, 10);
+table(size_x = 300, size_y = 150, thickness = 10);
 
 module spindle() {
     cylinder(d = 80, h = 261);
