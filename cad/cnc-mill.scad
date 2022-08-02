@@ -20,9 +20,11 @@ module spindle(min_height) {
         diameter                      =  80;
         diameter_collet               =  19;
         diameter_neck_base            =  29.5;
+        diameter_shoulder             =  54;
         height_collet                 =  13;
         height_collect_neck_neck_base =  36;
         height_neck_base              =   3;
+        height_shoulder               =  18;
         height_total                  = 261;
 
         // These dimensions are derived from the previous ones.
@@ -37,9 +39,10 @@ module spindle(min_height) {
             [   height_collet,    diameter_collet], // collet
             [     height_neck,      diameter_neck], // neck
             [height_neck_base, diameter_neck_base], // neck base
+            [ height_shoulder,  diameter_shoulder], // shoulder
 
             // placeholder for rest of spindle
-            [height_total - height_collet - height_neck - height_neck_base, diameter],
+            [height_total - height_collet - height_neck - height_neck_base - height_shoulder, diameter],
         ];
 
         element(i = 0, elements = elements);
