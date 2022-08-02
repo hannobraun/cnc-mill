@@ -17,21 +17,21 @@ module spindle(min_height) {
     translate([0, 0, min_height])
     union() {
         // These are dimensions that are specified in the drawing.
-        diameter                      =  80;
-        diameter_collet               =  19;
-        diameter_neck_base            =  29.5;
-        diameter_shoulder             =  54;
-        height_collet                 =  13;
-        height_collect_neck_neck_base =  36;
-        height_neck_base              =   3;
-        height_shoulder               =  18;
-        height_body_bottom            =   8;
-        height_body_main              = 164;
-        height_body_top               =  26;
-        height_total                  = 261;
+        diameter                     =  80;
+        diameter_collet              =  19;
+        diameter_neck_base           =  29.5;
+        diameter_shoulder            =  54;
+        height_collet                =  13;
+        height_collet_neck_neck_base =  36;
+        height_neck_base             =   3;
+        height_shoulder              =  18;
+        height_body_bottom           =   8;
+        height_body_main             = 164;
+        height_body_top              =  26;
+        height_total                 = 261;
 
         // These dimensions are derived from the previous ones.
-        height_neck = height_collect_neck_neck_base
+        height_neck = height_collet_neck_neck_base
             - height_collet
             - height_neck_base;
 
