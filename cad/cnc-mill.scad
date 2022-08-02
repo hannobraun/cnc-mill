@@ -34,9 +34,14 @@ module spindle(min_height) {
         height_neck = height_collet_neck_neck_base
             - height_collet
             - height_neck_base;
+        height_connector = height_total
+            - height_body_top - height_body_main - height_body_bottom
+            - height_shoulder
+            - height_collet_neck_neck_base;
 
-        // This one's just a guess, as the drawing doesn't say.
-        diameter_neck = 15;
+        // These ones are just guesses, as the drawing doesn't say.
+        diameter_neck      = 15;
+        diameter_connector = 20;
 
         // Colors
         black  = [0.0, 0.0, 0.0, 1.0];
@@ -50,9 +55,7 @@ module spindle(min_height) {
             [height_body_bottom,           diameter,  black], // body: bottom
             [  height_body_main,           diameter, silver], // body: main
             [   height_body_top,           diameter,  black], // body: top
-
-            // placeholder for rest of spindle
-            [height_total - height_collet - height_neck - height_neck_base - height_shoulder - height_body_bottom - height_body_main - height_body_top, diameter, silver],
+            [  height_connector, diameter_connector, silver], // connector
         ];
 
         element(i = 0, elements = elements);
