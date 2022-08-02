@@ -16,11 +16,17 @@ table(size_x = 300, size_y = 150, thickness = 10);
 module spindle(min_height) {
     translate([0, 0, min_height])
     union() {
-        diameter = 80;
+        // These are dimensions that are specified in the drawing.
+        diameter        = 80;
+        diameter_collet = 19;
+        height_collet   = 13;
+        height_total    = 261;
 
         elements = [
-            [      13,       19], // collet
-            [261 - 13, diameter], // placeholder for rest of spindle
+            // collet
+            [height_collet, diameter_collet],
+            // placeholder for rest of spindle
+            [height_total - height_collet, diameter],
         ];
 
         element(i = 0, elements = elements);
