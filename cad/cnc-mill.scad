@@ -1,3 +1,5 @@
+$fn = 60;
+
 table(300, 150, 10);
 
 module table(size_x, size_y, thickness) {
