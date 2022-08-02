@@ -35,14 +35,18 @@ module spindle(min_height) {
         // This one's just a guess, as the drawing doesn't say.
         diameter_neck = 15;
 
+        // Colors
+        black  = [0.0, 0.0, 0.0, 1.0];
+        silver = [0.8, 0.8, 0.8, 1.0];
+
         elements = [
-            [   height_collet,    diameter_collet], // collet
-            [     height_neck,      diameter_neck], // neck
-            [height_neck_base, diameter_neck_base], // neck base
-            [ height_shoulder,  diameter_shoulder], // shoulder
+            [   height_collet,    diameter_collet,  black], // collet
+            [     height_neck,      diameter_neck, silver], // neck
+            [height_neck_base, diameter_neck_base, silver], // neck base
+            [ height_shoulder,  diameter_shoulder,  black], // shoulder
 
             // placeholder for rest of spindle
-            [height_total - height_collet - height_neck - height_neck_base - height_shoulder, diameter],
+            [height_total - height_collet - height_neck - height_neck_base - height_shoulder, diameter, silver],
         ];
 
         element(i = 0, elements = elements);
@@ -52,7 +56,9 @@ module spindle(min_height) {
         if (i < len(elements)) {
             height   = elements[i][0];
             diameter = elements[i][1];
+            color    = elements[i][2];
 
+            color(color)
             cylinder(d = diameter, h = height);
 
             translate([0, 0, height])
