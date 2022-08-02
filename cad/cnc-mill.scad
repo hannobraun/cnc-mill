@@ -10,6 +10,9 @@ $fn = 60;
 spindle(min_height = 10);
 table(size_x = 300, size_y = 150, thickness = 10);
 
+// The CNC spindle motor
+//
+// https://www.zhonghuajiangspindle.com/1.5kw-cnc-air-cooled-spindle-motor-80mm.html
 module spindle(min_height) {
     translate([0, 0, min_height])
     union() {
