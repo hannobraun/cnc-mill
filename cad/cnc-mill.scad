@@ -33,10 +33,9 @@ module spindle(min_height) {
         diameter_neck = 15;
 
         elements = [
-            // collet
-            [height_collet, diameter_collet],
-            // neck
-            [height_neck, diameter_neck],
+            [height_collet, diameter_collet], // collet
+            [  height_neck,   diameter_neck], // neck
+
             // placeholder for rest of spindle
             [height_total - height_collet - height_neck, diameter],
         ];
