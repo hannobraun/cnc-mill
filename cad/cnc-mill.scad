@@ -14,9 +14,14 @@ module spindle(min_height) {
     translate([0, 0, min_height])
     union() {
         diameter = 80;
+
+        z_collet_bottom      =   0;
+        z_collet_top         =  13;
         z_top_plus_connector = 261;
 
-        cylinder(d = diameter, h = z_top_plus_connector);
+        cylinder(d = 19, h = z_collet_top - z_collet_bottom);
+        translate([0, 0, z_collet_top])
+        cylinder(d = diameter, h = z_top_plus_connector - z_collet_top);
     }
 }
 
