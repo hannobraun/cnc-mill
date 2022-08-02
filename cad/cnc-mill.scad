@@ -15,13 +15,24 @@ module spindle(min_height) {
     union() {
         diameter = 80;
 
-        z_collet_bottom      =   0;
-        z_collet_top         =  13;
-        z_top_plus_connector = 261;
+        elements = [
+            [      13,       19], // collet
+            [261 - 13, diameter], // placeholder for rest of spindle
+        ];
 
-        cylinder(d = 19, h = z_collet_top - z_collet_bottom);
-        translate([0, 0, z_collet_top])
-        cylinder(d = diameter, h = z_top_plus_connector - z_collet_top);
+        element(i = 0, elements = elements);
+    }
+
+    module element(i, elements) {
+        if (i < len(elements)) {
+            height   = elements[i][0];
+            diameter = elements[i][1];
+
+            cylinder(d = diameter, h = height);
+
+            translate([0, 0, height])
+            element(i = i + 1, elements = elements);
+        }
     }
 }
 
