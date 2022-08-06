@@ -16,7 +16,7 @@ I suspect it might simply be impossible to fulfill all of these requirements wit
 
 ## Status
 
-I've been doing research for a while now, and have made some preliminary design decisions. All of that is documented below.
+The project is still in the planning phase. I've done lots of research (notes below) an have started with [some CAD modeling](/cad/).
 
 
 ## License
