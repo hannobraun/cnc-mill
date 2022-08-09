@@ -1,5 +1,6 @@
 $fn = 60;
 
+
 // TASK: What is a good value for the minimum spindle height? I think to answer
 //       this question, I think I need to answer the following ones first:
 //       1. Do I want to mill to be able to machine its own table?
@@ -9,7 +10,9 @@ $fn = 60;
 //          a) what is the shortest tool I might conceivably use?
 translate([0, 0, 10])
 spindle();
+
 table(size_x = 300, size_y = 150, thickness = 10);
+
 
 // The CNC spindle motor
 //
