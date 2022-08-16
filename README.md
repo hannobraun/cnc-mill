@@ -201,6 +201,24 @@ They have a square spindle that I would prefer: [1.5KW 1500W Air Cooled Spindle 
 
 Unfortunately that's the one that I can't find a source for around here.
 
+### Cutting Tools
+
+The cutting tools that are expected to be used are important for various design decisions. Since I don't have very specific use cases in mind, my goal here is to get a feel for the range of tooling that I might want to use for aluminium. From there, I'll hopefully have better information to make various design decisions.
+
+Here are some cutting tools that I could find:
+
+- cnc-technics
+  - Endmills: https://shop.cnc-technics.de/Fraeser/?view_mode=default&listing_sort=&listing_count=96
+- Dold Mechatronik
+  - Drills: https://www.dold-mechatronik.de/Werkzeuge-Bohrer
+  - Endmills: https://www.dold-mechatronik.de/VHM-Fraeser
+- Sorotec: https://www.sorotec.de/shop/Zerspanungswerkzeuge/
+  - Sorotec: https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/
+  - Firstattec: https://www.sorotec.de/shop/Zerspanungswerkzeuge/Firstattec/
+  - Datron: https://www.sorotec.de/shop/Zerspanungswerkzeuge/datron-cnc-fraeswerkzeuge/
+- Datron: https://webshop.datron.de/industrie-fraeswerkzeuge/?p=1
+- Misumi: https://de.misumi-ec.com/vona2/fs_machining/
+
 ### Cutting Forces
 
 *The following is based on some research, and my own not-that-great knowledge about mechanics. For all I know, my complete reasoning could be wrong.*
