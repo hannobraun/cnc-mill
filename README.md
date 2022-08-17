@@ -219,6 +219,46 @@ Here are some cutting tools that I could find:
 - Datron: https://webshop.datron.de/industrie-fraeswerkzeuge/?p=1
 - Misumi: https://de.misumi-ec.com/vona2/fs_machining/
 
+I've decided to focus my analysis on the Sorotec offerings, as they have a broad selection, and also focus on the class of machine I'm trying to build, roughly. I'm only looking at tools that are specifically recommended for aluminium.
+
+Analysis:
+
+- Diameter, cutting (mm): 0.2 - 60
+- Diameter, shaft (mm): 3 - 12
+- Length, cutting (mm): 2 - 43
+- Length, total (mm): 38 - 110
+
+List of tools taken into account:
+
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/3-175----1-8---Fraeser/2-Schneider-ALU/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/3-175----1-8---Fraeser/Sonderlaengen-360/2-Schneider-361/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/HM-Bohrer/bohrer3175/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/HM-Bohrer/bohrer317565/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/Schaftfraeser-ALU-412/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/1-Schneider-Sorotec-PROALU/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/einschneider-sorotec-alu-beschichtet/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/2-schneider/2-schneider-kurz/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/2-schneider/2-schneider-alu-eckradius/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/2-schneider/Schaftfraeser-ALU/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/schlichtfraeser/schlichtfraeser-beschichtet/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/schlichtfraeser/schlichtfraeser-unbeschichtet/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Gewindefraeser/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/RADIENFRAeSER/1-Schneider-PRO/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/planfraeser-985/Planfraeser/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/vhm-spiralbohrer/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Entgrater---Senker/HM-Senker/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Entgrater---Senker/Entgratfraeser-Fasenfraeser/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Entgrater---Senker/Viertelkreisfraeser/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Gravurwerkzeuge/Gravierfraeser/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Gravurwerkzeuge/Gravierstichel--Standard-/
+- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Gravurwerkzeuge/Radienstichel/
+
+Additional notes:
+
+- https://webseite.sorotec.de/download/fraesparameter/schnittwerte_1_8_sv.pdf
+- https://www.sorotec.de/webshop/Datenblaetter/fraeser/fraeser_verwendung_schaftfraeser.png
+- https://webseite.sorotec.de/download/fraesparameter/schnittwerte_planfraeser.pdf
+
 ### Cutting Forces
 
 *The following is based on some research, and my own not-that-great knowledge about mechanics. For all I know, my complete reasoning could be wrong.*
