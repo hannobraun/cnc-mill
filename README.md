@@ -230,28 +230,36 @@ Analysis:
 
 List of tools taken into account:
 
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/3-175----1-8---Fraeser/2-Schneider-ALU/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/3-175----1-8---Fraeser/Sonderlaengen-360/2-Schneider-361/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/HM-Bohrer/bohrer3175/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/HM-Bohrer/bohrer317565/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/Schaftfraeser-ALU-412/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/1-Schneider-Sorotec-PROALU/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/einschneider-sorotec-alu-beschichtet/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/2-schneider/2-schneider-kurz/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/2-schneider/2-schneider-alu-eckradius/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/2-schneider/Schaftfraeser-ALU/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/schlichtfraeser/schlichtfraeser-beschichtet/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/schlichtfraeser/schlichtfraeser-unbeschichtet/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Gewindefraeser/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/RADIENFRAeSER/1-Schneider-PRO/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/planfraeser-985/Planfraeser/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/vhm-spiralbohrer/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Entgrater---Senker/HM-Senker/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Entgrater---Senker/Entgratfraeser-Fasenfraeser/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Entgrater---Senker/Viertelkreisfraeser/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Gravurwerkzeuge/Gravierfraeser/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Gravurwerkzeuge/Gravierstichel--Standard-/
-- https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Gravurwerkzeuge/Radienstichel/
+- Countersinking
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Entgrater---Senker/HM-Senker/
+- Deburring/Chamfering/Filleting
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Entgrater---Senker/Entgratfraeser-Fasenfraeser/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Entgrater---Senker/Viertelkreisfraeser/
+- Drilling
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/HM-Bohrer/bohrer3175/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/HM-Bohrer/bohrer317565/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/vhm-spiralbohrer/
+- Engraving
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Gravurwerkzeuge/Gravierfraeser/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Gravurwerkzeuge/Gravierstichel--Standard-/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Gravurwerkzeuge/Radienstichel/
+- Face Milling
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/planfraeser-985/Planfraeser/
+- Finishing
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/schlichtfraeser/schlichtfraeser-beschichtet/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/schlichtfraeser/schlichtfraeser-unbeschichtet/
+- Milling
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/3-175----1-8---Fraeser/2-Schneider-ALU/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/3-175----1-8---Fraeser/Sonderlaengen-360/2-Schneider-361/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/Schaftfraeser-ALU-412/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/1-Schneider-Sorotec-PROALU/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/einschneider-sorotec-alu-beschichtet/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/2-schneider/2-schneider-kurz/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/2-schneider/2-schneider-alu-eckradius/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/2-schneider/Schaftfraeser-ALU/
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/RADIENFRAeSER/1-Schneider-PRO/
+- Tapping
+  - https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/Gewindefraeser/
 
 Additional notes:
 
