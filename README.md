@@ -2,16 +2,16 @@
 
 ## Goal
 
-I want a 3-axis CNC mill. I've considered buying one, but everything I can find violates one or more of the following constraints:
+I'd like to have a 3-axis CNC mill. I've considered buying one, but everything I can find violates one or more of the following constraints:
 
 - **Budget:** It's going to be my first CNC mill, so spending a lot of money doesn't make much sense. The main purpose is to learn, and figure out what I actually need in a CNC mill. For that reason, I'd like to keep the budget below 1000€.
 - **Capability:** At the same time, I don't want to buy a machine that I will outgrow within the first week. It should be capable of cutting aluminium.
 - **Space:** I'm severely limited on space. It needs to comfortably fit on a desk.
-- **Environment:** I don't have a proper workshop, unfortunately. The machine will need to run in my apartment, preferably without making my neighbors hate me.
+- **Environment:** I don't have a proper workshop, unfortunately. The machine will need to run in my apartment, preferably without disturbing the neighbors.
 
 There simply doesn't seem to be a machine like this, which is not a surprise. For this reason, I'd like to try and build my own, purpose-made for my use case.
 
-I suspect it might simply be impossible to fulfill all of these requirements within the limited budget. If that is the case, I'm looking forward to learning what the limitations are specifically. I'm also aware that there's a high risk that a self-built machine will fall short in some or all of these areas. I think it's still likely to be a better investment, for the learning experience alone.
+I suspect it might simply be impossible to fulfill all of these requirements within the limited budget. If that is the case, I'm looking forward to learning what the limitations are specifically. I'm also aware that there's a high risk that a self-built machine will fall short in some or all of these areas. I think it's still likely to be a good investment, for the learning experience alone.
 
 
 ## Status
