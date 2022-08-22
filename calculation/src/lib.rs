@@ -37,7 +37,7 @@ fn cnc() -> fj::Shape {
 }
 
 /// Calculate spindle torque in Nm at a given speed in rpm
-pub fn torque_nm(rpm: Rpm) -> f64 {
+pub fn torque_nm(rpm: Rpm) -> Nm {
     let spindle_power_w = 1500.;
 
     // According to Wikipedia, this is how to calculate power from torque:
@@ -51,7 +51,10 @@ pub fn torque_nm(rpm: Rpm) -> f64 {
     let angular_speed = rpm.0 / 60. * 2. * PI;
 
     // Now we can calculate torque, according to the formula above.
-    spindle_power_w / angular_speed
+    Nm(spindle_power_w / angular_speed)
 }
 
 pub struct Rpm(pub f64);
+
+#[derive(Debug)]
+pub struct Nm(pub f64);
