@@ -26,7 +26,7 @@
 use std::f64::consts::PI;
 
 #[fj::model]
-fn cnc() {
+fn cnc() -> fj::Shape {
     dbg!(torque_nm(5000.));
     dbg!(torque_nm(24000.));
 
