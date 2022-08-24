@@ -27,8 +27,10 @@ use std::f64::consts::PI;
 
 #[fj::model]
 fn cnc() -> fj::Shape {
-    dbg!(Spindle.torque(Rpm(5000.)));
-    dbg!(Spindle.torque(Rpm(24000.)));
+    let spindle = Spindle;
+
+    dbg!(spindle.torque(Rpm(5000.)));
+    dbg!(spindle.torque(Rpm(24000.)));
 
     // This is a placeholder. We don't actually need to export geometry right
     // now, but Fornjot won't allow us to have a function that doesn't do that.
