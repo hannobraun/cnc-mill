@@ -32,6 +32,10 @@ fn cnc() -> fj::Shape {
     dbg!(spindle.torque(Spindle::MIN_RPM));
     dbg!(spindle.torque(Spindle::MAX_RPM));
 
+    // TASK: I can test every tool at min and max RPM, but does that make sense?
+    //       Small diameter tools will apply the largest force for a given
+    //       moment, but they will have smaller moments due to higher RPM.
+
     // This is a placeholder. We don't actually need to export geometry right
     // now, but Fornjot won't allow us to have a function that doesn't do that.
     let w = 0.5;
