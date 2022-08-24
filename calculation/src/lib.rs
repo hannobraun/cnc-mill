@@ -43,7 +43,7 @@ pub struct Spindle;
 impl Spindle {
     /// Calculate spindle torque in Nm at a given speed in rpm
     pub fn torque(&self, rpm: Rpm) -> Nm {
-        let spindle_power_w = 1500.;
+        let spindle_power_w = W(1500.);
 
         // According to Wikipedia, this is how to calculate power from torque:
         // power = torque * angular speed
@@ -56,9 +56,11 @@ impl Spindle {
         let angular_speed = rpm.0 / 60. * 2. * PI;
 
         // Now we can calculate torque, according to the formula above.
-        Nm(spindle_power_w / angular_speed)
+        Nm(spindle_power_w.0 / angular_speed)
     }
 }
+
+pub struct W(pub f64);
 
 pub struct Rpm(pub f64);
 
