@@ -123,7 +123,6 @@ impl Tool {
                 length_cutting_edge: 5.0,
                 length_total: 8.0,
             },
-
             // https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/Schaftfraeser-ALU-412/
             Self {
                 diameter: 3.0,
@@ -145,14 +144,12 @@ impl Tool {
                 length_cutting_edge: 26.0,
                 length_total: 110.0,
             },
-
             // https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/1-Schneider-Sorotec-PROALU/
             Self {
                 diameter: 2.0,
                 length_cutting_edge: 8.0,
                 length_total: 50.0,
             },
-
             // https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/einschneider-sorotec-alu-beschichtet/
             Self {
                 diameter: 1.0,
@@ -164,7 +161,6 @@ impl Tool {
                 length_cutting_edge: 5.0,
                 length_total: 40.0,
             },
-
             // https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/2-schneider/Schaftfraeser-ALU/
             Self {
                 diameter: 4.0,
@@ -196,7 +192,6 @@ impl Tool {
                 length_cutting_edge: 32.0,
                 length_total: 74.0,
             },
-
             // https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/RADIENFRAeSER/1-Schneider-PRO/
             Self {
                 diameter: 2.0,
