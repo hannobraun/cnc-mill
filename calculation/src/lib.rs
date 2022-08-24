@@ -27,7 +27,7 @@ use std::f64::consts::PI;
 
 #[fj::model]
 fn cnc() -> fj::Shape {
-    let spindle = Spindle;
+    let spindle = Spindle::new(W(1500.));
 
     dbg!(spindle.torque(Rpm(5000.)));
     dbg!(spindle.torque(Rpm(24000.)));
@@ -38,13 +38,17 @@ fn cnc() -> fj::Shape {
     fj::Sketch::from_points(vec![[-w, -w], [w, -w], [w, w], [-w, w]]).into()
 }
 
-pub struct Spindle;
+pub struct Spindle {
+    power: W,
+}
 
 impl Spindle {
+    pub fn new(power: W) -> Self {
+        Self { power }
+    }
+
     /// Calculate spindle torque in Nm at a given speed in rpm
     pub fn torque(&self, rpm: Rpm) -> Nm {
-        let spindle_power_w = W(1500.);
-
         // According to Wikipedia, this is how to calculate power from torque:
         // power = torque * angular speed
         //
@@ -56,7 +60,7 @@ impl Spindle {
         let angular_speed = rpm.0 / 60. * 2. * PI;
 
         // Now we can calculate torque, according to the formula above.
-        Nm(spindle_power_w.0 / angular_speed)
+        Nm(self.power.0 / angular_speed)
     }
 }
 
