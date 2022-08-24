@@ -29,8 +29,8 @@ use std::f64::consts::PI;
 fn cnc() -> fj::Shape {
     let spindle = Spindle::new(W(1500.));
 
-    dbg!(spindle.torque(Rpm(5000.)));
-    dbg!(spindle.torque(Rpm(24000.)));
+    dbg!(spindle.torque(Spindle::MIN_RPM));
+    dbg!(spindle.torque(Spindle::MAX_RPM));
 
     // This is a placeholder. We don't actually need to export geometry right
     // now, but Fornjot won't allow us to have a function that doesn't do that.
@@ -43,6 +43,9 @@ pub struct Spindle {
 }
 
 impl Spindle {
+    const MIN_RPM: Rpm = Rpm(5000.);
+    const MAX_RPM: Rpm = Rpm(24000.);
+
     pub fn new(power: W) -> Self {
         Self { power }
     }
