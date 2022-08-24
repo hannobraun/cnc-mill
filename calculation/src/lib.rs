@@ -27,8 +27,8 @@ use std::f64::consts::PI;
 
 #[fj::model]
 fn cnc() -> fj::Shape {
-    dbg!(Spindle::torque(Rpm(5000.)));
-    dbg!(Spindle::torque(Rpm(24000.)));
+    dbg!(Spindle.torque(Rpm(5000.)));
+    dbg!(Spindle.torque(Rpm(24000.)));
 
     // This is a placeholder. We don't actually need to export geometry right
     // now, but Fornjot won't allow us to have a function that doesn't do that.
@@ -40,7 +40,7 @@ pub struct Spindle;
 
 impl Spindle {
     /// Calculate spindle torque in Nm at a given speed in rpm
-    pub fn torque(rpm: Rpm) -> Nm {
+    pub fn torque(&self, rpm: Rpm) -> Nm {
         let spindle_power_w = 1500.;
 
         // According to Wikipedia, this is how to calculate power from torque:
