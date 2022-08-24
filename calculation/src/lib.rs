@@ -27,8 +27,8 @@ use std::f64::consts::PI;
 
 #[fj::model]
 fn cnc() -> fj::Shape {
-    dbg!(torque(Rpm(5000.)));
-    dbg!(torque(Rpm(24000.)));
+    dbg!(Spindle::torque(Rpm(5000.)));
+    dbg!(Spindle::torque(Rpm(24000.)));
 
     // This is a placeholder. We don't actually need to export geometry right
     // now, but Fornjot won't allow us to have a function that doesn't do that.
@@ -36,22 +36,26 @@ fn cnc() -> fj::Shape {
     fj::Sketch::from_points(vec![[-w, -w], [w, -w], [w, w], [-w, w]]).into()
 }
 
-/// Calculate spindle torque in Nm at a given speed in rpm
-pub fn torque(rpm: Rpm) -> Nm {
-    let spindle_power_w = 1500.;
+pub struct Spindle;
 
-    // According to Wikipedia, this is how to calculate power from torque:
-    // power = torque * angular speed
-    //
-    // Hence:
-    // torque[Nm] = power[W] / angular speed[rad/s]
-    //
-    // We got the rotational speed in RPM, so let's convert that to angular
-    // speed first.
-    let angular_speed = rpm.0 / 60. * 2. * PI;
+impl Spindle {
+    /// Calculate spindle torque in Nm at a given speed in rpm
+    pub fn torque(rpm: Rpm) -> Nm {
+        let spindle_power_w = 1500.;
 
-    // Now we can calculate torque, according to the formula above.
-    Nm(spindle_power_w / angular_speed)
+        // According to Wikipedia, this is how to calculate power from torque:
+        // power = torque * angular speed
+        //
+        // Hence:
+        // torque[Nm] = power[W] / angular speed[rad/s]
+        //
+        // We got the rotational speed in RPM, so let's convert that to angular
+        // speed first.
+        let angular_speed = rpm.0 / 60. * 2. * PI;
+
+        // Now we can calculate torque, according to the formula above.
+        Nm(spindle_power_w / angular_speed)
+    }
 }
 
 pub struct Rpm(pub f64);
