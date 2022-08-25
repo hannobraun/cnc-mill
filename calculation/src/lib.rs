@@ -71,13 +71,6 @@ impl Spindle {
     }
 }
 
-pub struct W(pub f64);
-
-pub struct Rpm(pub f64);
-
-#[derive(Debug)]
-pub struct Nm(pub f64);
-
 pub struct Tool {
     pub diameter: f64,
     pub length_cutting_edge: f64,
@@ -245,3 +238,10 @@ impl Tool {
         ]
     }
 }
+
+pub struct W(pub f64);
+
+pub struct Rpm(pub f64);
+
+#[derive(Debug)]
+pub struct Nm(pub f64);
