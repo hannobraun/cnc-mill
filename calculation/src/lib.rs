@@ -238,10 +238,12 @@ impl Tool {
         ]
     }
 
-    pub fn desired_rpm(&self, cutting_speed: MperM) -> Rpm {
-        // TASK: Figure out what inputs we actually need to calculate RPM. Can
-        //       we get a desired cutting speed from the combination of tool and
-        //       material?
+    pub fn desired_rpm(&self) -> Rpm {
+        // Cutting speed for aluminium. See this document:
+        // https://www.sorotec.de/webshop/Datenblaetter/fraeser/schnittwerte.pdf
+        let cutting_speed = MperM(500.);
+
+        // Formula for calculating spindle RPM. See same document.
         Rpm(cutting_speed.0 * 1000. / self.diameter / PI)
     }
 }
