@@ -82,6 +82,7 @@ pub struct Tool {
     pub diameter: f64,
     pub length_cutting_edge: f64,
     pub length_total: f64,
+    pub num_flutes: f64,
 }
 
 impl Tool {
@@ -96,126 +97,150 @@ impl Tool {
                 diameter: 0.4,
                 length_cutting_edge: 2.0,
                 length_total: 38.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 0.5,
                 length_cutting_edge: 2.5,
                 length_total: 38.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 0.6,
                 length_cutting_edge: 3.0,
                 length_total: 38.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 1.5,
                 length_cutting_edge: 12.0,
                 length_total: 38.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 1.6,
                 length_cutting_edge: 5.0,
                 length_total: 38.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 1.8,
                 length_cutting_edge: 6.0,
                 length_total: 38.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 2.0,
                 length_cutting_edge: 12.0,
                 length_total: 38.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 2.4,
                 length_cutting_edge: 7.0,
                 length_total: 38.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 2.5,
                 length_cutting_edge: 15.0,
                 length_total: 38.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 3.175,
                 length_cutting_edge: 5.0,
                 length_total: 8.0,
+                num_flutes: 2.,
             },
             // https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/Schaftfraeser-ALU-412/
             Self {
                 diameter: 3.0,
                 length_cutting_edge: 22.0,
                 length_total: 50.0,
+                num_flutes: 1.,
             },
             Self {
                 diameter: 6.0,
                 length_cutting_edge: 26.0,
                 length_total: 68.0,
+                num_flutes: 1.,
             },
             Self {
                 diameter: 6.0,
                 length_cutting_edge: 21.0,
                 length_total: 80.0,
+                num_flutes: 1.,
             },
             Self {
                 diameter: 10.0,
                 length_cutting_edge: 26.0,
                 length_total: 110.0,
+                num_flutes: 1.,
             },
             // https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/1-Schneider-Sorotec-PROALU/
             Self {
                 diameter: 2.0,
                 length_cutting_edge: 8.0,
                 length_total: 50.0,
+                num_flutes: 1.,
             },
             // https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-schneider/einschneider-sorotec-alu-beschichtet/
             Self {
                 diameter: 1.0,
                 length_cutting_edge: 5.0,
                 length_total: 40.0,
+                num_flutes: 1.,
             },
             Self {
                 diameter: 2.0,
                 length_cutting_edge: 5.0,
                 length_total: 40.0,
+                num_flutes: 1.,
             },
             // https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/2-schneider/Schaftfraeser-ALU/
             Self {
                 diameter: 4.0,
                 length_cutting_edge: 21.0,
                 length_total: 70.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 5.0,
                 length_cutting_edge: 30.0,
                 length_total: 75.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 6.0,
                 length_cutting_edge: 30.0,
                 length_total: 75.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 8.0,
                 length_cutting_edge: 40.0,
                 length_total: 100.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 10.0,
                 length_cutting_edge: 40.0,
                 length_total: 100.0,
+                num_flutes: 2.,
             },
             Self {
                 diameter: 12.0,
                 length_cutting_edge: 32.0,
                 length_total: 74.0,
+                num_flutes: 2.,
             },
             // https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/RADIENFRAeSER/1-Schneider-PRO/
             Self {
                 diameter: 2.0,
                 length_cutting_edge: 6.0,
                 length_total: 39.0,
+                num_flutes: 1.,
             },
         ]
     }
