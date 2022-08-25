@@ -30,15 +30,17 @@ fn cnc() -> fj::Shape {
     let spindle = Spindle::new(W(1500.));
     let tools = Tool::tools();
 
-    let max_torque = tools
+    let max_force_n = tools
         .into_iter()
         .map(|tool| {
             let rpm = tool.desired_rpm();
-            spindle.torque(rpm).0
+            let torque = spindle.torque(rpm);
+            let tool_radius_m = tool.diameter / 2. / 1000.;
+            torque.0 / tool_radius_m
         })
         .reduce(f64::max);
 
-    dbg!(max_torque);
+    dbg!(max_force_n);
 
     // This is a placeholder. We don't actually need to export geometry right
     // now, but Fornjot won't allow us to have a function that doesn't do that.
