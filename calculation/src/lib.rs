@@ -237,6 +237,13 @@ impl Tool {
             },
         ]
     }
+
+    pub fn desired_rpm(&self, cutting_speed: MperM) -> Rpm {
+        // TASK: Figure out what inputs we actually need to calculate RPM. Can
+        //       we get a desired cutting speed from the combination of tool and
+        //       material?
+        Rpm(cutting_speed.0 * 1000. / self.diameter / PI)
+    }
 }
 
 pub struct W(pub f64);
@@ -245,3 +252,6 @@ pub struct Rpm(pub f64);
 
 #[derive(Debug)]
 pub struct Nm(pub f64);
+
+/// Meter per minute
+pub struct MperM(pub f64);
