@@ -56,6 +56,8 @@ impl Spindle {
 
     /// Calculate spindle torque in Nm at a given speed in rpm
     pub fn torque(&self, rpm: Rpm) -> Nm {
+        let rpm = rpm.0.min(Self::MAX_RPM.0).max(Self::MIN_RPM.0);
+
         // According to Wikipedia, this is how to calculate power from torque:
         // power = torque * angular speed
         //
@@ -64,7 +66,7 @@ impl Spindle {
         //
         // We got the rotational speed in RPM, so let's convert that to angular
         // speed first.
-        let angular_speed = rpm.0 / 60. * 2. * PI;
+        let angular_speed = rpm / 60. * 2. * PI;
 
         // Now we can calculate torque, according to the formula above.
         Nm(self.power.0 / angular_speed)
