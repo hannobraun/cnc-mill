@@ -263,6 +263,7 @@ List of tools taken into account:
 
 Additional notes:
 
+- https://www.sorotec.de/webshop/Datenblaetter/fraeser/schnittwerte.pdf
 - https://webseite.sorotec.de/download/fraesparameter/schnittwerte_1_8_sv.pdf
 - https://www.sorotec.de/webshop/Datenblaetter/fraeser/fraeser_verwendung_schaftfraeser.png
 - https://webseite.sorotec.de/download/fraesparameter/schnittwerte_planfraeser.pdf
