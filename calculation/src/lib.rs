@@ -28,13 +28,17 @@ use std::f64::consts::PI;
 #[fj::model]
 fn cnc() -> fj::Shape {
     let spindle = Spindle::new(W(1500.));
+    let tools = Tool::tools();
 
-    dbg!(spindle.torque(Spindle::MIN_RPM));
-    dbg!(spindle.torque(Spindle::MAX_RPM));
+    let max_torque = tools
+        .into_iter()
+        .map(|tool| {
+            let rpm = tool.desired_rpm();
+            spindle.torque(rpm).0
+        })
+        .reduce(f64::max);
 
-    // TASK: I can test every tool at min and max RPM, but does that make sense?
-    //       Small diameter tools will apply the largest force for a given
-    //       moment, but they will have smaller moments due to higher RPM.
+    dbg!(max_torque);
 
     // This is a placeholder. We don't actually need to export geometry right
     // now, but Fornjot won't allow us to have a function that doesn't do that.
