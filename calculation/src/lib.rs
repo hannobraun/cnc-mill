@@ -36,6 +36,17 @@ fn cnc() -> fj::Shape {
             let rpm = tool.desired_rpm();
             let torque = spindle.torque(rpm);
             let tool_radius_m = tool.diameter / 2. / 1000.;
+
+            // We now have the spindle torque for the given tool at its desired
+            // RPM. Based on that, we calculate the absolute worst-case
+            // tangential cutting force.
+            //
+            // This is not going to be a realistic value. It doesn't take depth
+            // of cut into account, or really anything else. It's the worst
+            // possible force that the calculated torque could result in.
+            //
+            // I'm not completely sure if this calculation is even right, but it
+            // certainly needs to be refined, to come up with a useful value.
             torque.0 / tool_radius_m
         })
         .reduce(f64::max);
