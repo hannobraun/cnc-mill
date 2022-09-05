@@ -37,6 +37,27 @@ fn cnc() -> fj::Shape {
             let torque = spindle.torque(rpm);
             let tool_radius_m = tool.diameter / 2. / 1000.;
 
+            // This article talks about tangential cutting force:
+            // https://www.ctemag.com/news/articles/understanding-tangential-cutting-force-when-milling
+            //
+            // It gives the following formula; (2) in the article:
+            // Ft = sigma * A * Zc * Ef * Tf
+            //
+            // Ft: tangential cutting force
+            // sigma: ultimate tensile strength (σ)
+            // A: cross-sectional area of the uncut chip
+            // Zc: number of teeth engaged in workpiece
+            // Ef: engagement factor of workpiece material
+            // Tf: cutting tool wear factor
+            //
+            // Wikipedia has an article on ultimate tensile strength:
+            // https://en.wikipedia.org/wiki/Ultimate_tensile_strength
+            //
+            // According to the table in there, this is the value for aluminium:
+            let sigma = 483.; // MPa
+
+            // TASK: Calculate the rest of those quantities.
+
             // We now have the spindle torque for the given tool at its desired
             // RPM. Based on that, we calculate the absolute worst-case
             // tangential cutting force.
