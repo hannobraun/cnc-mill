@@ -55,6 +55,7 @@ fn cnc() -> fj::Shape {
             //
             // According to the table in there, this is the value for aluminium:
             let sigma = 483.; // MPa
+            dbg!(&sigma);
 
             // TASK: Calculate the rest of those quantities.
 
