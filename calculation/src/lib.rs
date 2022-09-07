@@ -57,6 +57,16 @@ fn cnc() -> fj::Shape {
             let sigma = 483.; // MPa
             dbg!(&sigma);
 
+            // The cross-sectional area of the uncut chip depends on axial depth
+            // of cut. There's information about that in this document:
+            // https://www.sorotec.de/webshop/Datenblaetter/fraeser/schnittwerte.pdf
+            //
+            // For our calculation, the side milling case is the worst case, due
+            // to the higher axial depth of cut.
+            let radial_depth_of_cut = tool.length_cutting_edge;
+            let a = radial_depth_of_cut * tool.feed_per_tooth();
+            dbg!(&a);
+
             // TASK: Calculate the rest of those quantities.
 
             // We now have the spindle torque for the given tool at its desired
@@ -288,7 +298,7 @@ impl Tool {
         Rpm(cutting_speed.0 * 1000. / self.diameter / PI)
     }
 
-    pub fn feed_per_tooth(&self) -> MperM {
+    pub fn feed_per_tooth(&self) -> f64 {
         // Based on the table on page 2 of this document:
         // https://www.sorotec.de/webshop/Datenblaetter/fraeser/schnittwerte.pdf
         //
@@ -306,9 +316,7 @@ impl Tool {
         feed_per_tooth.insert(10, 0.080);
         feed_per_tooth.insert(12, 0.100);
 
-        MperM(
-            feed_per_tooth.get(&(self.diameter.ceil() as u8)).unwrap() / 1000.,
-        )
+        feed_per_tooth.get(&(self.diameter.ceil() as u8)).unwrap() / 1000.
     }
 }
 
