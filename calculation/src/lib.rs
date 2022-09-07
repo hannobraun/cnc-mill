@@ -320,18 +320,6 @@ impl Tool {
     }
 }
 
-pub struct Cut {
-    pub depth_radial: f64,
-    pub depth_axial: f64,
-    pub engaged_flutes: f64,
-}
-
-impl Cut {
-    pub fn cross_section(&self) -> f64 {
-        self.depth_radial * self.depth_axial
-    }
-}
-
 pub struct W(pub f64);
 
 pub struct Rpm(pub f64);
