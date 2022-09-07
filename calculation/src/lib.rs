@@ -23,7 +23,7 @@
 //!
 //! [Fornjot]: https://www.fornjot.app/
 
-use std::f64::consts::PI;
+use std::{collections::BTreeMap, f64::consts::PI};
 
 #[fj::model]
 fn cnc() -> fj::Shape {
@@ -286,6 +286,29 @@ impl Tool {
 
         // Formula for calculating spindle RPM. See same document.
         Rpm(cutting_speed.0 * 1000. / self.diameter / PI)
+    }
+
+    pub fn feed_per_tooth(&self) -> MperM {
+        // Based on the table on page 2 of this document:
+        // https://www.sorotec.de/webshop/Datenblaetter/fraeser/schnittwerte.pdf
+        //
+        // There are two rows for aluminium. We're choosing the higher values
+        // here, since those represent the worst case for our calculation.
+
+        let mut feed_per_tooth = BTreeMap::new();
+        feed_per_tooth.insert(1, 0.010);
+        feed_per_tooth.insert(2, 0.020);
+        feed_per_tooth.insert(3, 0.025);
+        feed_per_tooth.insert(4, 0.050);
+        feed_per_tooth.insert(5, 0.050);
+        feed_per_tooth.insert(6, 0.050);
+        feed_per_tooth.insert(8, 0.064);
+        feed_per_tooth.insert(10, 0.080);
+        feed_per_tooth.insert(12, 0.100);
+
+        MperM(
+            feed_per_tooth.get(&(self.diameter.ceil() as u8)).unwrap() / 1000.,
+        )
     }
 }
 
