@@ -278,6 +278,7 @@ Some reference material on how to calculate cutting force:
 
 - [Cutting Forces in Milling](https://www.ame.com/workholding-wisdom-posts/2021/03/01/cutting-forces-in-milling/)
 - [Understanding tangential cutting force when milling](https://www.ctemag.com/news/articles/understanding-tangential-cutting-force-when-milling)
+- [Lots of useful formula for milling](https://www.sandvik.coromant.com/en-gb/knowledge/machining-formulas-definitions/pages/milling.aspx)
 
 From the aforementioned references, I got the following formula for computing tangential cutting force:
 
