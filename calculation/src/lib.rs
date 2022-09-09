@@ -63,8 +63,8 @@ fn cnc() -> fj::Shape {
             //
             // For our calculation, the side milling case is the worst case, due
             // to the higher axial depth of cut.
-            let radial_depth_of_cut = tool.length_cutting_edge;
-            let a = radial_depth_of_cut * tool.feed_per_tooth();
+            let axial_depth_of_cut = tool.length_cutting_edge;
+            let a = axial_depth_of_cut * tool.feed_per_tooth();
             dbg!(&a);
 
             // For the number of engaged teeth, let's just go with the worst
