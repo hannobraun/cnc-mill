@@ -67,6 +67,12 @@ fn cnc() -> fj::Shape {
             let a = radial_depth_of_cut * tool.feed_per_tooth();
             dbg!(&a);
 
+            // For the number of engaged teeth, let's just go with the worst
+            // case: At most, the engagement angle is 180°, and the number of
+            // engaged teeth is half the total number of teeth.
+            let z_c = (tool.num_flutes / 2.).ceil();
+            dbg!(z_c);
+
             // TASK: Calculate the rest of those quantities.
 
             // We now have the spindle torque for the given tool at its desired
