@@ -73,6 +73,16 @@ fn cnc() -> fj::Shape {
             let z_c = (tool.num_flutes / 2.).ceil();
             dbg!(z_c);
 
+            // I don't quite understand what the engagement factor is, but if
+            // I'm reading the article right, it's just the radial depth of cut
+            // divided by cutting diameter.
+            //
+            // Radial depth of cut is supposed to be 25% of the cutter diameter
+            // for the side milling case we're looking at, according to the
+            // Sorotec document linked above.
+            let e_f = 0.25;
+            dbg!(&e_f);
+
             // TASK: Calculate the rest of those quantities.
 
             // We now have the spindle torque for the given tool at its desired
