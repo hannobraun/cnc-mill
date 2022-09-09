@@ -143,6 +143,7 @@ impl Spindle {
     }
 }
 
+#[derive(Debug)]
 pub struct Tool {
     pub diameter: f64,
     pub length_cutting_edge: f64,
