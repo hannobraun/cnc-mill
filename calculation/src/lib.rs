@@ -83,6 +83,11 @@ fn cnc() -> fj::Shape {
             let e_f = 0.25;
             dbg!(&e_f);
 
+            // As for cutting tool wear factor, I might be misunderstanding the
+            // article, but I think the following should be a good worst case.
+            let t_f = 1.6;
+            dbg!(&t_f);
+
             // TASK: Calculate the rest of those quantities.
 
             // We now have the spindle torque for the given tool at its desired
