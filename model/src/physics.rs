@@ -22,6 +22,7 @@ impl Diameter {
 }
 
 /// A force
+#[derive(Debug)]
 pub struct Force(f64);
 
 impl Force {
