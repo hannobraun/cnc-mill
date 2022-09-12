@@ -37,8 +37,8 @@ impl Force {
     }
 
     /// Compute the torque resulting from this force at the given radius
-    pub fn to_torque(&self, radius: Radius) -> Torque {
-        let torque_nm = self.value_n() * radius.to_length().value_m();
+    pub fn to_torque(&self, radius: impl Into<Radius>) -> Torque {
+        let torque_nm = self.value_n() * radius.into().to_length().value_m();
         Torque::from_value_nm(torque_nm)
     }
 }
@@ -90,6 +90,12 @@ impl Radius {
     /// Convert this radius into a `Length`
     pub fn to_length(&self) -> Length {
         self.0
+    }
+}
+
+impl From<Diameter> for Radius {
+    fn from(diameter: Diameter) -> Self {
+        diameter.to_radius()
     }
 }
 
