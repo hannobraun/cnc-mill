@@ -100,6 +100,7 @@ impl From<Diameter> for Radius {
 }
 
 /// A torque
+#[derive(PartialEq, PartialOrd)]
 pub struct Torque(f64);
 
 impl Torque {
