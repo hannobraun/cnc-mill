@@ -99,11 +99,17 @@ fn cnc() -> fj::Shape {
                 println!(
                     "Tangential cutting force: {tangential_cutting_force:.2} N"
                 );
+
+                return TangentialCuttingForce::PerMaxSpindleTorque(
+                    spindle_torque.0 / tool_radius_m,
+                );
             }
 
-            tangential_cutting_force
+            TangentialCuttingForce::PerToolRequirements(
+                tangential_cutting_force,
+            )
         })
-        .reduce(f64::max);
+        .reduce(|a, b| if a > b { a } else { b });
 
     dbg!(max_force_n);
 
@@ -340,6 +346,33 @@ impl Tool {
         feed_per_tooth.insert(12, 0.100);
 
         feed_per_tooth.get(&(self.diameter.ceil() as u8)).unwrap() / 1000.
+    }
+}
+
+#[derive(Clone, Copy, Debug)]
+pub enum TangentialCuttingForce {
+    PerToolRequirements(f64),
+    PerMaxSpindleTorque(f64),
+}
+
+impl TangentialCuttingForce {
+    fn value(self) -> f64 {
+        match self {
+            TangentialCuttingForce::PerToolRequirements(value) => value,
+            TangentialCuttingForce::PerMaxSpindleTorque(value) => value,
+        }
+    }
+}
+
+impl PartialEq for TangentialCuttingForce {
+    fn eq(&self, other: &Self) -> bool {
+        self.value().eq(&other.value())
+    }
+}
+
+impl PartialOrd for TangentialCuttingForce {
+    fn partial_cmp(&self, other: &Self) -> Option<std::cmp::Ordering> {
+        self.value().partial_cmp(&other.value())
     }
 }
 
