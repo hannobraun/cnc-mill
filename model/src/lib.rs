@@ -25,7 +25,7 @@
 
 mod physics;
 
-use std::{collections::BTreeMap, f64::consts::PI};
+use std::{collections::BTreeMap, f64::consts::PI, fmt};
 
 use physics::{Diameter, Length, Torque};
 
@@ -114,9 +114,10 @@ fn cnc() -> fj::Shape {
                 tangential_cutting_force,
             )
         })
-        .reduce(|a, b| if a > b { a } else { b });
+        .reduce(|a, b| if a > b { a } else { b })
+        .unwrap();
 
-    dbg!(max_force_n);
+    println!("Maximum tangential cutting force: {}", max_force_n);
 
     // This is a placeholder. We don't actually need to export geometry right
     // now, but Fornjot won't allow us to have a function that doesn't do that.
@@ -414,6 +415,23 @@ impl PartialEq for TangentialCuttingForce {
 impl PartialOrd for TangentialCuttingForce {
     fn partial_cmp(&self, other: &Self) -> Option<std::cmp::Ordering> {
         self.value().partial_cmp(&other.value())
+    }
+}
+
+impl fmt::Display for TangentialCuttingForce {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{} ", self.value())?;
+
+        match self {
+            TangentialCuttingForce::PerToolRequirements(_) => {
+                write!(f, "(per tool requirements)")?
+            }
+            TangentialCuttingForce::PerMaxSpindleTorque(_) => {
+                write!(f, "(limited by max spindle torque)")?
+            }
+        }
+
+        Ok(())
     }
 }
 
