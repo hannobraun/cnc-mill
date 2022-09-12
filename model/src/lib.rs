@@ -36,7 +36,7 @@ fn cnc() -> fj::Shape {
     let spindle = Spindle::new(W(1500.));
     let tools = Tool::tools();
 
-    let max_force_n = tools
+    let max_force = tools
         .into_iter()
         .map(|tool| {
             let spindle_torque = spindle.torque(tool.desired_rpm());
@@ -117,7 +117,7 @@ fn cnc() -> fj::Shape {
         .reduce(|a, b| if a > b { a } else { b })
         .unwrap();
 
-    println!("Maximum tangential cutting force: {}", max_force_n);
+    println!("Maximum tangential cutting force: {}", max_force);
 
     // This is a placeholder. We don't actually need to export geometry right
     // now, but Fornjot won't allow us to have a function that doesn't do that.
