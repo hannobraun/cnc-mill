@@ -14,6 +14,11 @@ impl Diameter {
     pub fn to_length(&self) -> Length {
         self.0
     }
+
+    /// Convert this diameter into a `Radius`
+    pub fn to_radius(&self) -> Radius {
+        Radius::from_length(self.to_length() / 2.)
+    }
 }
 
 /// A force
@@ -62,5 +67,20 @@ impl Div<f64> for Length {
 
     fn div(self, rhs: f64) -> Self::Output {
         Self(self.0 / rhs)
+    }
+}
+
+/// A radius
+pub struct Radius(Length);
+
+impl Radius {
+    /// Create an instance of `Radius` from a `Length`
+    pub fn from_length(length: Length) -> Self {
+        Self(length)
+    }
+
+    /// Convert this radius into a `Length`
+    pub fn to_length(&self) -> Length {
+        self.0
     }
 }
