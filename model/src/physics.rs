@@ -14,7 +14,7 @@ impl Force {
 }
 
 /// A length
-#[derive(Debug)]
+#[derive(Clone, Copy, Debug)]
 pub struct Length(f64);
 
 impl Length {
