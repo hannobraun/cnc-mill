@@ -43,6 +43,12 @@ impl Force {
     }
 }
 
+impl fmt::Display for Force {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{:.2} N", self.value_n())
+    }
+}
+
 /// A length
 #[derive(Clone, Copy, Debug)]
 pub struct Length(f64);

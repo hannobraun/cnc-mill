@@ -101,10 +101,8 @@ fn cnc() -> fj::Shape {
                     torque ({spindle_torque})!",
                 );
                 println!("Tool: {tool:#?}");
-                let tangential_cutting_force =
-                    tangential_cutting_force.value_n();
                 println!(
-                    "Tangential cutting force: {tangential_cutting_force:.2} N"
+                    "Tangential cutting force: {tangential_cutting_force}"
                 );
 
                 let tool_radius_m = tool.diameter.to_radius();
