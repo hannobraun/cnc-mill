@@ -33,8 +33,7 @@ fn cnc() -> fj::Shape {
     let max_force_n = tools
         .into_iter()
         .map(|tool| {
-            let rpm = tool.desired_rpm();
-            let torque = spindle.torque(rpm);
+            let torque = spindle.torque(tool.desired_rpm());
             let tool_radius_m = tool.diameter / 2. / 1000.;
 
             // This article talks about tangential cutting force:
