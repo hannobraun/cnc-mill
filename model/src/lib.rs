@@ -67,7 +67,7 @@ fn cnc() -> fj::Shape {
             // For our calculation, the side milling case is the worst case, due
             // to the higher axial depth of cut.
             let axial_depth_of_cut = tool.length_cutting_edge.value_m();
-            let a = axial_depth_of_cut * tool.feed_per_tooth();
+            let a = axial_depth_of_cut * tool.feed_per_tooth().value_m();
 
             // For the number of engaged teeth, let's just go with the worst
             // case: At most, the engagement angle is 180°, and the number of
@@ -367,7 +367,7 @@ impl Tool {
         Rpm(cutting_speed.0 / self.diameter.to_length().value_m() / PI)
     }
 
-    pub fn feed_per_tooth(&self) -> f64 {
+    pub fn feed_per_tooth(&self) -> Length {
         // Based on the table on page 2 of this document:
         // https://www.sorotec.de/webshop/Datenblaetter/fraeser/schnittwerte.pdf
         //
@@ -385,9 +385,11 @@ impl Tool {
         feed_per_tooth.insert(10, 0.080);
         feed_per_tooth.insert(12, 0.100);
 
-        *feed_per_tooth
+        let length_mm = *feed_per_tooth
             .get(&(self.diameter.to_length().value_mm().ceil() as u8))
-            .unwrap()
+            .unwrap();
+
+        Length::from_value_mm(length_mm)
     }
 }
 
