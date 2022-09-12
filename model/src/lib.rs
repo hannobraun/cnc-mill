@@ -23,7 +23,11 @@
 //!
 //! [Fornjot]: https://www.fornjot.app/
 
+mod physics;
+
 use std::{collections::BTreeMap, f64::consts::PI};
+
+use crate::physics::Force;
 
 #[fj::model]
 fn cnc() -> fj::Shape {
@@ -83,11 +87,13 @@ fn cnc() -> fj::Shape {
 
             // Now put it all together to calculate the tangential cutting
             // force.
-            let tangential_cutting_force = sigma * a * z_c * e_f * t_f;
+            let tangential_cutting_force =
+                Force::from_value_n(sigma * a * z_c * e_f * t_f);
 
             // Also figure out the torque that would require, and make sure it's
             // below the torque that the spindle can deliver.
             let tool_radius_m = tool.diameter / 2. / 1000.;
+            let tangential_cutting_force = tangential_cutting_force.value_n();
             let torque = tangential_cutting_force * tool_radius_m;
             if torque > spindle_torque.0 {
                 println!(
