@@ -119,6 +119,12 @@ impl Torque {
     pub fn value_nm(&self) -> f64 {
         self.0
     }
+
+    /// Compute the force resulting from this torque at the given radius
+    pub fn to_force(&self, radius: impl Into<Radius>) -> Force {
+        let force_n = self.value_nm() / radius.into().to_length().value_m();
+        Force::from_value_n(force_n)
+    }
 }
 
 impl fmt::Display for Torque {

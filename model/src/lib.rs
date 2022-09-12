@@ -105,10 +105,8 @@ fn cnc() -> fj::Shape {
                     "Tangential cutting force: {tangential_cutting_force}"
                 );
 
-                let tool_radius_m = tool.diameter.to_radius();
                 return TangentialCuttingForce::PerMaxSpindleTorque(
-                    spindle_torque.value_nm()
-                        / tool_radius_m.to_length().value_m(),
+                    spindle_torque.to_force(tool.diameter).value_n(),
                 );
             }
 
