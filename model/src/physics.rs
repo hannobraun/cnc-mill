@@ -1,4 +1,4 @@
-use std::ops::Div;
+use std::{fmt, ops::Div};
 
 /// A diameter
 #[derive(Clone, Copy, Debug)]
@@ -112,5 +112,11 @@ impl Torque {
     /// Return the value in Nm
     pub fn value_nm(&self) -> f64 {
         self.0
+    }
+}
+
+impl fmt::Display for Torque {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{:.2} Nm", self.value_nm())
     }
 }
