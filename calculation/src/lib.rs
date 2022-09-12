@@ -34,7 +34,6 @@ fn cnc() -> fj::Shape {
         .into_iter()
         .map(|tool| {
             let spindle_torque = spindle.torque(tool.desired_rpm());
-            let tool_radius_m = tool.diameter / 2. / 1000.;
 
             // This article talks about tangential cutting force:
             // https://www.ctemag.com/news/articles/understanding-tangential-cutting-force-when-milling
@@ -53,8 +52,7 @@ fn cnc() -> fj::Shape {
             // https://en.wikipedia.org/wiki/Ultimate_tensile_strength
             //
             // According to the table in there, this is the value for aluminium:
-            let sigma = 483.; // MPa
-            dbg!(&sigma);
+            let sigma = 483_000_000.; // Pascal
 
             // The cross-sectional area of the uncut chip depends on axial depth
             // of cut. There's information about that in this document:
@@ -62,15 +60,13 @@ fn cnc() -> fj::Shape {
             //
             // For our calculation, the side milling case is the worst case, due
             // to the higher axial depth of cut.
-            let axial_depth_of_cut = tool.length_cutting_edge;
+            let axial_depth_of_cut = tool.length_cutting_edge / 1000.; // meter
             let a = axial_depth_of_cut * tool.feed_per_tooth();
-            dbg!(&a);
 
             // For the number of engaged teeth, let's just go with the worst
             // case: At most, the engagement angle is 180°, and the number of
             // engaged teeth is half the total number of teeth.
             let z_c = (tool.num_flutes / 2.).ceil();
-            dbg!(z_c);
 
             // I don't quite understand what the engagement factor is, but if
             // I'm reading the article right, it's just the radial depth of cut
@@ -80,26 +76,32 @@ fn cnc() -> fj::Shape {
             // for the side milling case we're looking at, according to the
             // Sorotec document linked above.
             let e_f = 0.25;
-            dbg!(&e_f);
 
             // As for cutting tool wear factor, I might be misunderstanding the
             // article, but I think the following should be a good worst case.
             let t_f = 1.6;
-            dbg!(&t_f);
 
-            // TASK: Calculate the rest of those quantities.
+            // Now put it all together to calculate the tangential cutting
+            // force.
+            let tangential_cutting_force = sigma * a * z_c * e_f * t_f;
 
-            // We now have the spindle torque for the given tool at its desired
-            // RPM. Based on that, we calculate the absolute worst-case
-            // tangential cutting force.
-            //
-            // This is not going to be a realistic value. It doesn't take depth
-            // of cut into account, or really anything else. It's the worst
-            // possible force that the calculated torque could result in.
-            //
-            // I'm not completely sure if this calculation is even right, but it
-            // certainly needs to be refined, to come up with a useful value.
-            spindle_torque.0 / tool_radius_m
+            // Also figure out the torque that would require, and make sure it's
+            // below the torque that the spindle can deliver.
+            let tool_radius_m = tool.diameter / 2. / 1000.;
+            let torque = tangential_cutting_force * tool_radius_m;
+            if torque > spindle_torque.0 {
+                println!(
+                    "Required torque ({torque:.2} Nm) is larger than spindle \
+                    torque ({:.2} Nm)!",
+                    spindle_torque.0,
+                );
+                println!("Tool: {tool:#?}");
+                println!(
+                    "Tangential cutting force: {tangential_cutting_force:.2} N"
+                );
+            }
+
+            tangential_cutting_force
         })
         .reduce(f64::max);
 
