@@ -1,7 +1,7 @@
 use std::ops::Div;
 
 /// A diameter
-#[derive(Debug)]
+#[derive(Clone, Copy, Debug)]
 pub struct Diameter(Length);
 
 impl Diameter {
