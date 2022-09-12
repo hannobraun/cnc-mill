@@ -1,7 +1,7 @@
 use std::{fmt, ops::Div};
 
 /// A diameter
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, PartialEq, PartialOrd)]
 pub struct Diameter(Length);
 
 impl Diameter {
@@ -22,7 +22,7 @@ impl Diameter {
 }
 
 /// A force
-#[derive(Debug)]
+#[derive(Clone, Copy, Debug, PartialEq, PartialOrd)]
 pub struct Force(f64);
 
 impl Force {
@@ -50,7 +50,7 @@ impl fmt::Display for Force {
 }
 
 /// A length
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, PartialEq, PartialOrd)]
 pub struct Length(f64);
 
 impl Length {

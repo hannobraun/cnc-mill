@@ -106,11 +106,10 @@ fn cnc() -> fj::Shape {
                 );
 
                 return TangentialCuttingForce::PerMaxSpindleTorque(
-                    spindle_torque.to_force(tool.diameter).value_n(),
+                    spindle_torque.to_force(tool.diameter),
                 );
             }
 
-            let tangential_cutting_force = tangential_cutting_force.value_n();
             TangentialCuttingForce::PerToolRequirements(
                 tangential_cutting_force,
             )
@@ -393,12 +392,12 @@ impl Tool {
 
 #[derive(Clone, Copy, Debug)]
 pub enum TangentialCuttingForce {
-    PerToolRequirements(f64),
-    PerMaxSpindleTorque(f64),
+    PerToolRequirements(Force),
+    PerMaxSpindleTorque(Force),
 }
 
 impl TangentialCuttingForce {
-    fn value(self) -> f64 {
+    fn value(self) -> Force {
         match self {
             TangentialCuttingForce::PerToolRequirements(value) => value,
             TangentialCuttingForce::PerMaxSpindleTorque(value) => value,
