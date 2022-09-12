@@ -1,3 +1,5 @@
+use std::ops::Div;
+
 /// A diameter
 #[derive(Debug)]
 pub struct Diameter(Length);
@@ -52,5 +54,13 @@ impl Length {
     /// Return the value in millimeter
     pub fn value_mm(&self) -> f64 {
         self.0 * 1000.
+    }
+}
+
+impl Div<f64> for Length {
+    type Output = Self;
+
+    fn div(self, rhs: f64) -> Self::Output {
+        Self(self.0 / rhs)
     }
 }
