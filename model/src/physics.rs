@@ -85,3 +85,18 @@ impl Radius {
         self.0
     }
 }
+
+/// A torque
+pub struct Torque(f64);
+
+impl Torque {
+    /// Create an instance of `Torque` from a value in Nm
+    pub fn from_value_nm(torque_nm: f64) -> Self {
+        Self(torque_nm)
+    }
+
+    /// Return the value in Nm
+    pub fn value_nm(&self) -> f64 {
+        self.0
+    }
+}

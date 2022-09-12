@@ -27,7 +27,7 @@ mod physics;
 
 use std::{collections::BTreeMap, f64::consts::PI};
 
-use physics::{Diameter, Length};
+use physics::{Diameter, Length, Torque};
 
 use crate::physics::Force;
 
@@ -97,11 +97,11 @@ fn cnc() -> fj::Shape {
             let tool_radius_m = tool.diameter.to_length().value_m() / 2.;
             let tangential_cutting_force = tangential_cutting_force.value_n();
             let torque = tangential_cutting_force * tool_radius_m;
-            if torque > spindle_torque.0 {
+            if torque > spindle_torque.value_nm() {
                 println!(
                     "Required torque ({torque:.2} Nm) is larger than spindle \
                     torque ({:.2} Nm)!",
-                    spindle_torque.0,
+                    spindle_torque.value_nm(),
                 );
                 println!("Tool: {tool:#?}");
                 println!(
@@ -109,7 +109,7 @@ fn cnc() -> fj::Shape {
                 );
 
                 return TangentialCuttingForce::PerMaxSpindleTorque(
-                    spindle_torque.0 / tool_radius_m,
+                    spindle_torque.value_nm() / tool_radius_m,
                 );
             }
 
@@ -140,7 +140,7 @@ impl Spindle {
     }
 
     /// Calculate spindle torque in Nm at a given speed in rpm
-    pub fn torque(&self, rpm: Rpm) -> Nm {
+    pub fn torque(&self, rpm: Rpm) -> Torque {
         let rpm = rpm.0.min(Self::MAX_RPM.0).max(Self::MIN_RPM.0);
 
         // According to Wikipedia, this is how to calculate power from torque:
@@ -154,7 +154,7 @@ impl Spindle {
         let angular_speed = rpm / 60. * 2. * PI;
 
         // Now we can calculate torque, according to the formula above.
-        Nm(self.power.0 / angular_speed)
+        Torque::from_value_nm(self.power.0 / angular_speed)
     }
 }
 
@@ -423,9 +423,6 @@ impl PartialOrd for TangentialCuttingForce {
 pub struct W(pub f64);
 
 pub struct Rpm(pub f64);
-
-#[derive(Debug)]
-pub struct Nm(pub f64);
 
 /// Meter per minute
 pub struct MperM(pub f64);
