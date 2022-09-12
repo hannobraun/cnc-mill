@@ -170,7 +170,29 @@ impl Tool {
         // to find combinations of the smallest diameter and longest length. See
         // research notes.
 
-        vec![
+        macro_rules! tools {
+            ($(
+                Self {
+                    diameter: $diameter:expr,
+                    length_cutting_edge: $length_cutting_edge:expr,
+                    length_total: $length_total:expr,
+                    num_flutes: $num_flutes:expr,
+                },
+            )*) => {
+                vec![
+                    $(
+                        Self {
+                            diameter: $diameter,
+                            length_cutting_edge: $length_cutting_edge,
+                            length_total: $length_total,
+                            num_flutes: $num_flutes,
+                        },
+                    )*
+                ]
+            };
+        }
+
+        tools![
             // https://www.sorotec.de/shop/Zerspanungswerkzeuge/sorotec-werkzeuge/1-8-werkzeuge/3-175----1-8---Fraeser/2-Schneider-ALU/
             Self {
                 diameter: 0.4,
