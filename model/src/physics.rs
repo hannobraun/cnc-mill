@@ -72,6 +72,7 @@ impl Div<f64> for Length {
 }
 
 /// A radius
+#[derive(Clone, Copy)]
 pub struct Radius(Length);
 
 impl Radius {
