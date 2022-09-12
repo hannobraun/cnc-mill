@@ -27,6 +27,8 @@ mod physics;
 
 use std::{collections::BTreeMap, f64::consts::PI};
 
+use physics::Length;
+
 use crate::physics::Force;
 
 #[fj::model]
@@ -64,7 +66,7 @@ fn cnc() -> fj::Shape {
             //
             // For our calculation, the side milling case is the worst case, due
             // to the higher axial depth of cut.
-            let axial_depth_of_cut = tool.length_cutting_edge / 1000.; // meter
+            let axial_depth_of_cut = tool.length_cutting_edge.value_m();
             let a = axial_depth_of_cut * tool.feed_per_tooth();
 
             // For the number of engaged teeth, let's just go with the worst
@@ -159,8 +161,8 @@ impl Spindle {
 #[derive(Debug)]
 pub struct Tool {
     pub diameter: f64,
-    pub length_cutting_edge: f64,
-    pub length_total: f64,
+    pub length_cutting_edge: Length,
+    pub length_total: Length,
     pub num_flutes: f64,
 }
 
@@ -181,11 +183,18 @@ impl Tool {
             )*) => {
                 vec![
                     $(
-                        Self {
-                            diameter: $diameter,
-                            length_cutting_edge: $length_cutting_edge,
-                            length_total: $length_total,
-                            num_flutes: $num_flutes,
+                        {
+                            let length_cutting_edge =
+                                Length::from_value_mm($length_cutting_edge);
+                            let length_total =
+                                Length::from_value_mm($length_total);
+
+                            Self {
+                                diameter: $diameter,
+                                length_cutting_edge,
+                                length_total,
+                                num_flutes: $num_flutes,
+                            }
                         },
                     )*
                 ]
