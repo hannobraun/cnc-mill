@@ -33,10 +33,10 @@ use crate::physics::Force;
 
 #[fj::model]
 fn cnc() -> fj::Shape {
-    let spindle = Spindle::new(W(1500.));
+    let spindle = Spindle::new(W(2200.));
     let tools = Tool::tools();
 
-    let max_force = tools
+    let (max_force, tool) = tools
         .into_iter()
         .map(|tool| {
             let spindle_torque = spindle.torque(tool.desired_rpm());
@@ -105,19 +105,26 @@ fn cnc() -> fj::Shape {
                     "Tangential cutting force: {tangential_cutting_force}"
                 );
 
-                return TangentialCuttingForce::PerMaxSpindleTorque(
-                    spindle_torque.to_force(tool.diameter),
+                return (
+                    TangentialCuttingForce::PerMaxSpindleTorque(
+                        spindle_torque.to_force(tool.diameter),
+                    ),
+                    tool,
                 );
             }
 
-            TangentialCuttingForce::PerToolRequirements(
-                tangential_cutting_force,
+            (
+                TangentialCuttingForce::PerToolRequirements(
+                    tangential_cutting_force,
+                ),
+                tool,
             )
         })
-        .reduce(|a, b| if a > b { a } else { b })
+        .reduce(|a, b| if a.0 > b.0 { a } else { b })
         .unwrap();
 
     println!("Maximum tangential cutting force: {}", max_force);
+    println!("Tool: {tool:#?}");
 
     // This is a placeholder. We don't actually need to export geometry right
     // now, but Fornjot won't allow us to have a function that doesn't do that.
