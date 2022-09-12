@@ -27,7 +27,7 @@ mod physics;
 
 use std::{collections::BTreeMap, f64::consts::PI};
 
-use physics::Length;
+use physics::{Diameter, Length};
 
 use crate::physics::Force;
 
@@ -94,7 +94,7 @@ fn cnc() -> fj::Shape {
 
             // Also figure out the torque that would require, and make sure it's
             // below the torque that the spindle can deliver.
-            let tool_radius_m = tool.diameter / 2. / 1000.;
+            let tool_radius_m = tool.diameter.to_length().value_m() / 2.;
             let tangential_cutting_force = tangential_cutting_force.value_n();
             let torque = tangential_cutting_force * tool_radius_m;
             if torque > spindle_torque.0 {
@@ -160,7 +160,7 @@ impl Spindle {
 
 #[derive(Debug)]
 pub struct Tool {
-    pub diameter: f64,
+    pub diameter: Diameter,
     pub length_cutting_edge: Length,
     pub length_total: Length,
     pub num_flutes: f64,
@@ -184,13 +184,16 @@ impl Tool {
                 vec![
                     $(
                         {
+                            let diameter = Diameter::from_length(
+                                Length::from_value_mm($diameter),
+                            );
                             let length_cutting_edge =
                                 Length::from_value_mm($length_cutting_edge);
                             let length_total =
                                 Length::from_value_mm($length_total);
 
                             Self {
-                                diameter: $diameter,
+                                diameter,
                                 length_cutting_edge,
                                 length_total,
                                 num_flutes: $num_flutes,
@@ -361,7 +364,7 @@ impl Tool {
         let cutting_speed = MperM(500.);
 
         // Formula for calculating spindle RPM. See same document.
-        Rpm(cutting_speed.0 * 1000. / self.diameter / PI)
+        Rpm(cutting_speed.0 / self.diameter.to_length().value_m() / PI)
     }
 
     pub fn feed_per_tooth(&self) -> f64 {
@@ -382,7 +385,9 @@ impl Tool {
         feed_per_tooth.insert(10, 0.080);
         feed_per_tooth.insert(12, 0.100);
 
-        feed_per_tooth.get(&(self.diameter.ceil() as u8)).unwrap() / 1000.
+        *feed_per_tooth
+            .get(&(self.diameter.to_length().value_mm().ceil() as u8))
+            .unwrap()
     }
 }
 

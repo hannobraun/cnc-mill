@@ -1,3 +1,19 @@
+/// A diameter
+#[derive(Debug)]
+pub struct Diameter(Length);
+
+impl Diameter {
+    /// Create an instance of `Diameter` from a `Length`
+    pub fn from_length(length: Length) -> Self {
+        Self(length)
+    }
+
+    /// Convert this diameter into a `Length`
+    pub fn to_length(&self) -> Length {
+        self.0
+    }
+}
+
 /// A force
 pub struct Force(f64);
 
@@ -31,5 +47,10 @@ impl Length {
     /// Return the value in meter
     pub fn value_m(&self) -> f64 {
         self.0
+    }
+
+    /// Return the value in millimeter
+    pub fn value_mm(&self) -> f64 {
+        self.0 * 1000.
     }
 }
