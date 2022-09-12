@@ -94,9 +94,10 @@ fn cnc() -> fj::Shape {
 
             // Also figure out the torque that would require, and make sure it's
             // below the torque that the spindle can deliver.
-            let tool_radius_m = tool.diameter.to_length().value_m() / 2.;
+            let tool_radius_m = tool.diameter.to_radius();
             let tangential_cutting_force = tangential_cutting_force.value_n();
-            let torque = tangential_cutting_force * tool_radius_m;
+            let torque =
+                tangential_cutting_force * tool_radius_m.to_length().value_m();
             if torque > spindle_torque.value_nm() {
                 println!(
                     "Required torque ({torque:.2} Nm) is larger than spindle \
@@ -109,7 +110,8 @@ fn cnc() -> fj::Shape {
                 );
 
                 return TangentialCuttingForce::PerMaxSpindleTorque(
-                    spindle_torque.value_nm() / tool_radius_m,
+                    spindle_torque.value_nm()
+                        / tool_radius_m.to_length().value_m(),
                 );
             }
 
