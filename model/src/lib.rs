@@ -149,18 +149,10 @@ impl Spindle {
         let rotational_speed =
             rotational_speed.clamp(Self::MIN_RPM, Self::MAX_RPM);
 
-        // According to Wikipedia, this is how to calculate power from torque:
-        // power = torque * angular speed
-        //
-        // Hence:
-        // torque[Nm] = power[W] / angular speed[rad/s]
-        //
-        // We got the rotational speed in RPM, so let's convert that to angular
-        // speed first.
-        let angular_speed = rotational_speed.value_rpm() / 60. * 2. * PI;
-
         // Now we can calculate torque, according to the formula above.
-        Torque::from_value_nm(self.power.value_w() / angular_speed)
+        Torque::from_value_nm(
+            self.power.value_w() / rotational_speed.value_rad_per_s(),
+        )
     }
 }
 
