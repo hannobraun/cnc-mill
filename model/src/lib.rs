@@ -39,8 +39,7 @@ fn cnc() -> fj::Shape {
     let (max_force, tool) = tools
         .into_iter()
         .map(|tool| {
-            let spindle_torque = spindle
-                .torque(RotationalSpeed::from_value_rpm(tool.desired_rpm().0));
+            let spindle_torque = spindle.torque(tool.desired_rpm());
 
             // This article talks about tangential cutting force:
             // https://www.ctemag.com/news/articles/understanding-tangential-cutting-force-when-milling
@@ -365,13 +364,15 @@ impl Tool {
         ]
     }
 
-    pub fn desired_rpm(&self) -> Rpm {
+    pub fn desired_rpm(&self) -> RotationalSpeed {
         // Cutting speed for aluminium. See this document:
         // https://www.sorotec.de/webshop/Datenblaetter/fraeser/schnittwerte.pdf
         let cutting_speed = MperM(500.);
 
         // Formula for calculating spindle RPM. See same document.
-        Rpm(cutting_speed.0 / self.diameter.to_length().value_m() / PI)
+        RotationalSpeed::from_value_rpm(
+            cutting_speed.0 / self.diameter.to_length().value_m() / PI,
+        )
     }
 
     pub fn feed_per_tooth(&self) -> Length {
