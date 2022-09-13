@@ -379,16 +379,35 @@ impl Tool {
         // There are two rows for aluminium. We're choosing the higher values
         // here, since those represent the worst case for our calculation.
 
-        let mut feed_per_tooth = BTreeMap::new();
-        feed_per_tooth.insert(1, 0.010);
-        feed_per_tooth.insert(2, 0.020);
-        feed_per_tooth.insert(3, 0.025);
-        feed_per_tooth.insert(4, 0.050);
-        feed_per_tooth.insert(5, 0.050);
-        feed_per_tooth.insert(6, 0.050);
-        feed_per_tooth.insert(8, 0.064);
-        feed_per_tooth.insert(10, 0.080);
-        feed_per_tooth.insert(12, 0.100);
+        macro_rules! table {
+            (
+                $(
+                    $diameter:expr, $feed_per_tooth_mm:expr;
+                )*
+            ) => {
+                {
+                    let mut feed_per_tooth = BTreeMap::new();
+
+                    $(
+                        feed_per_tooth.insert($diameter, $feed_per_tooth_mm);
+                    )*
+
+                    feed_per_tooth
+                }
+            };
+        }
+
+        let feed_per_tooth = table!(
+            1, 0.010;
+            2, 0.020;
+            3, 0.025;
+            4, 0.050;
+            5, 0.050;
+            6, 0.050;
+            8, 0.064;
+            10, 0.080;
+            12, 0.100;
+        );
 
         let length_mm = *feed_per_tooth
             .get(&(self.diameter.to_length().value_mm().ceil() as u8))
