@@ -27,13 +27,13 @@ mod physics;
 
 use std::{collections::BTreeMap, f64::consts::PI, fmt};
 
-use physics::{Diameter, Length, Torque};
+use physics::{Diameter, Length, Power, Torque};
 
 use crate::physics::Force;
 
 #[fj::model]
 fn cnc() -> fj::Shape {
-    let spindle = Spindle::new(W(1500.));
+    let spindle = Spindle::new(Power::from_value_kw(1.5));
     let tools = Tool::tools();
 
     let (max_force, tool) = tools
@@ -133,14 +133,14 @@ fn cnc() -> fj::Shape {
 }
 
 pub struct Spindle {
-    power: W,
+    power: Power,
 }
 
 impl Spindle {
     const MIN_RPM: Rpm = Rpm(5000.);
     const MAX_RPM: Rpm = Rpm(24000.);
 
-    pub fn new(power: W) -> Self {
+    pub fn new(power: Power) -> Self {
         Self { power }
     }
 
@@ -159,7 +159,7 @@ impl Spindle {
         let angular_speed = rpm / 60. * 2. * PI;
 
         // Now we can calculate torque, according to the formula above.
-        Torque::from_value_nm(self.power.0 / angular_speed)
+        Torque::from_value_nm(self.power.value_w() / angular_speed)
     }
 }
 

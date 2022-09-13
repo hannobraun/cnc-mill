@@ -83,6 +83,23 @@ impl Div<f64> for Length {
     }
 }
 
+/// A power value
+pub struct Power(f64);
+
+impl Power {
+    pub fn from_value_w(power_w: f64) -> Self {
+        Self(power_w)
+    }
+
+    pub fn from_value_kw(power_kw: f64) -> Self {
+        Self::from_value_w(power_kw * 1000.)
+    }
+
+    pub fn value_w(&self) -> f64 {
+        self.0
+    }
+}
+
 /// A radius
 #[derive(Clone, Copy)]
 pub struct Radius(Length);
