@@ -147,11 +147,7 @@ impl Spindle {
     /// Calculate spindle torque in Nm at a given speed in rpm
     pub fn torque(&self, rotational_speed: RotationalSpeed) -> Torque {
         let rotational_speed = rotational_speed.clamp(Self::MIN, Self::MAX);
-
-        // Now we can calculate torque, according to the formula above.
-        Torque::from_value_nm(
-            self.power.value_w() / rotational_speed.value_rad_per_s(),
-        )
+        self.power.to_torque(rotational_speed)
     }
 }
 

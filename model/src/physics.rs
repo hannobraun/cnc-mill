@@ -98,6 +98,12 @@ impl Power {
     pub fn value_w(&self) -> f64 {
         self.0
     }
+
+    pub fn to_torque(&self, rotational_speed: RotationalSpeed) -> Torque {
+        Torque::from_value_nm(
+            self.value_w() / rotational_speed.value_rad_per_s(),
+        )
+    }
 }
 
 /// A radius
