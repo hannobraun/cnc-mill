@@ -33,7 +33,7 @@ use crate::physics::Force;
 
 #[fj::model]
 fn cnc() -> fj::Shape {
-    let spindle = Spindle::new(W(2200.));
+    let spindle = Spindle::new(W(1500.));
     let tools = Tool::tools();
 
     let (max_force, tool) = tools
