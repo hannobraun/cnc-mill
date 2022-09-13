@@ -122,6 +122,22 @@ impl From<Diameter> for Radius {
     }
 }
 
+pub struct RotationalSpeed(f64);
+
+impl RotationalSpeed {
+    pub const fn from_value_rpm(rotational_speed_rpm: f64) -> Self {
+        Self(rotational_speed_rpm)
+    }
+
+    pub fn value_rpm(&self) -> f64 {
+        self.0
+    }
+
+    pub fn clamp(&self, min: RotationalSpeed, max: RotationalSpeed) -> Self {
+        Self(self.0.clamp(min.0, max.0))
+    }
+}
+
 /// A torque
 #[derive(PartialEq, PartialOrd)]
 pub struct Torque(f64);

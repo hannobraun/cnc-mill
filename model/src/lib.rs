@@ -27,7 +27,7 @@ mod physics;
 
 use std::{collections::BTreeMap, f64::consts::PI, fmt};
 
-use physics::{Diameter, Length, Power, Torque};
+use physics::{Diameter, Length, Power, RotationalSpeed, Torque};
 
 use crate::physics::Force;
 
@@ -39,7 +39,8 @@ fn cnc() -> fj::Shape {
     let (max_force, tool) = tools
         .into_iter()
         .map(|tool| {
-            let spindle_torque = spindle.torque(tool.desired_rpm());
+            let spindle_torque = spindle
+                .torque(RotationalSpeed::from_value_rpm(tool.desired_rpm().0));
 
             // This article talks about tangential cutting force:
             // https://www.ctemag.com/news/articles/understanding-tangential-cutting-force-when-milling
@@ -137,16 +138,17 @@ pub struct Spindle {
 }
 
 impl Spindle {
-    const MIN_RPM: Rpm = Rpm(5000.);
-    const MAX_RPM: Rpm = Rpm(24000.);
+    const MIN_RPM: RotationalSpeed = RotationalSpeed::from_value_rpm(5000.);
+    const MAX_RPM: RotationalSpeed = RotationalSpeed::from_value_rpm(24000.);
 
     pub fn new(power: Power) -> Self {
         Self { power }
     }
 
     /// Calculate spindle torque in Nm at a given speed in rpm
-    pub fn torque(&self, rpm: Rpm) -> Torque {
-        let rpm = rpm.0.min(Self::MAX_RPM.0).max(Self::MIN_RPM.0);
+    pub fn torque(&self, rotational_speed: RotationalSpeed) -> Torque {
+        let rotational_speed =
+            rotational_speed.clamp(Self::MIN_RPM, Self::MAX_RPM);
 
         // According to Wikipedia, this is how to calculate power from torque:
         // power = torque * angular speed
@@ -156,7 +158,7 @@ impl Spindle {
         //
         // We got the rotational speed in RPM, so let's convert that to angular
         // speed first.
-        let angular_speed = rpm / 60. * 2. * PI;
+        let angular_speed = rotational_speed.value_rpm() / 60. * 2. * PI;
 
         // Now we can calculate torque, according to the formula above.
         Torque::from_value_nm(self.power.value_w() / angular_speed)
