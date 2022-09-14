@@ -148,6 +148,22 @@ impl RotationalSpeed {
     }
 }
 
+pub struct Speed(f64);
+
+impl Speed {
+    pub fn from_value_m_per_s(speed_m_per_s: f64) -> Self {
+        Self(speed_m_per_s)
+    }
+
+    pub fn from_value_m_per_min(speed_m_per_min: f64) -> Self {
+        Self::from_value_m_per_s(speed_m_per_min / 60.)
+    }
+
+    pub fn value_m_per_min(&self) -> f64 {
+        self.0 * 60.
+    }
+}
+
 /// A torque
 #[derive(PartialEq, PartialOrd)]
 pub struct Torque(f64);
