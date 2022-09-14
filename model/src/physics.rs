@@ -1,4 +1,8 @@
-use std::{f64::consts::PI, fmt, ops::Div};
+use std::{
+    f64::consts::{PI, TAU},
+    fmt,
+    ops::Div,
+};
 
 /// A diameter
 #[derive(Clone, Copy, Debug, PartialEq, PartialOrd)]
@@ -165,10 +169,10 @@ impl Speed {
 
     pub fn to_rotational_speed(
         &self,
-        diameter: impl Into<Diameter>,
+        radius: impl Into<Radius>,
     ) -> RotationalSpeed {
         RotationalSpeed::from_value_rpm(
-            self.value_m_per_min() / diameter.into().to_length().value_m() / PI,
+            self.value_m_per_min() / radius.into().to_length().value_m() / TAU,
         )
     }
 }
