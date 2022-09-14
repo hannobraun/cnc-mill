@@ -429,10 +429,3 @@ impl fmt::Display for TangentialCuttingForce {
         Ok(())
     }
 }
-
-pub struct W(pub f64);
-
-pub struct Rpm(pub f64);
-
-/// Meter per minute
-pub struct MperM(pub f64);
