@@ -26,7 +26,7 @@
 mod physics;
 mod spindle;
 
-use std::{collections::BTreeMap, f64::consts::PI, fmt};
+use std::{collections::BTreeMap, fmt};
 
 use physics::{Diameter, Length, Power, RotationalSpeed, Speed};
 
@@ -338,12 +338,7 @@ impl Tool {
         // https://www.sorotec.de/webshop/Datenblaetter/fraeser/schnittwerte.pdf
         let cutting_speed = Speed::from_value_m_per_min(500.);
 
-        // Formula for calculating spindle RPM. See same document.
-        RotationalSpeed::from_value_rpm(
-            cutting_speed.value_m_per_min()
-                / self.diameter.to_length().value_m()
-                / PI,
-        )
+        cutting_speed.to_rotational_speed(self.diameter)
     }
 
     pub fn feed_per_tooth(&self) -> Length {

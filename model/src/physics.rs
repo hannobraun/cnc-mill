@@ -162,6 +162,15 @@ impl Speed {
     pub fn value_m_per_min(&self) -> f64 {
         self.0 * 60.
     }
+
+    pub fn to_rotational_speed(
+        &self,
+        diameter: impl Into<Diameter>,
+    ) -> RotationalSpeed {
+        RotationalSpeed::from_value_rpm(
+            self.value_m_per_min() / diameter.into().to_length().value_m() / PI,
+        )
+    }
 }
 
 /// A torque
