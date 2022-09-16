@@ -139,10 +139,6 @@ impl RotationalSpeed {
         Self(rotational_speed_rpm)
     }
 
-    pub fn value_rpm(&self) -> f64 {
-        self.0
-    }
-
     pub fn value_rad_per_s(&self) -> f64 {
         self.0 / 60. * 2. * PI
     }
