@@ -41,13 +41,12 @@ fn cnc() -> fj::Shape {
     let (max_force, tool) = tools
         .into_iter()
         .map(|tool| {
-            let spindle_torque = spindle.torque(tool.desired_rpm());
-
             let tangential_cutting_force = tool.tangential_cutting_force();
 
             // Also figure out the torque that would require, and make sure it's
             // below the torque that the spindle can deliver.
             let tool_torque = tangential_cutting_force.to_torque(tool.diameter);
+            let spindle_torque = spindle.torque(tool.desired_rpm());
             if tool_torque > spindle_torque {
                 println!(
                     "Required torque ({tool_torque}) is larger than spindle \
