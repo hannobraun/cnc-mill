@@ -1,6 +1,6 @@
 use std::collections::BTreeMap;
 
-use crate::physics::{Diameter, Force, Length, RotationalSpeed, Speed};
+use crate::physics::{Diameter, Force, Length, RotationalSpeed, Speed, Torque};
 
 #[derive(Debug)]
 pub struct Tool {
@@ -254,7 +254,7 @@ impl Tool {
         Length::from_value_mm(length_mm)
     }
 
-    pub fn tangential_cutting_force(&self) -> Force {
+    pub fn tangential_cutting_force(&self) -> (Force, Torque) {
         // This article talks about tangential cutting force:
         // https://www.ctemag.com/news/articles/understanding-tangential-cutting-force-when-milling
         //
@@ -303,6 +303,11 @@ impl Tool {
 
         // Now put it all together to calculate the tangential cutting
         // force.
-        Force::from_value_n(sigma * a * z_c * e_f * t_f)
+        let tangential_cutting_force =
+            Force::from_value_n(sigma * a * z_c * e_f * t_f);
+
+        let torque = tangential_cutting_force.to_torque(self.diameter);
+
+        (tangential_cutting_force, torque)
     }
 }
