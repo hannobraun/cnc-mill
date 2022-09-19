@@ -7,4 +7,4 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-fj = "0.15.0"
+fj = "0.16.0"
