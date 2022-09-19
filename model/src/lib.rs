@@ -23,15 +23,15 @@
 //!
 //! [Fornjot]: https://www.fornjot.app/
 
+mod machine;
 mod physics;
-mod spindle;
 mod tools;
 
 use std::fmt;
 
 use physics::Power;
 
-use crate::{physics::Force, spindle::Spindle, tools::Tool};
+use crate::{machine::spindle::Spindle, physics::Force, tools::Tool};
 
 #[fj::model]
 fn cnc() -> fj::Shape {
