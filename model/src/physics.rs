@@ -10,7 +10,7 @@ pub struct Diameter(Length);
 
 impl Diameter {
     /// Create an instance of `Diameter` from a `Length`
-    pub fn from_length(length: Length) -> Self {
+    pub const fn from_length(length: Length) -> Self {
         Self(length)
     }
 
@@ -31,7 +31,7 @@ pub struct Force(f64);
 
 impl Force {
     /// Create an instance of `Force` from a value in Newton
-    pub fn from_value_n(force_n: f64) -> Self {
+    pub const fn from_value_n(force_n: f64) -> Self {
         Self(force_n)
     }
 
@@ -59,7 +59,7 @@ pub struct Length(f64);
 
 impl Length {
     /// Create an instance of `Length` from a value in meter
-    pub fn from_value_m(length_m: f64) -> Self {
+    pub const fn from_value_m(length_m: f64) -> Self {
         Self(length_m)
     }
 
@@ -91,7 +91,7 @@ impl Div<f64> for Length {
 pub struct Power(f64);
 
 impl Power {
-    pub fn from_value_w(power_w: f64) -> Self {
+    pub const fn from_value_w(power_w: f64) -> Self {
         Self(power_w)
     }
 
@@ -116,7 +116,7 @@ pub struct Radius(Length);
 
 impl Radius {
     /// Create an instance of `Radius` from a `Length`
-    pub fn from_length(length: Length) -> Self {
+    pub const fn from_length(length: Length) -> Self {
         Self(length)
     }
 
@@ -155,7 +155,7 @@ impl RotationalSpeed {
 pub struct Speed(f64);
 
 impl Speed {
-    pub fn from_value_m_per_s(speed_m_per_s: f64) -> Self {
+    pub const fn from_value_m_per_s(speed_m_per_s: f64) -> Self {
         Self(speed_m_per_s)
     }
 
@@ -183,7 +183,7 @@ pub struct Torque(f64);
 
 impl Torque {
     /// Create an instance of `Torque` from a value in Nm
-    pub fn from_value_nm(torque_nm: f64) -> Self {
+    pub const fn from_value_nm(torque_nm: f64) -> Self {
         Self(torque_nm)
     }
 
