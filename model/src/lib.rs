@@ -75,7 +75,7 @@ fn cnc() -> fj::Shape {
         .reduce(|a, b| if a.0 > b.0 { a } else { b })
         .unwrap();
 
-    println!("Maximum tangential cutting force: {}", worst_case_force);
+    println!("Worst-case tangential cutting force: {}", worst_case_force);
     println!("Tool: {tool:#?}");
 
     // This is a placeholder. We don't actually need to export geometry right
