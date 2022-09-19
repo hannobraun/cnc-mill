@@ -38,7 +38,7 @@ fn cnc() -> fj::Shape {
     let spindle = Spindle::new(Power::from_value_kw(1.5));
     let tools = Tool::tools();
 
-    let (max_force, tool) = tools
+    let (worst_case_force, tool) = tools
         .into_iter()
         .map(|tool| {
             let (tangential_cutting_force, tool_torque) =
@@ -75,7 +75,7 @@ fn cnc() -> fj::Shape {
         .reduce(|a, b| if a.0 > b.0 { a } else { b })
         .unwrap();
 
-    println!("Maximum tangential cutting force: {}", max_force);
+    println!("Maximum tangential cutting force: {}", worst_case_force);
     println!("Tool: {tool:#?}");
 
     // This is a placeholder. We don't actually need to export geometry right
