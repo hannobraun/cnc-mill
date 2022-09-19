@@ -43,56 +43,7 @@ fn cnc() -> fj::Shape {
         .map(|tool| {
             let spindle_torque = spindle.torque(tool.desired_rpm());
 
-            // This article talks about tangential cutting force:
-            // https://www.ctemag.com/news/articles/understanding-tangential-cutting-force-when-milling
-            //
-            // It gives the following formula; (2) in the article:
-            // Ft = sigma * A * Zc * Ef * Tf
-            //
-            // Ft: tangential cutting force
-            // sigma: ultimate tensile strength (σ)
-            // A: cross-sectional area of the uncut chip
-            // Zc: number of teeth engaged in workpiece
-            // Ef: engagement factor of workpiece material
-            // Tf: cutting tool wear factor
-            //
-            // Wikipedia has an article on ultimate tensile strength:
-            // https://en.wikipedia.org/wiki/Ultimate_tensile_strength
-            //
-            // According to the table in there, this is the value for aluminium:
-            let sigma = 483_000_000.; // Pascal
-
-            // The cross-sectional area of the uncut chip depends on axial depth
-            // of cut. There's information about that in this document:
-            // https://www.sorotec.de/webshop/Datenblaetter/fraeser/schnittwerte.pdf
-            //
-            // For our calculation, the side milling case is the worst case, due
-            // to the higher axial depth of cut.
-            let axial_depth_of_cut = tool.length_cutting_edge.value_m();
-            let a = axial_depth_of_cut * tool.feed_per_tooth().value_m();
-
-            // For the number of engaged teeth, let's just go with the worst
-            // case: At most, the engagement angle is 180°, and the number of
-            // engaged teeth is half the total number of teeth.
-            let z_c = (tool.num_flutes / 2.).ceil();
-
-            // I don't quite understand what the engagement factor is, but if
-            // I'm reading the article right, it's just the radial depth of cut
-            // divided by cutting diameter.
-            //
-            // Radial depth of cut is supposed to be 25% of the cutter diameter
-            // for the side milling case we're looking at, according to the
-            // Sorotec document linked above.
-            let e_f = 0.25;
-
-            // As for cutting tool wear factor, I might be misunderstanding the
-            // article, but I think the following should be a good worst case.
-            let t_f = 1.6;
-
-            // Now put it all together to calculate the tangential cutting
-            // force.
-            let tangential_cutting_force =
-                Force::from_value_n(sigma * a * z_c * e_f * t_f);
+            let tangential_cutting_force = tool.tangential_cutting_force();
 
             // Also figure out the torque that would require, and make sure it's
             // below the torque that the spindle can deliver.

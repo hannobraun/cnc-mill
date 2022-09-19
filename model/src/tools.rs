@@ -1,6 +1,6 @@
 use std::collections::BTreeMap;
 
-use crate::physics::{Diameter, Length, RotationalSpeed, Speed};
+use crate::physics::{Diameter, Force, Length, RotationalSpeed, Speed};
 
 #[derive(Debug)]
 pub struct Tool {
@@ -252,5 +252,57 @@ impl Tool {
             .unwrap();
 
         Length::from_value_mm(length_mm)
+    }
+
+    pub fn tangential_cutting_force(&self) -> Force {
+        // This article talks about tangential cutting force:
+        // https://www.ctemag.com/news/articles/understanding-tangential-cutting-force-when-milling
+        //
+        // It gives the following formula; (2) in the article:
+        // Ft = sigma * A * Zc * Ef * Tf
+        //
+        // Ft: tangential cutting force
+        // sigma: ultimate tensile strength (σ)
+        // A: cross-sectional area of the uncut chip
+        // Zc: number of teeth engaged in workpiece
+        // Ef: engagement factor of workpiece material
+        // Tf: cutting tool wear factor
+        //
+        // Wikipedia has an article on ultimate tensile strength:
+        // https://en.wikipedia.org/wiki/Ultimate_tensile_strength
+        //
+        // According to the table in there, this is the value for aluminium:
+        let sigma = 483_000_000.; // Pascal
+
+        // The cross-sectional area of the uncut chip depends on axial depth
+        // of cut. There's information about that in this document:
+        // https://www.sorotec.de/webshop/Datenblaetter/fraeser/schnittwerte.pdf
+        //
+        // For our calculation, the side milling case is the worst case, due
+        // to the higher axial depth of cut.
+        let axial_depth_of_cut = self.length_cutting_edge.value_m();
+        let a = axial_depth_of_cut * self.feed_per_tooth().value_m();
+
+        // For the number of engaged teeth, let's just go with the worst
+        // case: At most, the engagement angle is 180°, and the number of
+        // engaged teeth is half the total number of teeth.
+        let z_c = (self.num_flutes / 2.).ceil();
+
+        // I don't quite understand what the engagement factor is, but if
+        // I'm reading the article right, it's just the radial depth of cut
+        // divided by cutting diameter.
+        //
+        // Radial depth of cut is supposed to be 25% of the cutter diameter
+        // for the side milling case we're looking at, according to the
+        // Sorotec document linked above.
+        let e_f = 0.25;
+
+        // As for cutting tool wear factor, I might be misunderstanding the
+        // article, but I think the following should be a good worst case.
+        let t_f = 1.6;
+
+        // Now put it all together to calculate the tangential cutting
+        // force.
+        Force::from_value_n(sigma * a * z_c * e_f * t_f)
     }
 }
