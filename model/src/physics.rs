@@ -1,7 +1,7 @@
 use std::{
     f64::consts::{PI, TAU},
     fmt,
-    ops::Div,
+    ops::{Add, Div},
 };
 
 /// A diameter
@@ -76,6 +76,14 @@ impl Length {
     /// Return the value in millimeter
     pub fn value_mm(&self) -> f64 {
         self.0 * 1000.
+    }
+}
+
+impl Add<Self> for Length {
+    type Output = Self;
+
+    fn add(self, rhs: Self) -> Self::Output {
+        Self(self.0 + rhs.0)
     }
 }
 
