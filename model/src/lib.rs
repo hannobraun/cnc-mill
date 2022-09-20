@@ -31,7 +31,11 @@ use std::fmt;
 
 use physics::Power;
 
-use crate::{machine::spindle::Spindle, physics::Force, tools::Tool};
+use crate::{
+    machine::{axes, spindle::Spindle},
+    physics::{Force, Radius},
+    tools::Tool,
+};
 
 #[fj::model]
 fn cnc() -> fj::Shape {
@@ -77,6 +81,10 @@ fn cnc() -> fj::Shape {
 
     println!("Worst-case tangential cutting force: {}", worst_case_force);
     println!("Tool: {tool:#?}");
+
+    dbg!(Radius::from_length(
+        axes::y::table_thickness() + axes::z::max_travel()
+    ));
 
     // This is a placeholder. We don't actually need to export geometry right
     // now, but Fornjot won't allow us to have a function that doesn't do that.
