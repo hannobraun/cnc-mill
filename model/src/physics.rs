@@ -88,6 +88,7 @@ impl Div<f64> for Length {
 }
 
 /// A power value
+#[derive(Clone, Copy, Debug, PartialEq, PartialOrd)]
 pub struct Power(f64);
 
 impl Power {
@@ -111,7 +112,7 @@ impl Power {
 }
 
 /// A radius
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug, PartialEq, PartialOrd)]
 pub struct Radius(Length);
 
 impl Radius {
@@ -132,6 +133,7 @@ impl From<Diameter> for Radius {
     }
 }
 
+#[derive(Clone, Copy, Debug, PartialEq, PartialOrd)]
 pub struct RotationalSpeed(f64);
 
 impl RotationalSpeed {
@@ -152,6 +154,7 @@ impl RotationalSpeed {
     }
 }
 
+#[derive(Clone, Copy, Debug, PartialEq, PartialOrd)]
 pub struct Speed(f64);
 
 impl Speed {
@@ -178,7 +181,7 @@ impl Speed {
 }
 
 /// A torque
-#[derive(PartialEq, PartialOrd)]
+#[derive(Clone, Copy, Debug, PartialEq, PartialOrd)]
 pub struct Torque(f64);
 
 impl Torque {
