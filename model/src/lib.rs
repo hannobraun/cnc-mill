@@ -82,10 +82,10 @@ fn cnc() -> fj::Shape {
     println!("Worst-case tangential cutting force: {}", worst_case_force);
     println!("Tool: {tool:#?}");
 
-    dbg!(
+    let y_axis_rail_max_distance_to_force =
         Radius::from_length(axes::y::table_thickness() + axes::z::max_travel())
-            + Radius::from_length(mgn15_height_total() / 2.)
-    );
+            + Radius::from_length(mgn15_height_total() / 2.);
+    dbg!(y_axis_rail_max_distance_to_force);
 
     // This is a placeholder. We don't actually need to export geometry right
     // now, but Fornjot won't allow us to have a function that doesn't do that.
