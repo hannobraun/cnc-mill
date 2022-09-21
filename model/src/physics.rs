@@ -141,6 +141,14 @@ impl From<Diameter> for Radius {
     }
 }
 
+impl Add<Self> for Radius {
+    type Output = Self;
+
+    fn add(self, rhs: Self) -> Self::Output {
+        Self(self.0 + rhs.0)
+    }
+}
+
 #[derive(Clone, Copy, Debug, PartialEq, PartialOrd)]
 pub struct RotationalSpeed(f64);
 
