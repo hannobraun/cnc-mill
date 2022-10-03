@@ -630,7 +630,7 @@ Host-side control software:
 
 I'm currently operating under the assumption that an open-loop control system using stepper motors will be used, for cost reasons.
 
-There is a huge number of options available. A lot of them are pricy enough to take up the majority of the available budget. For that reason, I've focused on lower-priced options.
+There is a huge number of options available. A lot of them are pricy enough to take up the majority of the available budget. For that reason, I'm focusing on lower-priced options.
 
 TinyG control boards, which include steppers drivers, but lack something to control the spindle:
 
