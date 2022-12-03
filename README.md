@@ -16,7 +16,9 @@ I suspect it might simply be impossible to fulfill all of these requirements wit
 
 ## Status
 
-The project is still in the planning phase. I've done lots of research (notes below) an have started with [some CAD modeling](/cad/).
+This project has stalled while in the planning phase. I was at the point where the calculations I wanted to do were way beyond my knowledge, so I had to do quite a bit of studying to make progress. Then my daily schedule shifted from under me and I was left with very little time to continue doing that.
+
+I'm sure at some point, I'll have both the desire and the time to design my own CNC mill again. Whether I'll pick back up here when that time comes, or if I decide to start fresh, I don't know.
 
 
 ## License
